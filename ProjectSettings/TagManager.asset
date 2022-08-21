@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - World
   - NoMask
+  - Collectable
   layers:
   - Default
   - TransparentFX
