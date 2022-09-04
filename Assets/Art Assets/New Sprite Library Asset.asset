@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: New Sprite Library Asset
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Bush
+    m_Hash: 85468750
+    m_CategoryList:
+    - m_Name: BerryOn
+      m_Hash: -768691659
+      m_Sprite: {fileID: 8071477894747692127, guid: 78ac654cb6269f841a075eadd1551ae2, type: 3}
+    - m_Name: BerryOff
+      m_Hash: -395621511
+      m_Sprite: {fileID: 7804136046397400859, guid: 78ac654cb6269f841a075eadd1551ae2, type: 3}
