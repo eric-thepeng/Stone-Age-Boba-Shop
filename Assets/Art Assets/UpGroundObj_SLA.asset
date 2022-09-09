@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
-  m_Name: New Sprite Library Asset
+  m_Name: UpGroundObj_SLA
   m_EditorClassIdentifier: 
   m_Labels:
-  - m_Name: Bush
-    m_Hash: 85468750
+  - m_Name: BerryBush
+    m_Hash: 1675986900
     m_CategoryList:
     - m_Name: BerryOn
       m_Hash: -768691659

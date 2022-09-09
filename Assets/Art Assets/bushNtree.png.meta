@@ -145,7 +145,7 @@ TextureImporter:
         x: 1
         y: 0
         width: 16
-        height: 16
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,7 +166,7 @@ TextureImporter:
         x: 18
         y: 0
         width: 16
-        height: 16
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,7 +187,7 @@ TextureImporter:
         x: 35
         y: 0
         width: 16
-        height: 16
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,8 +207,8 @@ TextureImporter:
         serializedVersion: 2
         x: 52
         y: 0
-        width: 16
-        height: 16
+        width: 15
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +228,8 @@ TextureImporter:
         serializedVersion: 2
         x: 69
         y: 0
-        width: 16
-        height: 16
+        width: 15
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,8 +249,8 @@ TextureImporter:
         serializedVersion: 2
         x: 86
         y: 0
-        width: 16
-        height: 16
+        width: 15
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,7 +271,7 @@ TextureImporter:
         x: 103
         y: 0
         width: 16
-        height: 16
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -488,7 +488,7 @@ TextureImporter:
         x: 120
         y: 0
         width: 16
-        height: 16
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,7 +509,7 @@ TextureImporter:
         x: 137
         y: 0
         width: 16
-        height: 16
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,9 +527,9 @@ TextureImporter:
       name: bushNtree_9
       rect:
         serializedVersion: 2
-        x: 154
+        x: 156
         y: 0
-        width: 16
+        width: 12
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -551,7 +551,7 @@ TextureImporter:
         x: 171
         y: 0
         width: 16
-        height: 16
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,7 +572,7 @@ TextureImporter:
         x: 188
         y: 0
         width: 16
-        height: 16
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
