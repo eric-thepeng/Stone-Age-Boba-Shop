@@ -17,6 +17,10 @@ public class Gatherable : UpGroundObj
     public state bornState;
 
     Animator animator;
+
+    float gatherTimeRequire = 3;
+    float gatherTimeCount = 0;
+
     private void Awake()
     {
         spriteLibrary = GetComponent<SpriteLibrary>();
@@ -35,9 +39,9 @@ public class Gatherable : UpGroundObj
             return;
         }
         stateNow = bornState;
-        SetSpriteToState();
+        SetSpriteToCurrentState();
     }
-    void SetSpriteToState()
+    void SetSpriteToCurrentState()
     {
         if(stateNow == state.Full)
         {
@@ -48,13 +52,40 @@ public class Gatherable : UpGroundObj
             targetResolver.SetCategoryAndLabel(targetCategroy, emptySpriteLabel);
         }
     }
-    public void Gather()
+    void ChangeStateTo(state newState)
     {
-
+        if (stateNow == newState) return;
+        else
+        {
+            stateNow = newState;
+            SetSpriteToCurrentState();
+        } 
     }
+    public void Gather() 
+    {
+        if(stateNow == state.Empty)
+        {
+            EmptyGather();
+            return;
+        }
+        ChangeStateTo(state.Gathering);
+        gatherTimeCount += Time.deltaTime;
+        print(gatherTimeCount);
+        if(gatherTimeCount >= gatherTimeRequire)
+        {
+            Produce();
+        }
+    }
+    public void AbandonGather() 
+    {
+        ChangeStateTo(state.Full);
+        gatherTimeCount = 0;
+    }
+    public void EmptyGather() { }
 
     public void Produce()
     {
-
+        ChangeStateTo(state.Empty);
+        print("produce");
     }
 }

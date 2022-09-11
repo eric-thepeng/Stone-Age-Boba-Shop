@@ -4,25 +4,32 @@ using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
 {
-    Animator tarCollectable;
+    Gatherable tarGatherable;
+
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && tarCollectable != null)
+        if (Input.GetMouseButton(0) && tarGatherable != null)
         {
-            tarCollectable.SetTrigger("Collect");
-            tarCollectable = null;
+            tarGatherable.Gather();
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Collectable")
+        if (tarGatherable == null && other.gameObject.GetComponent<Gatherable>() != null)
         {
-            tarCollectable = other.GetComponent<Animator>();
+            tarGatherable = other.gameObject.GetComponent<Gatherable>();
+            print("1");
         }
     }
-    private void OnTriggerExit(Collider other)
+
+    private void OnTriggerExit(Collider other) //exit a area
     {
-        if (tarCollectable != null && other.gameObject == tarCollectable.gameObject) tarCollectable = null;
+        if (other.gameObject.GetComponent<Gatherable>() == null) return; //ignore if not gatherable
+        if(tarGatherable != null && tarGatherable == other.gameObject.GetComponent<Gatherable>()) //isGatherable and is tarGatherable, abandonGather and dislink
+        {
+            tarGatherable.AbandonGather();
+            tarGatherable = null;
+        }
     }
 }

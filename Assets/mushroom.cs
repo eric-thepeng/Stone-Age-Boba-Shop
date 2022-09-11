@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class mushroom : MonoBehaviour
 {
+
+    bool canGet = false; //fly for 0.5s before it could be pickedup
     IEnumerator Start()
     {
         GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(0.8f, 1f), Random.Range(-0.5f, 0.5f)).normalized * 100f);
@@ -13,13 +15,14 @@ public class mushroom : MonoBehaviour
             timeCount += Time.deltaTime;
             yield return new WaitForSeconds(0);
         }
-        GetComponent<CapsuleCollider>().enabled = true;
-    }
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(0, 1f), Random.Range(-0.5f, 0.5f)).normalized * 100f);
-        }
+        canGet = true;
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (canGet && collision.gameObject.GetComponent<Inventory>())
+        {
+            Destroy(gameObject);
+        }
+    }
 }
