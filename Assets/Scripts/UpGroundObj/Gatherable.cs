@@ -74,6 +74,7 @@ public class Gatherable : UpGroundObj
         }
         ChangeStateTo(state.Gathering);
         gatherTimeCount += Time.deltaTime;
+        DigUI.i.SetRatio(gatherTimeCount/gatherTimeRequire);
         if(gatherTimeCount >= gatherTimeRequire)
         {
             Produce();
@@ -84,6 +85,7 @@ public class Gatherable : UpGroundObj
         if (stateNow == state.Empty) return;
         ChangeStateTo(state.Full);
         gatherTimeCount = 0;
+        DigUI.i.Clear();
     }
     public void EmptyGather() { }
 
@@ -93,6 +95,7 @@ public class Gatherable : UpGroundObj
     }
     public void Produce()
     {
+        DigUI.i.Clear();
         ChangeStateTo(state.Empty);
         if(objProduce != null)
         {
