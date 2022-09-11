@@ -8,7 +8,7 @@ public class mushroom : MonoBehaviour
     bool canGet = false; //fly for 0.5s before it could be pickedup
     IEnumerator Start()
     {
-        GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(0.8f, 1f), Random.Range(-0.5f, 0.5f)).normalized * 100f);
+        GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(0.8f, 1f), Random.Range(-0.5f, 0f)).normalized * 150f);
         float timeCount = 0;
         while (timeCount<0.5)
         {
@@ -16,11 +16,13 @@ public class mushroom : MonoBehaviour
             yield return new WaitForSeconds(0);
         }
         canGet = true;
+        //GetComponent<CapsuleCollider>().enabled = false;
+        //GetComponent<CapsuleCollider>().enabled = true;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (canGet && collision.gameObject.GetComponent<Inventory>())
+        if (canGet && other.gameObject.GetComponent<Inventory>())
         {
             Destroy(gameObject);
         }

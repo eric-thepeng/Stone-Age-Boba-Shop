@@ -16,9 +16,11 @@ public class Gatherable : UpGroundObj
     state stateNow;
     public state bornState;
 
+    [SerializeField] GameObject objProduce;
+
     Animator animator;
 
-    float gatherTimeRequire = 3;
+    float gatherTimeRequire = 1;
     float gatherTimeCount = 0;
 
     private void Awake()
@@ -59,6 +61,8 @@ public class Gatherable : UpGroundObj
         {
             stateNow = newState;
             SetSpriteToCurrentState();
+            if(stateNow == state.Gathering) animator.SetBool("Gathering", true);
+            else animator.SetBool("Gathering", false);
         } 
     }
     public void Gather() 
@@ -70,7 +74,6 @@ public class Gatherable : UpGroundObj
         }
         ChangeStateTo(state.Gathering);
         gatherTimeCount += Time.deltaTime;
-        print(gatherTimeCount);
         if(gatherTimeCount >= gatherTimeRequire)
         {
             Produce();
@@ -78,14 +81,24 @@ public class Gatherable : UpGroundObj
     }
     public void AbandonGather() 
     {
+        if (stateNow == state.Empty) return;
         ChangeStateTo(state.Full);
         gatherTimeCount = 0;
     }
     public void EmptyGather() { }
 
+    public void Grow()
+    {
+        ChangeStateTo(state.Full);
+    }
     public void Produce()
     {
         ChangeStateTo(state.Empty);
-        print("produce");
+        if(objProduce != null)
+        {
+            GameObject ngo = Instantiate(objProduce, transform.parent);
+            ngo.transform.position = transform.position;
+        }
     }
+    public bool CheckEmpty() { return stateNow == state.Empty; }
 }

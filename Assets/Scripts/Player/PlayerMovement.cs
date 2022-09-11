@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public float rotationSpeed = 150;*/
     //----------SETTINGS ENDS----------//
 
-    bool canMove = true;
+    //bool canMove = true;
     public float movingSpeed = 5;
     float momentum = 0; //between 0 and 1
     public float momentumIndex = 5; //how fast accelerates to max speed

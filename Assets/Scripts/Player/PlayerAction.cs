@@ -5,13 +5,32 @@ using UnityEngine;
 public class PlayerAction : MonoBehaviour
 {
     Gatherable tarGatherable;
+    CapsuleCollider myCollider;
+
+    private void Awake()
+    {
+        myCollider = GetComponent<CapsuleCollider>();
+    }
 
     private void Update()
     {
-        if (Input.GetMouseButton(0) && tarGatherable != null)
+        if (tarGatherable == null) return;
+        if (Input.GetMouseButton(0))
         {
             tarGatherable.Gather();
         }
+        if (tarGatherable.CheckEmpty())
+        {
+            tarGatherable = null;
+            refreshCollider();
+        }
+
+    }
+
+    void refreshCollider()
+    {
+        myCollider.enabled = false;
+        myCollider.enabled = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,7 +38,6 @@ public class PlayerAction : MonoBehaviour
         if (tarGatherable == null && other.gameObject.GetComponent<Gatherable>() != null)
         {
             tarGatherable = other.gameObject.GetComponent<Gatherable>();
-            print("1");
         }
     }
 
