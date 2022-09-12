@@ -109,7 +109,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8071477894747692127, guid: 78ac654cb6269f841a075eadd1551ae2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3336ed5ada74dba4ab9d2122b0c4174b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -164,8 +164,8 @@ MonoBehaviour:
   - {fileID: 4890071595279968870}
   - {fileID: 4890071596194980551}
   m_Bounds:
-    m_Center: {x: 0.000000059604645, y: 0.37579393, z: 1.2932572e-12}
-    m_Extent: {x: 0.5000001, y: 0.37579393, z: 1.2790077e-10}
+    m_Center: {x: -0.006397128, y: 0.3829777, z: -0.00000095358644}
+    m_Extent: {x: 0.9213549, y: 0.5119872, z: 4.0824943e-10}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!95 &4890071595745685009
@@ -216,10 +216,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.07279436
-  m_Height: 1.0573404
+  m_Radius: 0.09771605
+  m_Height: 1.6280861
   m_Direction: 0
-  m_Center: {x: -0.0038660765, y: 0.06550654, z: 0.0035861726}
+  m_Center: {x: 0.013177991, y: 0.065506525, z: -0.0005931403}
 --- !u!1 &4890071596194980568
 GameObject:
   m_ObjectHideFlags: 0
