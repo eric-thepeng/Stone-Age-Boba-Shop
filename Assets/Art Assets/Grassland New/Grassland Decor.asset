@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: Grassland Decor
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Tree
+    m_Hash: 386724322
+    m_CategoryList:
+    - m_Name: Tree_1
+      m_Hash: -1948903498
+      m_Sprite: {fileID: -3558584760899686693, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Tree_2
+      m_Hash: 316622348
+      m_Sprite: {fileID: 8974663998772236968, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+  - m_Name: DecorBush
+    m_Hash: 432949616
+    m_CategoryList:
+    - m_Name: Bush_1
+      m_Hash: -1848397520
+      m_Sprite: {fileID: -7723019394761211078, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Bush_2
+      m_Hash: 148562058
+      m_Sprite: {fileID: 2789155961667091937, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Bush_3
+      m_Hash: 2145243164
+      m_Sprite: {fileID: -9174660343715329760, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Bush_4
+      m_Hash: -507951681
+      m_Sprite: {fileID: -7841909678015702404, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Bush_5
+      m_Hash: -1765903063
+      m_Sprite: {fileID: -5057281104055116649, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Bush_6
+      m_Hash: 263660691
+      m_Sprite: {fileID: 7403583090215596083, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Bush_7
+      m_Hash: 2024805381
+      m_Sprite: {fileID: 6461224174024904866, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+  - m_Name: Spike
+    m_Hash: 779695502
+    m_CategoryList:
+    - m_Name: Spike_1
+      m_Hash: -560526143
+      m_Sprite: {fileID: -4163400931218339853, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Spike_2
+      m_Hash: 1201560955
+      m_Sprite: {fileID: 3439414345747539802, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Spike_3
+      m_Hash: 815361517
+      m_Sprite: {fileID: 2504711434367527980, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}

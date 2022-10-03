@@ -13,14 +13,14 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Player
   - 
   - UpGroundPopUp
   - 
   - 
   - 
   - 
-  - 
+  - Ground
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Flat
+    uniqueID: 1444514373
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

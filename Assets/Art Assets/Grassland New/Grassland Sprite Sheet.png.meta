@@ -1,0 +1,1983 @@
+fileFormatVersion: 2
+guid: 9fb3a1bc1a276444895df328f9a72466
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3558584760899686693
+    second: Grassland Sprite Sheet_1
+  - first:
+      213: 8974663998772236968
+    second: Grassland Sprite Sheet_2
+  - first:
+      213: -7723019394761211078
+    second: Grassland Sprite Sheet_4
+  - first:
+      213: 2789155961667091937
+    second: Grassland Sprite Sheet_5
+  - first:
+      213: -9174660343715329760
+    second: Grassland Sprite Sheet_6
+  - first:
+      213: -7841909678015702404
+    second: Grassland Sprite Sheet_7
+  - first:
+      213: -5057281104055116649
+    second: Grassland Sprite Sheet_8
+  - first:
+      213: 7403583090215596083
+    second: Grassland Sprite Sheet_9
+  - first:
+      213: 6461224174024904866
+    second: Grassland Sprite Sheet_10
+  - first:
+      213: -4163400931218339853
+    second: Grassland Sprite Sheet_13
+  - first:
+      213: 3439414345747539802
+    second: Grassland Sprite Sheet_14
+  - first:
+      213: 2504711434367527980
+    second: Grassland Sprite Sheet_15
+  - first:
+      213: -9078524491303417266
+    second: Grassland Sprite Sheet_16
+  - first:
+      213: -5701394871076912354
+    second: Grassland Sprite Sheet_43
+  - first:
+      213: 8785252219847473265
+    second: Grassland Sprite Sheet_44
+  - first:
+      213: 5961127302475881073
+    second: Grassland Sprite Sheet_45
+  - first:
+      213: -6980803219931892111
+    second: Grassland Sprite Sheet_46
+  - first:
+      213: 6803534570160392770
+    second: Grassland Sprite Sheet_47
+  - first:
+      213: -949201612131643336
+    second: Grassland Sprite Sheet_48
+  - first:
+      213: 4591010391429451556
+    second: Grassland Sprite Sheet_50
+  - first:
+      213: -1061633099068226510
+    second: Grassland Sprite Sheet_51
+  - first:
+      213: 6642237053316917049
+    second: Grassland Sprite Sheet_52
+  - first:
+      213: -1501309591788083974
+    second: Grassland Sprite Sheet_53
+  - first:
+      213: -3467496400652551242
+    second: Grassland Sprite Sheet_59
+  - first:
+      213: 2128987166318267886
+    second: Grassland Sprite Sheet_61
+  - first:
+      213: 2046102574718208891
+    second: Grassland Sprite Sheet_66
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 4425
+        width: 794
+        height: 1598
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdea47f930e5d9ec0800000000000000
+      internalID: -3558584760899686693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 4452
+        width: 936
+        height: 1583
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a25e496b596c8c70800000000000000
+      internalID: 8974663998772236968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 3490
+        width: 654
+        height: 399
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a334ecd57c252d490800000000000000
+      internalID: -7723019394761211078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 3588
+        width: 521
+        height: 301
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed745ec19215b620800000000000000
+      internalID: 2789155961667091937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 3578
+        width: 853
+        height: 321
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0290cfdd60f0da080800000000000000
+      internalID: -9174660343715329760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3357
+        y: 3588
+        width: 381
+        height: 238
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a1d2132b0fb2390800000000000000
+      internalID: -7841909678015702404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3742
+        y: 3718
+        width: 477
+        height: 219
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79cdf7761ade0d9b0800000000000000
+      internalID: -5057281104055116649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 4522
+        y: 3616
+        width: 1098
+        height: 283
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330b36d389fceb660800000000000000
+      internalID: 7403583090215596083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 5921
+        y: 3616
+        width: 735
+        height: 388
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0dbea3721eaa950800000000000000
+      internalID: 6461224174024904866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 2944
+        width: 454
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7433569e0a836c0800000000000000
+      internalID: -4163400931218339853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 2843
+        width: 906
+        height: 371
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a572aa9ef114bbf20800000000000000
+      internalID: 3439414345747539802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2363
+        y: 2867
+        width: 749
+        height: 266
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ce55e67c582c220800000000000000
+      internalID: 2504711434367527980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 2273
+        width: 199
+        height: 262
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a0d23431a920280800000000000000
+      internalID: -9078524491303417266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1867
+        width: 193
+        height: 101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e130a31729390e0b0800000000000000
+      internalID: -5701394871076912354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1867
+        width: 98
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1787832095c7be970800000000000000
+      internalID: 8785252219847473265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 1867
+        width: 135
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a15fcb2bd2ab250800000000000000
+      internalID: 5961127302475881073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 1916
+        width: 433
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1767e0515743f1f90800000000000000
+      internalID: -6980803219931892111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 3808
+        y: 1695
+        width: 304
+        height: 231
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a008715a20b6e50800000000000000
+      internalID: 6803534570160392770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 4319
+        y: 1814
+        width: 513
+        height: 298
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8305aa0b922c3d2f0800000000000000
+      internalID: -949201612131643336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1405
+        width: 287
+        height: 154
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f874570ab86bf30800000000000000
+      internalID: 4591010391429451556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1405
+        width: 297
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234cd3832525441f0800000000000000
+      internalID: -1061633099068226510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 779
+        width: 581
+        height: 356
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones:
+      - name: bone_1
+        position: {x: 267.35242, y: 24.192688, z: 0}
+        rotation: {x: 0, y: 0, z: 0.71611196, w: 0.6979855}
+        length: 94.65824
+        parentId: -1
+      - name: bone_2
+        position: {x: 94.65822, y: -0.000026219961, z: 0}
+        rotation: {x: 0, y: 0, z: -0.0040449346, w: 0.9999919}
+        length: 207.48369
+        parentId: 0
+      spriteID: 93764ec6867fd2c50800000000000000
+      internalID: 6642237053316917049
+      vertices:
+      - {x: 244.54675, y: 4.352722}
+      - {x: 307.24048, y: 11.560486}
+      - {x: 368.7483, y: 24.534424}
+      - {x: 430.8297, y: 36.94153}
+      - {x: 490.91003, y: 53.61035}
+      - {x: 545.6692, y: 81.74158}
+      - {x: 583.9292, y: 129.84106}
+      - {x: 561.69946, y: 186.9607}
+      - {x: 530.3876, y: 240.64093}
+      - {x: 494.51, y: 288.62842}
+      - {x: 439.25415, y: 312.5714}
+      - {x: 380.8391, y: 324.77222}
+      - {x: 320.87427, y: 343.1029}
+      - {x: 258.84875, y: 358.4176}
+      - {x: 194.03839, y: 359.21887}
+      - {x: 142.69043, y: 326.80505}
+      - {x: 103.12897, y: 280.6754}
+      - {x: 59.554688, y: 234.48987}
+      - {x: 18.936707, y: 187.27911}
+      - {x: -0.31921387, y: 128.3435}
+      - {x: -0.31921387, y: 62.731995}
+      - {x: 22.281311, y: 31.395752}
+      - {x: 92.59485, y: 11.452026}
+      - {x: 151.5102, y: 4.772583}
+      - {x: 211.0343, y: 2.0819702}
+      - {x: 267.98608, y: 196.06958}
+      - {x: 157.78662, y: 138.09448}
+      - {x: 399.15625, y: 170.10364}
+      indices: 1300000015000000140000001600000015000000130000001a00000018000000170000001a000000170000001600000016000000130000001a00000000000000180000001a000000100000001a0000001100000012000000110000001a0000000f0000000e000000190000000f00000019000000100000000e0000000d0000001900000010000000190000001a0000001a000000130000001200000019000000000000001a00000002000000010000001900000003000000020000001b0000001b0000000200000019000000040000001b000000050000001b0000000700000005000000030000001b000000040000000600000005000000070000000c0000000b000000190000000b0000001b000000190000000d0000000c000000190000000a0000001b0000000b000000090000001b0000000a0000001b000000090000000800000008000000070000001b000000000000001900000001000000
+      edges:
+      - {x: 1, y: 0}
+      - {x: 2, y: 1}
+      - {x: 3, y: 2}
+      - {x: 4, y: 3}
+      - {x: 5, y: 4}
+      - {x: 6, y: 5}
+      - {x: 7, y: 6}
+      - {x: 8, y: 7}
+      - {x: 9, y: 8}
+      - {x: 10, y: 9}
+      - {x: 11, y: 10}
+      - {x: 11, y: 12}
+      - {x: 13, y: 12}
+      - {x: 14, y: 13}
+      - {x: 15, y: 14}
+      - {x: 16, y: 15}
+      - {x: 17, y: 16}
+      - {x: 18, y: 17}
+      - {x: 19, y: 18}
+      - {x: 20, y: 19}
+      - {x: 21, y: 20}
+      - {x: 22, y: 21}
+      - {x: 23, y: 22}
+      - {x: 24, y: 23}
+      - {x: 0, y: 24}
+      weights:
+      - weight[0]: 0.99999994
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.9698136
+        weight[1]: 0.030186415
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.8624508
+        weight[1]: 0.13754922
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.76209575
+        weight[1]: 0.23790425
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.69375587
+        weight[1]: 0.30624413
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.6493014
+        weight[1]: 0.3506986
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.58416975
+        weight[1]: 0.41583025
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.53324604
+        weight[1]: 0.46675393
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.6402819
+        weight[1]: 0.35971805
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.755533
+        weight[1]: 0.24446703
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.8772249
+        weight[1]: 0.1227751
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.9754479
+        weight[1]: 0.024552085
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.97009486
+        weight[1]: 0.029905137
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.87024
+        weight[1]: 0.12976001
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.7005297
+        weight[1]: 0.2994703
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.52909654
+        weight[1]: 0.47090346
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.5996273
+        weight[1]: 0.40037268
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.688959
+        weight[1]: 0.311041
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.7247263
+        weight[1]: 0.27527368
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.8051728
+        weight[1]: 0.1948272
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.89923394
+        weight[1]: 0.10076606
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.9822868
+        weight[1]: 0.01771319
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.5052916
+        weight[1]: 0.49470842
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.52154577
+        weight[1]: 0.47845423
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 771
+        width: 577
+        height: 357
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones:
+      - name: bone_1
+        position: {x: 294.20935, y: 28.26764, z: 0}
+        rotation: {x: 0, y: 0, z: 0.71458805, w: 0.6995455}
+        length: 91.392395
+        parentId: -1
+      - name: bone_2
+        position: {x: 91.3924, y: 0.000036152775, z: 0}
+        rotation: {x: 0, y: 0, z: -0.010637654, w: 0.99994344}
+        length: 196.35202
+        parentId: 0
+      spriteID: af4a59b61e64a2be0800000000000000
+      internalID: -1501309591788083974
+      vertices:
+      - {x: 276.4685, y: 5.1116943}
+      - {x: 338.0498, y: 14.880615}
+      - {x: 400.88342, y: 25.685242}
+      - {x: 461.21216, y: 40.716553}
+      - {x: 520.3025, y: 64.59308}
+      - {x: 573.9873, y: 97.99365}
+      - {x: 574.84814, y: 160.24268}
+      - {x: 544.13794, y: 212.35895}
+      - {x: 515.1316, y: 266.86487}
+      - {x: 466.61743, y: 303.68042}
+      - {x: 405.28455, y: 316.79077}
+      - {x: 345.5121, y: 334.40076}
+      - {x: 285.68713, y: 352.04224}
+      - {x: 222.37415, y: 359.23608}
+      - {x: 162.97607, y: 342.10535}
+      - {x: 120.85376, y: 295.34595}
+      - {x: 78.06665, y: 248.62158}
+      - {x: 31.23169, y: 205.95941}
+      - {x: 5.520996, y: 148.80475}
+      - {x: 2.015503, y: 126.84912}
+      - {x: 1.2177734, y: 51.587646}
+      - {x: 36.112183, y: 25.601257}
+      - {x: 95.11145, y: 8.523071}
+      - {x: 158.7533, y: 3.9920044}
+      - {x: 222.59106, y: 1.7631836}
+      - {x: 405.9098, y: 175.93127}
+      - {x: 256.2119, y: 233.34534}
+      - {x: 287.07324, y: 123.13092}
+      - {x: 151.67688, y: 138.69287}
+      indices: 1300000015000000140000000700000004000000190000000800000019000000090000000700000019000000080000000b000000190000001a0000000c0000000b0000001a0000000b0000000a0000001900000009000000190000000a0000000500000004000000060000001b0000001900000002000000190000000400000003000000190000000300000002000000190000001b0000001a00000002000000010000001b0000000700000006000000040000001b00000001000000000000001a0000001c0000000f0000000d0000000c0000001a0000001a0000000e0000000d0000001c000000100000000f0000000e0000001a0000000f0000001c000000120000001100000011000000100000001c000000120000001c000000130000001a0000001b0000001c00000017000000160000001c000000150000001c000000160000001c00000018000000170000001c00000015000000130000001b000000180000001c00000000000000180000001b000000
+      edges:
+      - {x: 1, y: 0}
+      - {x: 2, y: 1}
+      - {x: 3, y: 2}
+      - {x: 4, y: 3}
+      - {x: 5, y: 4}
+      - {x: 6, y: 5}
+      - {x: 7, y: 6}
+      - {x: 7, y: 8}
+      - {x: 9, y: 8}
+      - {x: 10, y: 9}
+      - {x: 11, y: 10}
+      - {x: 12, y: 11}
+      - {x: 13, y: 12}
+      - {x: 14, y: 13}
+      - {x: 14, y: 15}
+      - {x: 16, y: 15}
+      - {x: 16, y: 17}
+      - {x: 18, y: 17}
+      - {x: 19, y: 18}
+      - {x: 20, y: 19}
+      - {x: 21, y: 20}
+      - {x: 22, y: 21}
+      - {x: 23, y: 22}
+      - {x: 24, y: 23}
+      - {x: 0, y: 24}
+      weights:
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.9825641
+        weight[1]: 0.017435908
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.82187796
+        weight[1]: 0.17812204
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.8568706
+        weight[1]: 0.14312941
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.679896
+        weight[1]: 0.320104
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.56873536
+        weight[1]: 0.4312646
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.623737
+        weight[1]: 0.376263
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.7230575
+        weight[1]: 0.27694246
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.8291713
+        weight[1]: 0.17082867
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.90256375
+        weight[1]: 0.09743624
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.96752447
+        weight[1]: 0.032475524
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.9819724
+        weight[1]: 0.01802758
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.91613966
+        weight[1]: 0.08386036
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.7954638
+        weight[1]: 0.20453623
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.6709924
+        weight[1]: 0.3290076
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.5579538
+        weight[1]: 0.44204623
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.52568436
+        weight[1]: 0.4743156
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.5553444
+        weight[1]: 0.4446556
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.73707724
+        weight[1]: 0.26292276
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.8043621
+        weight[1]: 0.19563788
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.7861167
+        weight[1]: 0.21388328
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.9388538
+        weight[1]: 0.0611462
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.7513798
+        weight[1]: 0.24862023
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.6470475
+        weight[1]: 0.35295245
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.6011033
+        weight[1]: 0.39889666
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 828
+        width: 402
+        height: 241
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones:
+      - name: bone_1
+        position: {x: 209.30298, y: 28.505676, z: 0}
+        rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+        length: 52.33007
+        parentId: -1
+      - name: bone_2
+        position: {x: 52.330093, y: -0.000049058504, z: 0}
+        rotation: {x: 0, y: 0, z: 0.007873284, w: 0.999969}
+        length: 110.77904
+        parentId: 0
+      spriteID: 6bbb82b256af0efc0800000000000000
+      internalID: -3467496400652551242
+      vertices:
+      - {x: 87.94824, y: 0.39300537}
+      - {x: 133.27881, y: 1.1942749}
+      - {x: 151.07593, y: 3.1361694}
+      - {x: 195.41284, y: 5.2319946}
+      - {x: 238.89258, y: 4.7526245}
+      - {x: 283.1455, y: 6.7785034}
+      - {x: 325.8733, y: 16.323547}
+      - {x: 366.12036, y: 33.695618}
+      - {x: 390.3912, y: 86.839745}
+      - {x: 382.66504, y: 136.8399}
+      - {x: 364.18555, y: 174.43915}
+      - {x: 342.92505, y: 207.44788}
+      - {x: 307.7859, y: 231.45386}
+      - {x: 265.9502, y: 241.62866}
+      - {x: 221.84082, y: 240.31311}
+      - {x: 183.61572, y: 239.67627}
+      - {x: 140.40186, y: 241.31726}
+      - {x: 99.16455, y: 231.33142}
+      - {x: 66.07544, y: 206.22327}
+      - {x: 34.38916, y: 177.92755}
+      - {x: 0.96435547, y: 114.366394}
+      - {x: 1.3701172, y: 69.03107}
+      - {x: 3.2314453, y: 55.72473}
+      - {x: 23.767822, y: 21.767822}
+      - {x: 44.73946, y: 9.064949}
+      - {x: 123.71777, y: 149.71082}
+      - {x: 275.52124, y: 155.99536}
+      - {x: 294.5603, y: 88.06122}
+      - {x: 92.56738, y: 83.31683}
+      - {x: 199.57324, y: 162.26569}
+      - {x: 195.03223, y: 84.47113}
+      - {x: 16.126175, y: 146.3036}
+      indices: 17000000160000001c0000001c00000001000000000000001e0000001c00000019000000010000001c00000002000000180000001c00000000000000140000001c0000001500000016000000150000001c0000001c00000018000000170000001f0000001300000019000000100000001900000011000000120000001100000019000000100000000f0000001d00000019000000100000001d0000001f000000190000001c0000001300000012000000190000001f0000001c00000014000000020000001c0000001e0000001e000000040000000300000005000000040000001b0000001b000000070000000600000009000000080000001b000000070000001b00000008000000050000001b000000060000001a0000001b0000001e0000001e0000001b00000004000000020000001e000000030000000e0000001a0000001d0000000d0000000c0000001a0000000f0000000e0000001d0000000a0000001a0000000b0000000b0000001a0000000c0000000a0000001b0000001a0000001a0000001e0000001d0000001a0000000e0000000d0000001b0000000a00000009000000190000001d0000001e000000
+      edges:
+      - {x: 1, y: 0}
+      - {x: 1, y: 2}
+      - {x: 3, y: 2}
+      - {x: 3, y: 4}
+      - {x: 5, y: 4}
+      - {x: 6, y: 5}
+      - {x: 7, y: 6}
+      - {x: 9, y: 8}
+      - {x: 10, y: 9}
+      - {x: 11, y: 10}
+      - {x: 12, y: 11}
+      - {x: 13, y: 12}
+      - {x: 14, y: 13}
+      - {x: 15, y: 14}
+      - {x: 15, y: 16}
+      - {x: 17, y: 16}
+      - {x: 17, y: 18}
+      - {x: 19, y: 18}
+      - {x: 21, y: 20}
+      - {x: 22, y: 21}
+      - {x: 23, y: 22}
+      - {x: 24, y: 23}
+      - {x: 0, y: 24}
+      - {x: 20, y: 31}
+      - {x: 19, y: 31}
+      - {x: 7, y: 8}
+      weights:
+      - weight[0]: 0.95324814
+        weight[1]: 0.046751857
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.9739478
+        weight[1]: 0.026052177
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.9340968
+        weight[1]: 0.06590319
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.92256063
+        weight[1]: 0.07743937
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.5109996
+        weight[1]: 0.48900038
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.7573344
+        weight[1]: 0.2426656
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.8721781
+        weight[1]: 0.12782194
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.8879687
+        weight[1]: 0.11203129
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.7872312
+        weight[1]: 0.2127688
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.6536666
+        weight[1]: 0.34633335
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.5090146
+        weight[1]: 0.4909854
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.6199262
+        weight[1]: 0.3800738
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.64508086
+        weight[1]: 0.35491914
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.8608844
+        weight[1]: 0.13911557
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.8970662
+        weight[1]: 0.102933824
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.78288263
+        weight[1]: 0.21711735
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.53282005
+        weight[1]: 0.46717995
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.58861715
+        weight[1]: 0.41138285
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.5146299
+        weight[1]: 0.4853701
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.5710052
+        weight[1]: 0.42899477
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 3002
+        y: 835
+        width: 400
+        height: 241
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones:
+      - name: bone_1
+        position: {x: 203.31348, y: 30.751892, z: 0}
+        rotation: {x: 0, y: 0, z: 0.7071035, w: 0.7071101}
+        length: 52.329956
+        parentId: -1
+      - name: bone_2
+        position: {x: 52.329975, y: -0.000008298855, z: 0}
+        rotation: {x: 0, y: 0, z: -0.0070293783, w: 0.9999753}
+        length: 111.423805
+        parentId: 0
+      spriteID: eed04c34c8eab8d10800000000000000
+      internalID: 2128987166318267886
+      vertices:
+      - {x: 129.45895, y: 3.4145737}
+      - {x: 153.05675, y: 8.061935}
+      - {x: 198.76848, y: 8.265019}
+      - {x: 240.98888, y: 11.868557}
+      - {x: 277.82855, y: 9.570274}
+      - {x: 322.1233, y: 16.019165}
+      - {x: 357.01425, y: 29.76302}
+      - {x: 389.93204, y: 47.92232}
+      - {x: 396.18042, y: 97.295525}
+      - {x: 379.7373, y: 135.94067}
+      - {x: 361.30005, y: 173.16205}
+      - {x: 336.74365, y: 206.69214}
+      - {x: 302.03833, y: 229.86182}
+      - {x: 261.7317, y: 240.95337}
+      - {x: 210.8072, y: 229.4781}
+      - {x: 176.45497, y: 227.53651}
+      - {x: 139.05548, y: 234.59319}
+      - {x: 96.9436, y: 227.78384}
+      - {x: 68.03178, y: 202.42021}
+      - {x: 39.885864, y: 170.65038}
+      - {x: 5.890692, y: 123.72601}
+      - {x: 3.564192, y: 78.52014}
+      - {x: 10.481497, y: 51.774044}
+      - {x: 32.41738, y: 14.114708}
+      - {x: 60.719643, y: 2.2460341}
+      - {x: 80.49829, y: 123.949646}
+      - {x: 237.82715, y: 81.87811}
+      - {x: 83.19458, y: 59.30957}
+      - {x: 208.17358, y: 157.91766}
+      - {x: 137.8982, y: 164.8338}
+      - {x: 159.71045, y: 85.19653}
+      - {x: 315.33594, y: 91.84088}
+      - {x: 279.21216, y: 156.4732}
+      indices: 1b000000170000001600000016000000150000001b00000018000000170000001b0000001e0000000100000000000000190000001b00000015000000000000001b0000001e0000001c0000001e0000001d000000180000001b000000000000001d0000001e0000001900000002000000010000001e000000150000001400000019000000190000001300000012000000120000001d00000019000000100000000f0000001d0000001d0000000f0000001c0000001d000000110000001000000012000000110000001d0000001e0000001b0000001900000013000000190000001400000004000000030000001a000000200000001a0000001c0000001a0000001f000000040000001e0000001c0000001a0000001f000000060000000500000008000000070000001f000000060000001f00000007000000040000001f00000005000000200000001f0000001a0000001f0000000900000008000000020000001a00000003000000200000000e0000000d0000000d0000000c000000200000001c0000000f0000000e0000000a0000001f000000200000000c0000000b000000200000000b0000000a000000200000000a000000090000001f0000000e000000200000001c0000001a000000020000001e000000
+      edges:
+      - {x: 1, y: 0}
+      - {x: 3, y: 2}
+      - {x: 4, y: 3}
+      - {x: 5, y: 4}
+      - {x: 6, y: 5}
+      - {x: 7, y: 6}
+      - {x: 8, y: 7}
+      - {x: 9, y: 8}
+      - {x: 10, y: 9}
+      - {x: 11, y: 10}
+      - {x: 12, y: 11}
+      - {x: 13, y: 12}
+      - {x: 13, y: 14}
+      - {x: 15, y: 14}
+      - {x: 16, y: 15}
+      - {x: 17, y: 16}
+      - {x: 18, y: 17}
+      - {x: 19, y: 18}
+      - {x: 21, y: 20}
+      - {x: 22, y: 21}
+      - {x: 23, y: 22}
+      - {x: 24, y: 23}
+      - {x: 0, y: 24}
+      - {x: 19, y: 20}
+      - {x: 1, y: 2}
+      weights:
+      - weight[0]: 0.853034
+        weight[1]: 0.14696598
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.8195793
+        weight[1]: 0.1804207
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.7160825
+        weight[1]: 0.2839175
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.6599998
+        weight[1]: 0.3400002
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.5766659
+        weight[1]: 0.42333412
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.5478239
+        weight[1]: 0.45217612
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.70673966
+        weight[1]: 0.29326034
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.83912873
+        weight[1]: 0.16087125
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.83607906
+        weight[1]: 0.16392092
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.7074234
+        weight[1]: 0.2925766
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.5798317
+        weight[1]: 0.4201683
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.53682005
+        weight[1]: 0.46317995
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.60048515
+        weight[1]: 0.39951485
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.686522
+        weight[1]: 0.313478
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.6887978
+        weight[1]: 0.31120223
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.6346146
+        weight[1]: 0.36538538
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.65907484
+        weight[1]: 0.34092516
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.64242077
+        weight[1]: 0.35757923
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.99999994
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 1
+        weight[1]: 0
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.55436575
+        weight[1]: 0.44563425
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.5727006
+        weight[1]: 0.42729938
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 0
+        boneIndex[1]: 1
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+      - weight[0]: 0.8474002
+        weight[1]: 0.15259981
+        weight[2]: 0
+        weight[3]: 0
+        boneIndex[0]: 1
+        boneIndex[1]: 0
+        boneIndex[2]: 0
+        boneIndex[3]: 0
+    - serializedVersion: 2
+      name: Grassland Sprite Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 348
+        width: 163
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b47147377356c10800000000000000
+      internalID: 2046102574718208891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

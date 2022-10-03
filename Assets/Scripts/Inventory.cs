@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    static Inventory instance;
+    public static Inventory i
     {
-        
+        get
+        {
+            if (instance == null) instance = FindObjectOfType<Inventory>();
+            return instance;
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
+    List<ScriptableObject> Backpack;
+
+    public void ObtainItem(ScriptableObject so)
     {
-        
+        Backpack.Add(so);
+    }
+
+    public void DeleteItem()
+    {
+
     }
 }

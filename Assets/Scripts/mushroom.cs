@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class mushroom : MonoBehaviour
 {
-
+    [SerializeField] ScriptableObject thisSO;
     bool canGet = false; //fly for 0.5s before it could be pickedup
     IEnumerator Start()
     {
@@ -16,15 +16,25 @@ public class mushroom : MonoBehaviour
             yield return new WaitForSeconds(0);
         }
         canGet = true;
-        //GetComponent<CapsuleCollider>().enabled = false;
-        //GetComponent<CapsuleCollider>().enabled = true;
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*
+    private void OnTriggerEnter(Collider other) //be picked up when near
     {
         if (canGet && other.gameObject.GetComponent<Inventory>())
         {
+            Inventory.i.ObtainItem(thisSO);
+            Destroy(gameObject);
+        }
+    }*/
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (canGet && collision.gameObject.GetComponent<Inventory>())
+        {
+            Inventory.i.ObtainItem(thisSO);
             Destroy(gameObject);
         }
     }
+
 }
