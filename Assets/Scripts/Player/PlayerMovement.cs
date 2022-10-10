@@ -6,12 +6,12 @@ public class PlayerMovement : MonoBehaviour
 {
 
     //----------SETTINGS----------//
-    //移动方向:
+    //????????:
 
-    //是否应用鼠标于旋转和变换朝向
+    //????????????????????????????
     /*public bool CURSOR_CONTROL = true;
     public bool CURSOR_INDICATOR = true;
-    public enum eRotationMode { Instant, Fix, Ratio } //"INSTANT":旋转锁死鼠标 "FIX":固定旋转速度 "RATIO":速度与距离成正比
+    public enum eRotationMode { Instant, Fix, Ratio } //"INSTANT":???????????? "FIX":???????????? "RATIO":????????????????
     public eRotationMode ROTATION_MODE = eRotationMode.Instant;
     GameObject rotateComp;
     GameObject cursorComp;
@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 movingDir = new Vector3(0, 0, 0);
 
     Rigidbody rb;
-    SpriteRenderer sr;
+    //SpriteRenderer sr;
     Animator am;
 
     // Start is called before the first frame update
@@ -35,8 +35,8 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        sr = GetComponent<SpriteRenderer>();
-        am = GetComponent<Animator>();
+        //sr = GetComponent<SpriteRenderer>();
+        am = GetComponentInChildren(typeof(Animator)) as Animator;
     }
 
     void Start()
@@ -121,12 +121,12 @@ public class PlayerMovement : MonoBehaviour
 
         if(momentum == 0)
         {
-            am.Play("Crood_Idle");
+            am.Play("Boy_Idle");
         }
         else
         {
-            if (movingSpeed < 4) am.Play("Crood_Walk");
-            else am.Play("Crood_Run");
+            //if (movingSpeed < 4) am.Play("Crood_Walk");
+            //else am.Play("Crood_Run");
         }
 
         //Move
@@ -140,21 +140,21 @@ public class PlayerMovement : MonoBehaviour
     {
         if(changeTo.x == 1)
         {
-            sr.flipX = false;
+            am.Play("Boy_WalkRight");
         }
         else if(changeTo.x == -1)
         {
-            sr.flipX = true;
+            am.Play("Boy_WalkLeft");
         }
         /*
-        if (changeTo == new Vector2(0, 1)) { } // print("change facing to 正上");
-        else if (changeTo == new Vector2(1, 1)) { } // print("change facing to 右上");
-        else if (changeTo == new Vector2(1, 0)) { } // print("change facing to 正右");
-        else if (changeTo == new Vector2(1, -1)) { } // print("change facing to 右下");
-        else if (changeTo == new Vector2(0, -1)) { } // print("change facing to 正下");
-        else if (changeTo == new Vector2(-1, -1)) { } // print("change facing to 左下");
-        else if (changeTo == new Vector2(-1, 0)) { } // print("change facing to 正左");
-        else if (changeTo == new Vector2(-1, 1)) { } // print("change facing to 左上");*/
+        if (changeTo == new Vector2(0, 1)) { } // print("change facing to ????");
+        else if (changeTo == new Vector2(1, 1)) { } // print("change facing to ????");
+        else if (changeTo == new Vector2(1, 0)) { } // print("change facing to ????");
+        else if (changeTo == new Vector2(1, -1)) { } // print("change facing to ????");
+        else if (changeTo == new Vector2(0, -1)) { } // print("change facing to ????");
+        else if (changeTo == new Vector2(-1, -1)) { } // print("change facing to ????");
+        else if (changeTo == new Vector2(-1, 0)) { } // print("change facing to ????");
+        else if (changeTo == new Vector2(-1, 1)) { } // print("change facing to ????");*/
     }
 
     Vector3 VectorChangeSingle(Vector3 origional, int which, float toWhat)
