@@ -20,9 +20,29 @@ public class Edge : MonoBehaviour
         
     }
 
-    public void RefreshState()
+    public void RefreshState() 
     {
+        if (touchingEdges[0] == null) return;
+        if (oppositeTetris != null) return;
+    
+        oppositeTetris = touchingEdges[0].getTetris();
+        oppositeTetris.RefreshEdges();
+    }
 
+    public void ResetState()
+    {
+        if(oppositeTetris != null)
+        {
+            foreach (Edge e in oppositeTetris.allEdges)
+            {
+                if (e.oppositeTetris == myTetris)
+                {
+                    e.oppositeTetris = null;
+                }
+            }
+
+        }
+        oppositeTetris = null;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,7 +50,6 @@ public class Edge : MonoBehaviour
         if (other.GetComponent<Edge>() != null)
         {
             touchingEdges.Add(other.GetComponent<Edge>());
-            oppositeTetris = other.GetComponent<Edge>().getTetris();
         }
     }
 
