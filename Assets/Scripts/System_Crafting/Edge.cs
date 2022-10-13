@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Edge : MonoBehaviour
 {
-    Tetris myTetris;
-    Tetris oppositeTetris;
+    public Tetris myTetris;
+    public Tetris oppositeTetris = null;
 
-    List<Edge> touchingEdges = new List<Edge>();
+    public List<Edge> touchingEdges = new List<Edge>();
 
     void Start()
     {
@@ -15,18 +15,16 @@ public class Edge : MonoBehaviour
         myTetris = GetComponentInParent<Tetris>();
     }
 
-    void Update()
-    {
-        
-    }
-
     public void RefreshState() 
     {
-        if (touchingEdges[0] == null) return;
+        //print(transform.parent.name + " " + name + " oppositeTetris: " +oppositeTetris);
+        if (touchingEdges.Count == 0) return;
+        //print(transform.parent.name + " " + name + " has touching edge");
         if (oppositeTetris != null) return;
+        //print(transform.parent.name + " " + name + "is refreshing");
     
         oppositeTetris = touchingEdges[0].getTetris();
-        oppositeTetris.RefreshEdges();
+        touchingEdges[0].RefreshState();
     }
 
     public void ResetState()
@@ -45,21 +43,48 @@ public class Edge : MonoBehaviour
         oppositeTetris = null;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //print("in");
+        if (collision.GetComponent<Edge>() != null)
+        {
+            touchingEdges.Add(collision.GetComponent<Edge>());
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.GetComponent<Edge>() != null)
+        {
+            touchingEdges.Remove(collision.GetComponent<Edge>());
+        }
+    }
+
+    /*
     private void OnTriggerEnter(Collider other)
     {
+        //print("in");
         if (other.GetComponent<Edge>() != null)
         {
             touchingEdges.Add(other.GetComponent<Edge>());
+            //print("add");
         }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        //print("stay");
+
     }
 
     private void OnTriggerExit(Collider other)
     {
+        //print("out");
         if (other.GetComponent<Edge>() != null)
         {
             touchingEdges.Remove(other.GetComponent<Edge>());
         }
-    }
+    }*/
 
     public Tetris getTetris() { return myTetris; }
     public bool isConnected() { return oppositeTetris != null; }
