@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6341743217605813237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 1, g: 0.6273585, b: 0.6273585, a: 1}
+  m_Color: {r: 1, g: 0.6273585, b: 0.6273585, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -118,6 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a03152c8967549f2aae1ff1482fb131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myTetris: {fileID: 0}
+  oppositeTetris: {fileID: 0}
+  touchingEdges: []
 --- !u!58 &6341743217605813235
 CircleCollider2D:
   m_ObjectHideFlags: 0

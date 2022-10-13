@@ -85,9 +85,10 @@ public class Edge : MonoBehaviour
             touchingEdges.Remove(other.GetComponent<Edge>());
         }
     }*/
-
+    
     public Tetris getTetris() { return myTetris; }
     public bool isConnected() { return oppositeTetris != null; }
     public Tetris getOppositeTetris() { return oppositeTetris; }
+    public Vector3 getOppositeEdgeDistance() {return (touchingEdges[0].transform.position - transform.position);}
     
 }
