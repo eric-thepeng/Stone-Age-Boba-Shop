@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Edge : MonoBehaviour
 {
+    public enum facing {Up, Down, Left, Right}
+    public facing myFacing;
+
     public Tetris myTetris;
     public Tetris oppositeTetris = null;
 
@@ -46,7 +49,7 @@ public class Edge : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //print("in");
-        if (collision.GetComponent<Edge>() != null)
+        if (collision.GetComponent<Edge>() != null && checkFacingMatch(myFacing, collision.GetComponent<Edge>().myFacing))
         {
             touchingEdges.Add(collision.GetComponent<Edge>());
         }
@@ -90,5 +93,14 @@ public class Edge : MonoBehaviour
     public bool isConnected() { return oppositeTetris != null; }
     public Tetris getOppositeTetris() { return oppositeTetris; }
     public Vector3 getOppositeEdgeDistance() {return (touchingEdges[0].transform.position - transform.position);}
+
+    public bool checkFacingMatch(facing one, facing two)
+    {
+        if (one == facing.Up && two == facing.Down) return true;
+        if (one == facing.Down && two == facing.Up) return true;
+        if (one == facing.Left && two == facing.Right) return true;
+        if (one == facing.Right && two == facing.Left) return true;
+        return false;
+    }
     
 }
