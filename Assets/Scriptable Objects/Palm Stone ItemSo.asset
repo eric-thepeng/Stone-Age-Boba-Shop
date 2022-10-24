@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72effb42c254bf04faaa49a204686017, type: 3}
   m_Name: Palm Stone ItemSo
   m_EditorClassIdentifier: 
-  name: Palm Stone
-  craftingSprite: {fileID: 0}
+  recipe:
+  - rows: 000000000000
+  - rows: 000000000000
+  - rows: 000000000000
+  - rows: 000000000000
+  - rows: 000000000000
+  - rows: 000000000000

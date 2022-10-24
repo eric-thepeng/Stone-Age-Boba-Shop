@@ -5,6 +5,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ItemSO", menuName = "ScriptableObjects/ItemSO")]
 public class ItemScriptableObject : ScriptableObject
 {
-    public string name;
-    public Sprite craftingSprite;
+
+    [System.Serializable]
+    public class Column
+    {
+        public ItemScriptableObject[] rows = new ItemScriptableObject[6];
+    }
+
+    public Column[] recipe = new Column[6];
+
+
 }
