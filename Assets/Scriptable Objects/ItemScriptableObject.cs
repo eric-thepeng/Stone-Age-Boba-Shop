@@ -18,6 +18,17 @@ public class ItemScriptableObject : SerializedScriptableObject
         }
     }
 
+
+    public bool CheckMatch(List<KeyValuePair<Vector2, ScriptableObject>> toCheck)
+    {
+        foreach (Recipe r in allRecipes)
+        {
+            if (r.CheckMatch(toCheck)) return true;
+        }
+        return false;
+    }
+
+
     //Each Recipe class contains one recipe, can be accessed by methods.
 
     public class Recipe
@@ -40,8 +51,16 @@ public class ItemScriptableObject : SerializedScriptableObject
             }
             return export;
         }
+
+        public bool CheckMatch(List<KeyValuePair<Vector2, ScriptableObject>> toCheck)
+        {
+            List<KeyValuePair<Vector2, ScriptableObject>> toMatch = getCoordForm();
+            if (toCheck.Count != toMatch.Count) return false;
+            foreach(KeyValuePair<Vector2, ScriptableObject> kvp in toCheck)
+            {
+                if (!toMatch.Contains(kvp)) return false;
+            }
+            return true;
+        }
     }
-
-
-
 }

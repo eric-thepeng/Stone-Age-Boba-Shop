@@ -24,6 +24,7 @@ public class Tetris : MonoBehaviour
 
     public string myType;
     public ItemScriptableObject itemSO;
+    public ItemSOListScriptableObject allItemListSO;
 
     public List<Edge> allEdges = new List<Edge>();
 
@@ -47,7 +48,7 @@ public class Tetris : MonoBehaviour
         public void AddTetris(Tetris baseT, Tetris newT, Vector2 baseCor, Vector2 dir, Vector2 newCor)
         {
             //Avoid Repetition (extra prevention
-            if (Searched(newT)) return; 
+            if (Searched(newT)) return;
             pastTetris.Add(newT);
 
             //first add
@@ -89,7 +90,12 @@ public class Tetris : MonoBehaviour
                 if (kvp.Key.x < leftNTopBound.x) leftNTopBound.x = kvp.Key.x;
                 if (kvp.Key.y < leftNTopBound.y) leftNTopBound.y = kvp.Key.y;
             }
-            //TODO finish organization;
+            List<KeyValuePair<Vector2, ScriptableObject>> editedRecipeGrid = new List<KeyValuePair<Vector2, ScriptableObject>>();
+            foreach (KeyValuePair<Vector2, ScriptableObject> kvp in recipeGrid)
+            {
+                editedRecipeGrid.Add(new KeyValuePair<Vector2, ScriptableObject>(kvp.Key - leftNTopBound, kvp.Value));
+            }
+            recipeGrid = editedRecipeGrid;
         }
 
         public bool hasConnector()
@@ -100,11 +106,13 @@ public class Tetris : MonoBehaviour
         public void DebugPrint()
         {
             print("Debug Print Recipe");
-            foreach(KeyValuePair<Vector2, ScriptableObject> kvp in recipeGrid)
+            foreach (KeyValuePair<Vector2, ScriptableObject> kvp in recipeGrid)
             {
                 print(kvp.Key + " " + kvp.Value.name);
             }
         }
+
+        public List<KeyValuePair<Vector2, ScriptableObject>> getRecipeGrid() { return recipeGrid; }
     }
 
     private Vector3 GetMouseWorldPos()
@@ -140,6 +148,7 @@ public class Tetris : MonoBehaviour
         RecipeCombiator RC = new RecipeCombiator(this);
         Search(RC, this, new Vector2(0,0), new Vector2(0, 0), new Vector2(0, 0));
         CheckSnap(RC);
+        RC.Organize();
         CheckRecipe(RC);
     }
 
@@ -161,33 +170,31 @@ public class Tetris : MonoBehaviour
 
     void CheckRecipe(RecipeCombiator rc)
     {
+        ItemScriptableObject product = null;
         rc.DebugPrint();
+        foreach (ItemScriptableObject iso in allItemListSO.list)
+        {
+            if(iso == itemSO) { continue; }
+            if (iso.CheckMatch(rc.getRecipeGrid()))
+            {
+                product = iso;
+                break;
+            }
+        }
+
+        if (product != null)
+        {
+            print("We got it! It is: " + product.name);
+        }
+
         /*
-        //PROCESS RECIPE
-        //1. find left-top point
-        Vector2 topLeft = new Vector3(0,0,0);
-        foreach(TetrisInfo t in recipe)
+        rc.DebugPrint();
+        foreach(ItemScriptableObject iso in allItemListSO.list)
         {
-            if (t.position.x <= topLeft.x) topLeft.x = t.position.x;
-            if (t.position.y >= topLeft.y) topLeft.y = t.position.y;
-        }
-        //2. edit all
-        for(int i =0; i<recipe.Count; i++)
-        {
-            topLeft += recipe[i].position;//.position = recipe[i].position - topLeft;
-        }
-
-
-        //EXPORT
-        string export = "";
-        print("start checking recipe");
-        int c = 1;
-        foreach (TetrisInfo t in recipe)
-        {
-            export += "" + c + " " + t.type + " " + t.position + " || ";
-            c++;
-        }
-        print(export);*/
+            foreach(ItemScriptableObject.Recipe r in iso.allRecipes){
+                if(r.CheckMatch(rc.getRecipeGrid()) && itemSO.)
+            }
+        }*/
     }
 
     /*
@@ -222,12 +229,10 @@ public class Tetris : MonoBehaviour
     void CheckSnap(RecipeCombiator rc)
     {
         if (!rc.hasConnector()) return;
-        print("In checksnap");
         foreach (Edge e in allEdges)
         {
             if (e.isConnected())
             {
-                //print(e.getOppositeEdgeDistance());
                 StartCoroutine(SnapMovement(e.getOppositeEdgeDistance()));
                 break;
             }
@@ -237,7 +242,6 @@ public class Tetris : MonoBehaviour
 
     IEnumerator SnapMovement(Vector3 delta)
     {
-        print("in corou");
         stateNow = state.Animation;
         Vector3 orgPos = transform.position, tarPos = orgPos+delta;
         float timeCount = 0, timeRequire = 0.2f;

@@ -2733,6 +2733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myType: Big One
   itemSO: {fileID: 11400000, guid: c4d5f2fa533c35c498ddd61a0e446cc9, type: 2}
+  allItemListSO: {fileID: 11400000, guid: 05ec99f8a874344d18fe8bfdd2ea945f, type: 2}
   allEdges: []
   dragDisplacement: {x: 0, y: 0}
   mouseDownPos: {x: 0, y: 0, z: 0}
@@ -4722,6 +4723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myType: Small One
   itemSO: {fileID: 11400000, guid: 67ab52df58a8dec44b9a7b954d1484ca, type: 2}
+  allItemListSO: {fileID: 11400000, guid: 05ec99f8a874344d18fe8bfdd2ea945f, type: 2}
   allEdges: []
   dragDisplacement: {x: 0, y: 0}
   mouseDownPos: {x: 0, y: 0, z: 0}
@@ -4991,6 +4993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myType: Small Two
   itemSO: {fileID: 11400000, guid: 67ab52df58a8dec44b9a7b954d1484ca, type: 2}
+  allItemListSO: {fileID: 11400000, guid: 05ec99f8a874344d18fe8bfdd2ea945f, type: 2}
   allEdges: []
   dragDisplacement: {x: 0, y: 0}
   mouseDownPos: {x: 0, y: 0, z: 0}
