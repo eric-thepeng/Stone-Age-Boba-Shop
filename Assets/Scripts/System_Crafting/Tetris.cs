@@ -4,15 +4,6 @@ using UnityEngine;
 
 public struct TetrisInfo
 {
-    /*
-    public ScriptableObject type;
-    public Vector2 position;
-    public TetrisInfo(ScriptableObject t, Vector2 v)
-    {
-        this.type = t;
-        this.position = v;
-    }*/
-
     public string type;
     public Vector2 position;
     public TetrisInfo(string t, Vector2 v)
@@ -29,9 +20,11 @@ public class Tetris : MonoBehaviour
     state stateNow = state.Wait;
 
     TetrisInfo myInfo;
+    Vector2 recipeFormingDelta;
 
     //ScriptableObject myType;
     public string myType;
+    public ItemScriptableObject itemSO;
 
     public List<TetrisInfo> recipe = new List<TetrisInfo>();
 
@@ -41,6 +34,42 @@ public class Tetris : MonoBehaviour
     public Vector3 mouseDownPos = new Vector2(0, 0);
     public Vector3 tetrisDownPos = new Vector3(0, 0, 0);
 
+    public class RecipeCombiator
+    {
+        Tetris baseClass;
+        List<Tetris> pastTetris;
+        List<KeyValuePair<Vector2, ScriptableObject>> recipeGrid;
+
+        RecipeCombiator(Tetris t)
+        {
+            baseClass = t;
+            pastTetris = new List<Tetris>();
+            recipeGrid = new List<KeyValuePair<Vector2, ScriptableObject>>();
+        }
+
+        public void AddTetris(Tetris t, Vector2 baseCor, Vector2 dir, Vector2 thisCor)
+        {
+            if (pastTetris.Contains(t)) return;
+            pastTetris.Add(t);
+            Vector2 delta = baseCor + dir - thisCor + t.recipeFormingDelta;
+            baseClass.recipeFormingDelta = delta;
+            ScriptableObject[,] composition = t.itemSO.allRecipes[0].recipe;
+            foreach(KeyValuePair<Vector2, ScriptableObject> kvp in )
+            for(int x=0; x<composition.GetLength(0); x++)
+            {
+                for(int y = 0; y < composition.GetLength(0); y++)
+                {
+                    if (composition[x,y] == null) continue;
+                    recipeGrid.Add(new KeyValuePair<Vector2, ScriptableObject>(new Vector2(x, y) + delta, composition[x, y]));
+                }
+            }
+        }
+
+        public void Organize()
+        {
+
+        }
+    }
     private Vector3 GetMouseWorldPos()
     {
         return Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
@@ -151,7 +180,7 @@ public class Tetris : MonoBehaviour
         print("in corou");
         stateNow = state.Animation;
         Vector3 orgPos = transform.position, tarPos = orgPos+delta;
-        float timeCount = 0, timeRequire = 0.3f;
+        float timeCount = 0, timeRequire = 0.2f;
 
         while (timeCount < timeRequire)
         {

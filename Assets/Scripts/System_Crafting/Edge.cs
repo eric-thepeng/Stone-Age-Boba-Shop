@@ -7,6 +7,8 @@ public class Edge : MonoBehaviour
     public enum facing {Up, Down, Left, Right}
     public facing myFacing;
 
+    public Vector2 attachedCoordination;
+
     public Tetris myTetris;
     public Tetris oppositeTetris = null;
 
