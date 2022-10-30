@@ -16,17 +16,14 @@ public struct TetrisInfo
 
 public class Tetris : MonoBehaviour
 { 
-    enum state {Wait, Animation, Merge}
+    enum state {Wait, Drag, Animation, Merge}
     state stateNow = state.Wait;
 
     TetrisInfo myInfo;
     Vector2 recipeFormingDelta;
 
-    //ScriptableObject myType;
     public string myType;
     public ItemScriptableObject itemSO;
-
-    public List<TetrisInfo> recipe = new List<TetrisInfo>();
 
     public List<Edge> allEdges = new List<Edge>();
 
@@ -36,48 +33,94 @@ public class Tetris : MonoBehaviour
 
     public class RecipeCombiator
     {
-        Tetris baseClass;
+        Tetris motherTetris;
         List<Tetris> pastTetris;
         List<KeyValuePair<Vector2, ScriptableObject>> recipeGrid;
 
-        RecipeCombiator(Tetris t)
+        public RecipeCombiator(Tetris t)
         {
-            baseClass = t;
+            motherTetris = t;
             pastTetris = new List<Tetris>();
             recipeGrid = new List<KeyValuePair<Vector2, ScriptableObject>>();
         }
 
-        public void AddTetris(Tetris t, Vector2 baseCor, Vector2 dir, Vector2 thisCor)
+        public void AddTetris(Tetris baseT, Tetris newT, Vector2 baseCor, Vector2 dir, Vector2 newCor)
         {
-            if (pastTetris.Contains(t)) return;
-            pastTetris.Add(t);
-            Vector2 delta = baseCor + dir - thisCor + t.recipeFormingDelta;
-            baseClass.recipeFormingDelta = delta;
-            ScriptableObject[,] composition = t.itemSO.allRecipes[0].recipe;
-            foreach(KeyValuePair<Vector2, ScriptableObject> kvp in )
-            for(int x=0; x<composition.GetLength(0); x++)
+            //Avoid Repetition (extra prevention
+            if (Searched(newT)) return; 
+            pastTetris.Add(newT);
+
+            //first add
+            if (baseT == newT)
             {
-                for(int y = 0; y < composition.GetLength(0); y++)
+                newT.recipeFormingDelta = new Vector2(0, 0);
+                List<KeyValuePair<Vector2, ScriptableObject>> toSearch = newT.itemSO.FormationRecipeCoord;//getFormationRecipeCoord();
+                foreach (KeyValuePair<Vector2, ScriptableObject> kvp in toSearch)
                 {
-                    if (composition[x,y] == null) continue;
-                    recipeGrid.Add(new KeyValuePair<Vector2, ScriptableObject>(new Vector2(x, y) + delta, composition[x, y]));
+                    recipeGrid.Add(kvp);
+                }
+                return;
+            }
+            //not first add
+            else
+            {
+                //Calculate and record Delta
+                Vector2 delta = baseCor + dir - newCor + baseT.recipeFormingDelta;
+                newT.recipeFormingDelta = delta;
+
+                //Load into final receipe 
+                foreach (KeyValuePair<Vector2, ScriptableObject> kvp in newT.itemSO.FormationRecipeCoord)//getFormationRecipeCoord())
+                {
+                    recipeGrid.Add(new KeyValuePair<Vector2, ScriptableObject>(kvp.Key + delta, kvp.Value));
                 }
             }
         }
 
+        public bool Searched(Tetris t)
+        {
+            return (pastTetris.Contains(t));
+        }
+
         public void Organize()
         {
+            Vector2 leftNTopBound = new Vector2(0, 0);
+            foreach (KeyValuePair<Vector2, ScriptableObject> kvp in recipeGrid)
+            {
+                if (kvp.Key.x < leftNTopBound.x) leftNTopBound.x = kvp.Key.x;
+                if (kvp.Key.y < leftNTopBound.y) leftNTopBound.y = kvp.Key.y;
+            }
+            //TODO finish organization;
+        }
 
+        public bool hasConnector()
+        {
+            return (pastTetris.Count != 1);
+        }
+
+        public void DebugPrint()
+        {
+            print("Debug Print Recipe");
+            foreach(KeyValuePair<Vector2, ScriptableObject> kvp in recipeGrid)
+            {
+                print(kvp.Key + " " + kvp.Value.name);
+            }
         }
     }
+
     private Vector3 GetMouseWorldPos()
     {
         return Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
     }
 
+    private void SetState(state newState)
+    {
+        stateNow = newState;
+    }
+
     private void OnMouseDown()
     {
         if (stateNow != state.Wait) return;
+        SetState(state.Drag);
         ResetEdges();
         mouseDownPos = GetMouseWorldPos();
         tetrisDownPos = transform.position;
@@ -85,19 +128,19 @@ public class Tetris : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        if (stateNow != state.Wait) return;
+        if (stateNow != state.Drag) return;
         transform.position = tetrisDownPos + (GetMouseWorldPos() - mouseDownPos);
     }
 
     private void OnMouseUp()
     {
-        if (stateNow != state.Wait) return;
+        if (stateNow != state.Drag) return;
+        SetState(state.Wait);
         RefreshEdges();
-        recipe = new List<TetrisInfo>();
-        Search(recipe);
-        CheckSnap();
-        CheckRecipe();
-        
+        RecipeCombiator RC = new RecipeCombiator(this);
+        Search(RC, this, new Vector2(0,0), new Vector2(0, 0), new Vector2(0, 0));
+        CheckSnap(RC);
+        CheckRecipe(RC);
     }
 
     public void RefreshEdges()
@@ -116,8 +159,10 @@ public class Tetris : MonoBehaviour
         }
     }
 
-    void CheckRecipe()
+    void CheckRecipe(RecipeCombiator rc)
     {
+        rc.DebugPrint();
+        /*
         //PROCESS RECIPE
         //1. find left-top point
         Vector2 topLeft = new Vector3(0,0,0);
@@ -142,9 +187,10 @@ public class Tetris : MonoBehaviour
             export += "" + c + " " + t.type + " " + t.position + " || ";
             c++;
         }
-        print(export);
+        print(export);*/
     }
 
+    /*
     void Search(List<TetrisInfo> Recipe)
     {
         print("at search of: " + GetTetrisInfo().type);
@@ -157,17 +203,31 @@ public class Tetris : MonoBehaviour
             if (Recipe.Contains(e.getOppositeTetris().GetTetrisInfo())) continue;
             e.getOppositeTetris().Search(Recipe);
         }
+    }*/
+
+    void Search(RecipeCombiator rc, Tetris baseTetris, Vector2 baseCor, Vector2 dir, Vector2 newCor)
+    {
+        //add Tetris to recipe (embedded repitition check
+        rc.AddTetris(baseTetris, this, baseCor, dir, newCor);
+
+        List<Edge> toProcess = new List<Edge>(allEdges);
+        foreach (Edge e in toProcess)
+        {
+            if (!e.isConnected()) continue;
+            if (rc.Searched(e.getOppositeTetris())) continue;
+            e.getOppositeTetris().Search(rc, this,e.getAttachedCoord(),e.getAttachToDirection(),e.getOppositeEdge().getAttachedCoord());
+        }
     }
 
-    void CheckSnap()
+    void CheckSnap(RecipeCombiator rc)
     {
-        if (recipe.Count == 0) return;
+        if (!rc.hasConnector()) return;
         print("In checksnap");
         foreach (Edge e in allEdges)
         {
             if (e.isConnected())
             {
-                print(e.getOppositeEdgeDistance());
+                //print(e.getOppositeEdgeDistance());
                 StartCoroutine(SnapMovement(e.getOppositeEdgeDistance()));
                 break;
             }

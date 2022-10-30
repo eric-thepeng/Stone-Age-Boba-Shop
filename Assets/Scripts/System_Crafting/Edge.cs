@@ -94,7 +94,20 @@ public class Edge : MonoBehaviour
     public Tetris getTetris() { return myTetris; }
     public bool isConnected() { return oppositeTetris != null; }
     public Tetris getOppositeTetris() { return oppositeTetris; }
+    public Edge getOppositeEdge() { return touchingEdges[0]; }
     public Vector3 getOppositeEdgeDistance() {return (touchingEdges[0].transform.position - transform.position);}
+    public Vector2 getAttachedCoord() { return attachedCoordination; }
+
+    public Vector2 getAttachToDirection()
+    {
+        if (myFacing == facing.Left) return new Vector2(-1,0);
+        else if (myFacing == facing.Right) return new Vector2(1, 0);
+        else if (myFacing == facing.Down) return new Vector2(0, 1);
+        else if (myFacing == facing.Up) return new Vector2(0, -1);
+
+        print("error at getAttachToDirection()");
+        return new Vector2(0, 0);
+    }
 
     public bool checkFacingMatch(facing one, facing two)
     {

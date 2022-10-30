@@ -6,17 +6,27 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ItemScriptableObject", menuName = "ScriptableObjects/ItemScriptableObject")]
 public class ItemScriptableObject : SerializedScriptableObject
 {
+    //Variables
+
     public string name;
     public List<Recipe> allRecipes = new List<Recipe>();
-
-    public Recipe getFormationRecipe()
+    public List<KeyValuePair<Vector2, ScriptableObject>> FormationRecipeCoord
     {
-        return allRecipes[0];
+        get
+        {
+            return allRecipes[0].getCoordForm();
+        }
     }
+
+    //Each Recipe class contains one recipe, can be accessed by methods.
+
     public class Recipe
     {
-        //   [TableMatrix(HorizontalTitle = "Recipe Matrix", SquareCells = false)
+        //[TableMatrix(HorizontalTitle = "Recipe Matrix", SquareCells = false)
+
         public ScriptableObject[,] recipe = new ScriptableObject[6, 6];
+
+        //Get CoordForm of Recipe, the only form accessible.
         public List<KeyValuePair<Vector2, ScriptableObject>> getCoordForm()
         {
             List<KeyValuePair<Vector2, ScriptableObject>> export = new List<KeyValuePair<Vector2, ScriptableObject>>();
