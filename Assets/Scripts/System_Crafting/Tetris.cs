@@ -19,6 +19,8 @@ public class Tetris : MonoBehaviour
     public Vector3 mouseDownPos = new Vector2(0, 0);
     public Vector3 tetrisDownPos = new Vector3(0, 0, 0);
 
+    private Vector3 standardScale = new Vector3(0.2f, 0.2f, 1);
+
     public class RecipeCombiator
     {
         Tetris motherTetris;
@@ -112,6 +114,11 @@ public class Tetris : MonoBehaviour
         public List<Tetris> getPastTetris() { return pastTetris; }
     }
 
+    private void Start()
+    {
+        BornSelf();
+    }
+
     private Vector3 GetMouseWorldPos()
     {
         return Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
@@ -181,8 +188,7 @@ public class Tetris : MonoBehaviour
 
         if (product != null)
         {
-            Instantiate(product.myPrefab, rc.CentralPosition(), Quaternion.identity);
-            print("We got it! It is: " + product.name);
+            Object newTetris = Instantiate(product.myPrefab, rc.CentralPosition(), Quaternion.identity);
             foreach(Tetris t in rc.getPastTetris())
             {
                 t.DestroySelf();
@@ -219,10 +225,24 @@ public class Tetris : MonoBehaviour
 
     }
 
-    public void DestroySelf()
+    public void BornSelf()
     {
-        StartCoroutine(DestroySelfProcess());
+        transform.localScale = standardScale / 10;
+        StartCoroutine(BornSelfProgress());
     }
+
+    IEnumerator BornSelfProgress()
+    {
+
+        while (transform.localScale.x < standardScale.x)
+        {
+            transform.localScale += standardScale * Time.deltaTime * 3;
+            yield return new WaitForSeconds(0);
+        }
+        transform.localScale = standardScale;
+    }
+
+    public void DestroySelf(){StartCoroutine(DestroySelfProcess());}
 
     IEnumerator DestroySelfProcess()
     {
@@ -230,7 +250,7 @@ public class Tetris : MonoBehaviour
         while (t < 0.3)
         {
             t += Time.deltaTime;
-            transform.localScale -= new Vector3(0.2f, 0.2f, 0) * Time.deltaTime;
+            transform.localScale -= standardScale * Time.deltaTime * 2;
             yield return new WaitForSeconds(0);
         }
         Destroy(gameObject);

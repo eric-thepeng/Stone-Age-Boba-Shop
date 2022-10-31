@@ -8379,10 +8379,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4815281070313218372, guid: 0f1d26a4e2b544bb7878a1244c00b4de, type: 3}
-      propertyPath: itemSO
-      value: 
-      objectReference: {fileID: 11400000, guid: c4d5f2fa533c35c498ddd61a0e446cc9, type: 2}
     - target: {fileID: 4815281070313218393, guid: 0f1d26a4e2b544bb7878a1244c00b4de, type: 3}
       propertyPath: m_Name
       value: Tetris_WoodStick

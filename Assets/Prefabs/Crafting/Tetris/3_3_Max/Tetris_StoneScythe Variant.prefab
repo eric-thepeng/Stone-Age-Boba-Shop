@@ -332,7 +332,11 @@ PrefabInstance:
     - target: {fileID: 4815281070313218372, guid: 0f1d26a4e2b544bb7878a1244c00b4de, type: 3}
       propertyPath: itemSO
       value: 
-      objectReference: {fileID: 11400000, guid: c4d5f2fa533c35c498ddd61a0e446cc9, type: 2}
+      objectReference: {fileID: 11400000, guid: 27c454255295eb145a27f18a4aa0b4f5, type: 2}
+    - target: {fileID: 4815281070313218373, guid: 0f1d26a4e2b544bb7878a1244c00b4de, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4815281070313218373, guid: 0f1d26a4e2b544bb7878a1244c00b4de, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 2.031579
@@ -419,8 +423,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f1d26a4e2b544bb7878a1244c00b4de, type: 3}
+--- !u!1 &9010222711725650773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4815281070313218393, guid: 0f1d26a4e2b544bb7878a1244c00b4de, type: 3}
+  m_PrefabInstance: {fileID: 4600969420414571020}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9010222711725650775 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4815281070313218395, guid: 0f1d26a4e2b544bb7878a1244c00b4de, type: 3}
   m_PrefabInstance: {fileID: 4600969420414571020}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &771697655
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9010222711725650773}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.5, y: 1}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.031579, y: 3.0421054}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
