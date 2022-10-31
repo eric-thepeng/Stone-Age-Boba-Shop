@@ -16,6 +16,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 9010222711725650773, guid: 753d826aaad394b8c908fe5c5d867080, type: 3}
     - {fileID: 11400000, guid: c4d5f2fa533c35c498ddd61a0e446cc9, type: 2}
     - {fileID: 11400000, guid: 67ab52df58a8dec44b9a7b954d1484ca, type: 2}
     SerializedBytesString: 
@@ -23,6 +24,9 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
+    - Name: myPrefab
+      Entry: 10
+      Data: 0
     - Name: allRecipes
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[ItemScriptableObject+Recipe, Assembly-CSharp]],
@@ -44,25 +48,25 @@ MonoBehaviour:
       Data: 6|6
     - Name: 
       Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
+      Data: 1
     - Name: 
       Entry: 10
       Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 10
+      Data: 2
     - Name: 
       Entry: 6
       Data: 
@@ -173,31 +177,31 @@ MonoBehaviour:
       Data: 6|6
     - Name: 
       Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 10
       Data: 1
     - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 1
     - Name: 
       Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 6
-      Data: 
+      Data: 1
     - Name: 
       Entry: 6
       Data: 

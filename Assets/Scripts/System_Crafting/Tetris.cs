@@ -2,27 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public struct TetrisInfo
-{
-    public string type;
-    public Vector2 position;
-    public TetrisInfo(string t, Vector2 v)
-    {
-        this.type = t;
-        this.position = v;
-    }
-
-}
-
 public class Tetris : MonoBehaviour
 { 
     enum state {Wait, Drag, Animation, Merge}
     state stateNow = state.Wait;
 
-    TetrisInfo myInfo;
     Vector2 recipeFormingDelta;
 
-    public string myType;
+    //public string myType;
     public ItemScriptableObject itemSO;
     public ItemSOListScriptableObject allItemListSO;
 
@@ -82,6 +69,16 @@ public class Tetris : MonoBehaviour
             return (pastTetris.Contains(t));
         }
 
+        public Vector3 CentralPosition()
+        {
+            Vector3 export = new Vector3(0, 0, 0);
+            foreach(Tetris t in pastTetris)
+            {
+                export += t.transform.position;
+            }
+            return export/pastTetris.Count;
+        }
+
         public void Organize()
         {
             Vector2 leftNTopBound = new Vector2(0, 0);
@@ -105,7 +102,6 @@ public class Tetris : MonoBehaviour
 
         public void DebugPrint()
         {
-            print("Debug Print Recipe");
             foreach (KeyValuePair<Vector2, ScriptableObject> kvp in recipeGrid)
             {
                 print(kvp.Key + " " + kvp.Value.name);
@@ -113,6 +109,7 @@ public class Tetris : MonoBehaviour
         }
 
         public List<KeyValuePair<Vector2, ScriptableObject>> getRecipeGrid() { return recipeGrid; }
+        public List<Tetris> getPastTetris() { return pastTetris; }
     }
 
     private Vector3 GetMouseWorldPos()
@@ -184,33 +181,15 @@ public class Tetris : MonoBehaviour
 
         if (product != null)
         {
+            Instantiate(product.myPrefab, rc.CentralPosition(), Quaternion.identity);
             print("We got it! It is: " + product.name);
-        }
-
-        /*
-        rc.DebugPrint();
-        foreach(ItemScriptableObject iso in allItemListSO.list)
-        {
-            foreach(ItemScriptableObject.Recipe r in iso.allRecipes){
-                if(r.CheckMatch(rc.getRecipeGrid()) && itemSO.)
+            foreach(Tetris t in rc.getPastTetris())
+            {
+                t.DestroySelf();
             }
-        }*/
+        }
     }
 
-    /*
-    void Search(List<TetrisInfo> Recipe)
-    {
-        print("at search of: " + GetTetrisInfo().type);
-        if (!Recipe.Contains(GetTetrisInfo())) Recipe.Add(GetTetrisInfo());
-
-        List<Edge> toProcess = new List<Edge>(allEdges);
-        foreach(Edge e in toProcess)
-        {
-            if (!e.isConnected()) continue;
-            if (Recipe.Contains(e.getOppositeTetris().GetTetrisInfo())) continue;
-            e.getOppositeTetris().Search(Recipe);
-        }
-    }*/
 
     void Search(RecipeCombiator rc, Tetris baseTetris, Vector2 baseCor, Vector2 dir, Vector2 newCor)
     {
@@ -240,6 +219,23 @@ public class Tetris : MonoBehaviour
 
     }
 
+    public void DestroySelf()
+    {
+        StartCoroutine(DestroySelfProcess());
+    }
+
+    IEnumerator DestroySelfProcess()
+    {
+        float t = 0;
+        while (t < 0.3)
+        {
+            t += Time.deltaTime;
+            transform.localScale -= new Vector3(0.2f, 0.2f, 0) * Time.deltaTime;
+            yield return new WaitForSeconds(0);
+        }
+        Destroy(gameObject);
+    }
+
     IEnumerator SnapMovement(Vector3 delta)
     {
         stateNow = state.Animation;
@@ -254,10 +250,5 @@ public class Tetris : MonoBehaviour
         }
 
         stateNow = state.Wait;
-    }
-
-    public TetrisInfo GetTetrisInfo() {
-        myInfo = new TetrisInfo(myType, transform.position);
-        return myInfo;
     }
 }

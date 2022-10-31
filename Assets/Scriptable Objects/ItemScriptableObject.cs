@@ -9,6 +9,7 @@ public class ItemScriptableObject : SerializedScriptableObject
     //Variables
 
     public string name;
+    public Object myPrefab;
     public List<Recipe> allRecipes = new List<Recipe>();
     public List<KeyValuePair<Vector2, ScriptableObject>> FormationRecipeCoord
     {
