@@ -380,13 +380,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e329ecfea280f439da71ca1f5c9fd9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myType: Small One
   itemSO: {fileID: 11400000, guid: 67ab52df58a8dec44b9a7b954d1484ca, type: 2}
   allItemListSO: {fileID: 11400000, guid: 05ec99f8a874344d18fe8bfdd2ea945f, type: 2}
   allEdges: []
   dragDisplacement: {x: 0, y: 0}
   mouseDownPos: {x: 0, y: 0, z: 0}
   tetrisDownPos: {x: 0, y: 0, z: 0}
+  craftEffect: {fileID: 125726, guid: b5edce590af794008acebfc0e06fcb14, type: 3}
 --- !u!61 &6736768091077395257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -404,7 +404,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.99, y: 1}
+    oldSize: {x: 1.0421053, y: 1.0526316}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

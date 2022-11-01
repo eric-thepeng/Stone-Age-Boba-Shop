@@ -20,6 +20,7 @@ public class Tetris : MonoBehaviour
     public Vector3 tetrisDownPos = new Vector3(0, 0, 0);
 
     private Vector3 standardScale = new Vector3(0.2f, 0.2f, 1);
+    public Object craftEffect;
 
     public class RecipeCombiator
     {
@@ -246,9 +247,16 @@ public class Tetris : MonoBehaviour
 
     IEnumerator DestroySelfProcess()
     {
+        bool animStart = false;
         float t = 0;
         while (t < 0.3)
         {
+            if(animStart == false && t > 0.15)
+            {
+                Instantiate(craftEffect, this.transform.position, Quaternion.identity);
+                
+                animStart = true;
+            }
             t += Time.deltaTime;
             transform.localScale -= standardScale * Time.deltaTime * 2;
             yield return new WaitForSeconds(0);
