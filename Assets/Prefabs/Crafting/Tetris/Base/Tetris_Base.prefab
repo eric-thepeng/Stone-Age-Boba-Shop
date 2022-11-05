@@ -382,6 +382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemSO: {fileID: 11400000, guid: 67ab52df58a8dec44b9a7b954d1484ca, type: 2}
   allItemListSO: {fileID: 11400000, guid: 05ec99f8a874344d18fe8bfdd2ea945f, type: 2}
+  allGroundSO: {fileID: 11400000, guid: 07be546b1d77e4939adc5bd1722ee223, type: 2}
   allEdges: []
   dragDisplacement: {x: 0, y: 0}
   mouseDownPos: {x: 0, y: 0, z: 0}

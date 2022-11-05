@@ -20,19 +20,16 @@ public class Edge : MonoBehaviour
         myTetris = GetComponentInParent<Tetris>();
     }
 
-    public void RefreshState() 
+    public void RefreshState() //refresh if it connects to another Edge, and if so, revursively refresh all edges.
     {
-        //print(transform.parent.name + " " + name + " oppositeTetris: " +oppositeTetris);
         if (touchingEdges.Count == 0) return;
-        //print(transform.parent.name + " " + name + " has touching edge");
         if (oppositeTetris != null) return;
-        //print(transform.parent.name + " " + name + "is refreshing");
     
         oppositeTetris = touchingEdges[0].getTetris();
         touchingEdges[0].RefreshState();
     }
 
-    public void ResetState()
+    public void ResetState() //clear out the connection information
     {
         if(oppositeTetris != null)
         {
@@ -48,56 +45,30 @@ public class Edge : MonoBehaviour
         oppositeTetris = null;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) //To log if there is a connected edge
     {
-        //print("in");
         if (collision.GetComponent<Edge>() != null && checkFacingMatch(myFacing, collision.GetComponent<Edge>().myFacing))
         {
             touchingEdges.Add(collision.GetComponent<Edge>());
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision) 
     {
         if (collision.GetComponent<Edge>() != null)
         {
             touchingEdges.Remove(collision.GetComponent<Edge>());
         }
     }
-
-    /*
-    private void OnTriggerEnter(Collider other)
-    {
-        //print("in");
-        if (other.GetComponent<Edge>() != null)
-        {
-            touchingEdges.Add(other.GetComponent<Edge>());
-            //print("add");
-        }
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        //print("stay");
-
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        //print("out");
-        if (other.GetComponent<Edge>() != null)
-        {
-            touchingEdges.Remove(other.GetComponent<Edge>());
-        }
-    }*/
     
     public Tetris getTetris() { return myTetris; }
     public bool isConnected() { return oppositeTetris != null; }
     public Tetris getOppositeTetris() { return oppositeTetris; }
     public Edge getOppositeEdge() { return touchingEdges[0]; }
-    public Vector3 getOppositeEdgeDistance() {return (touchingEdges[0].transform.position - transform.position);}
+    public Vector3 getOppositeEdgeDistance() {return touchingEdges[0].transform.position - transform.position;}
     public Vector2 getAttachedCoord() { return attachedCoordination; }
 
+    //Get the direction of connection
     public Vector2 getAttachToDirection()
     {
         if (myFacing == facing.Left) return new Vector2(-1,0);
@@ -109,6 +80,7 @@ public class Edge : MonoBehaviour
         return new Vector2(0, 0);
     }
 
+    //Check if the two edges are facing each other so that they can be connected
     public bool checkFacingMatch(facing one, facing two)
     {
         if (one == facing.Up && two == facing.Down) return true;

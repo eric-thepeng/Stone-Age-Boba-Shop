@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0191544a4ec8e4188a61df332b447e, type: 3}
-  m_Name: AllItemList
+  m_Name: MergeRecipeList
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2

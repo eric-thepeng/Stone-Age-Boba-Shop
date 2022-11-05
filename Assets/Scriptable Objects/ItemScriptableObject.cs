@@ -3,13 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+/*
+ * ItemScriptableObject represents the grid formulation of a single Tetris Game Obejct. It is a template for
+*/
+
 [CreateAssetMenu(fileName = "ItemScriptableObject", menuName = "ScriptableObjects/ItemScriptableObject")]
 public class ItemScriptableObject : SerializedScriptableObject
 {
-    //Variables
-
-    public string name;
-    public Object myPrefab;
+    public Object myPrefab = null; //For ITEM specifically (homogeneous)
+    public ItemScriptableObject mergeOutput = null; //For MERGE specifically (composite)
     public List<Recipe> allRecipes = new List<Recipe>();
     public List<KeyValuePair<Vector2, ScriptableObject>> FormationRecipeCoord
     {
@@ -19,7 +23,7 @@ public class ItemScriptableObject : SerializedScriptableObject
         }
     }
 
-
+    //Iterate all recipes, return true if one of them matches.
     public bool CheckMatch(List<KeyValuePair<Vector2, ScriptableObject>> toCheck)
     {
         foreach (Recipe r in allRecipes)
@@ -29,13 +33,11 @@ public class ItemScriptableObject : SerializedScriptableObject
         return false;
     }
 
-
     //Each Recipe class contains one recipe, can be accessed by methods.
-
     public class Recipe
     {
+        //The content of the Recipe
         //[TableMatrix(HorizontalTitle = "Recipe Matrix", SquareCells = false)
-
         public ScriptableObject[,] recipe = new ScriptableObject[6, 6];
 
         //Get CoordForm of Recipe, the only form accessible.
@@ -53,6 +55,7 @@ public class ItemScriptableObject : SerializedScriptableObject
             return export;
         }
 
+        //Compare CoordForm and self-CoordForm
         public bool CheckMatch(List<KeyValuePair<Vector2, ScriptableObject>> toCheck)
         {
             List<KeyValuePair<Vector2, ScriptableObject>> toMatch = getCoordForm();
@@ -62,6 +65,13 @@ public class ItemScriptableObject : SerializedScriptableObject
                 if (!toMatch.Contains(kvp)) return false;
             }
             return true;
+        }
+
+        //Compare two Recipe by CoordForm
+        public bool Equals(Recipe toCheck)
+        {
+            if (CheckMatch(toCheck.getCoordForm())) return true;
+            return false;
         }
     }
 }
