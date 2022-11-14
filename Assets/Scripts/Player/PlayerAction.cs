@@ -6,6 +6,8 @@ public class PlayerAction : MonoBehaviour
 {
     Gatherable tarGatherable;
     CapsuleCollider myCollider;
+    public enum tool {Hand, Scythe, Axe}
+    tool toolNow = tool.Axe;
 
     private void Awake()
     {
@@ -17,7 +19,7 @@ public class PlayerAction : MonoBehaviour
         if (tarGatherable == null) return;
         if (Input.GetMouseButton(0))
         {
-            tarGatherable.Gather();
+            tarGatherable.Gather(toolNow);
         }
         if (tarGatherable.CheckEmpty())
         {

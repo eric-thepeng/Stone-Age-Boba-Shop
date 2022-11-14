@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
 
     // Start is called before the first frame update
 
+    float refreshCounter = 0;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -51,6 +53,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        refreshCounter += Time.deltaTime;
+        if(refreshCounter >= 0.3)
+        {
+            PlayerInfo.i.refreshPlayerTransform(this.transform);
+        }
+
         if (Input.GetKey(KeyCode.Space))
         {
             movingSpeed = 5;

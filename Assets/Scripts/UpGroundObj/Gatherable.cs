@@ -13,6 +13,9 @@ public class Gatherable : UpGroundObj
     [SerializeField] string fullSpriteLabel;
     [SerializeField] string emptySpriteLabel;
     public enum state {Gathering, Full, Empty}
+    public enum toolMatchness {Normal, Stuck}
+    public enum type {Berry, Grass, Tree}
+    public type myType = type.Tree;
     state stateNow;
     public state bornState;
 
@@ -22,6 +25,7 @@ public class Gatherable : UpGroundObj
 
     float gatherTimeRequire = 1;
     float gatherTimeCount = 0;
+    float lastGatherTimeCount = 0;
 
     private void Awake()
     {
@@ -65,7 +69,7 @@ public class Gatherable : UpGroundObj
             else animator.SetBool("Gathering", false);
         } 
     }
-    public void Gather() 
+    public void Gather(PlayerAction.tool inTool) 
     {
         if(stateNow == state.Empty)
         {
@@ -74,11 +78,23 @@ public class Gatherable : UpGroundObj
         }
         ChangeStateTo(state.Gathering);
         gatherTimeCount += Time.deltaTime;
+        if(GetToolMatchness(inTool) == toolMatchness.Stuck)
+        {
+            gatherTimeCount = Mathf.Clamp(gatherTimeCount,0,gatherTimeRequire * 0.2f);
+        }
         DigUI.i.SetRatio(gatherTimeCount/gatherTimeRequire);
         if(gatherTimeCount >= gatherTimeRequire)
         {
             Produce();
         }
+    }
+    private void Update()
+    {
+        if(stateNow == state.Gathering && gatherTimeCount == lastGatherTimeCount)
+        {
+            AbandonGather();
+        }
+        lastGatherTimeCount = gatherTimeCount;
     }
     public void AbandonGather() 
     {
@@ -104,4 +120,22 @@ public class Gatherable : UpGroundObj
         }
     }
     public bool CheckEmpty() { return stateNow == state.Empty; }
+
+    public toolMatchness GetToolMatchness(PlayerAction.tool inTool)
+    {
+        if(myType == type.Berry)
+        {
+            return toolMatchness.Normal;
+        }
+        else if(myType == type.Grass)
+        {
+            if (inTool == PlayerAction.tool.Scythe) return toolMatchness.Normal;
+        }
+        else if(myType == type.Tree)
+        {
+            if (inTool == PlayerAction.tool.Axe) return toolMatchness.Normal;
+        }
+        return toolMatchness.Stuck;
+    }
+
 }

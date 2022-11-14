@@ -139,12 +139,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3467496400652551242, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+  m_Sprite: {fileID: 7583281820501385513, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 0.75}
+  m_Size: {x: 4.0105214, y: 2.3700001}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -194,8 +194,8 @@ MonoBehaviour:
   - {fileID: 3279167251596889270}
   - {fileID: 3279167250632328215}
   m_Bounds:
-    m_Center: {x: -0.12872005, y: 0.7918625, z: -0.00000023832217}
-    m_Extent: {x: 1.946904, y: 1.077809, z: 0.00000025637178}
+    m_Center: {x: -0.0515275, y: 0.7712511, z: 0.00000003568597}
+    m_Extent: {x: 2.0016398, y: 1.0983245, z: 0.00000003576487}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!95 &3279167252204816577
@@ -247,6 +247,6 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.22584823
-  m_Height: 5.8241043
+  m_Height: 4.2445035
   m_Direction: 0
-  m_Center: {x: 0.21458566, y: 0.38583806, z: -0.00059314835}
+  m_Center: {x: -0.09676546, y: 0.38583806, z: -0.00059314835}

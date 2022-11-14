@@ -16,16 +16,12 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 6553453577564619905, guid: dded9f4f2961b4ccba1da77dfc7b8d42, type: 3}
     - {fileID: 11400000}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: myPrefab
-      Entry: 10
-      Data: 0
     - Name: allRecipes
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[ItemScriptableObject+Recipe, Assembly-CSharp]],
@@ -47,7 +43,7 @@ MonoBehaviour:
       Data: 6|6
     - Name: 
       Entry: 10
-      Data: 1
+      Data: 0
     - Name: 
       Entry: 6
       Data: 
@@ -168,4 +164,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  name: Red Berry
+  myPrefab: {fileID: 6553453577564619905, guid: dded9f4f2961b4ccba1da77dfc7b8d42, type: 3}
+  mergeOutput: {fileID: 0}
+  objectSprite: {fileID: 0}
+  tetrisSprite: {fileID: 0}

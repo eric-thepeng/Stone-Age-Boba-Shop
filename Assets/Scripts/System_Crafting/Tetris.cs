@@ -31,7 +31,7 @@ public class Tetris : MonoBehaviour
     public Object craftEffect;
 
     //To trigger and check recipe-related actions
-    public RecipeAction recipeAction;
+    //public RecipeAction recipeAction;
 
     //The class that is passed on during recursive search to combine all the Tetris together and form a recipe
     public class RecipeCombiator
@@ -163,106 +163,10 @@ public class Tetris : MonoBehaviour
         public List<Tetris> getPastTetris() { return pastTetris; }
     }
 
-    public class RecipeAction
-    {
-        Tetris baseTetris;
-        public bool checkGround = false;
-        List<CraftingArea> allCraftingAreas = new List<CraftingArea>();
-
-        public RecipeAction(Tetris baseT)
-        {
-            baseTetris = baseT;
-        }
-
-        public void addAction()
-        {
-
-        }
-
-        public void locationIn(CraftingArea ca)
-        {
-            print("in + " + allCraftingAreas);
-            if (allCraftingAreas.Contains(ca)) return;
-            allCraftingAreas.Add(ca);
-        }
-
-        public void locationOut(CraftingArea ca)
-        {
-            if (!allCraftingAreas.Contains(ca)) return;
-            allCraftingAreas.Remove(ca);
-        }
-
-        public void Process(RecipeCombiator rc)
-        {
-            /*
-            if (allCraftingAreas.Count != 1) return;
-            if(allCraftingAreas[0].myType == CraftingArea.type.Merge) CheckMerging(rc); //see if new recipe creates a new object.
-            else if(allCraftingAreas[0].myType == CraftingArea.type.Ground) CheckGrounding(rc); //see if new recipe can be grounded.*/
-            CheckMerging(rc);
-            //CheckGrounding(rc);
-        }
-
-        void CheckMerging(RecipeCombiator rc)
-        {
-            ItemScriptableObject product = null;
-            rc.DebugPrint();
-            foreach (ItemScriptableObject iso in baseTetris.allItemListSO.list)
-            {
-                if (iso == baseTetris.itemSO) { continue; } //skip if the recipe is itself
-                if (iso.CheckMatch(rc.getRecipeGrid())) //find the scriptableobject with same recipe, if there is one
-                {
-                    product = iso;
-                    break;
-                }
-            }
-
-            if (product != null) //if there is a recipe match, destroyself and emerge new game object and add special effect
-            {
-                Object newTetris = Instantiate(product.myPrefab, rc.CentralPosition(), Quaternion.identity);
-                foreach (Tetris t in rc.getPastTetris())
-                {
-                    t.DestroySelf();
-                }
-            }
-        }
-
-        void CheckGrounding(RecipeCombiator rc)
-        {
-            ItemScriptableObject product = baseTetris.allGroundSO.groundRecipe[baseTetris.itemSO];
-            if (product != null)
-            {
-                Instantiate(product.myPrefab, rc.CentralPosition(), Quaternion.identity);
-                foreach (Tetris t in rc.getPastTetris())
-                {
-                    t.DestroySelf();
-                }
-            }
-
-        }
-
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.tag == "CraftingArea")
-        {
-            recipeAction.locationIn(collision.GetComponent<CraftingArea>());
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "CraftingArea")
-        {
-            recipeAction.locationOut(collision.GetComponent<CraftingArea>());
-        }
-    }
-
     private void Start()
     {
         //Born animation
         BornSelf();
-        recipeAction = new RecipeAction(this);
     }
 
     private Vector3 GetMouseWorldPos()
@@ -322,8 +226,34 @@ public class Tetris : MonoBehaviour
 
     void CheckRecipe(RecipeCombiator rc)
     {
-        recipeAction.Process(rc);
+        //TODO: restore check recipe
+        CheckMerging(rc);
     }
+
+    void CheckMerging(RecipeCombiator rc)
+    {
+        ItemScriptableObject product = null;
+        rc.DebugPrint();
+        foreach (ItemScriptableObject iso in allItemListSO.list)
+        {
+            if (iso == itemSO) { continue; } //skip if the recipe is itself
+            if (iso.CheckMatch(rc.getRecipeGrid())) //find the scriptableobject with same recipe, if there is one
+            {
+                product = iso;
+                break;
+            }
+        }
+
+        if (product != null) //if there is a recipe match, destroyself and emerge new game object and add special effect
+        {
+            Object newTetris = Instantiate(product.myPrefab, rc.CentralPosition(), Quaternion.identity);
+            foreach (Tetris t in rc.getPastTetris())
+            {
+                t.DestroySelf();
+            }
+        }
+    }
+
 
     /// <summary>
     /// Recursive search a Tetris

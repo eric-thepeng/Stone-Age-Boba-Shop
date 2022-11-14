@@ -8,33 +8,35 @@ public class mushroom : MonoBehaviour
     bool canGet = false; //fly for 0.5s before it could be pickedup
     IEnumerator Start()
     {
-        GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(0.8f, 1f), Random.Range(-0.5f, 0f)).normalized * 150f);
+        //stage one, fly for a while
+        //GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(0.8f, 1f), Random.Range(-0.5f, 0f)).normalized * 150f);
         float timeCount = 0;
-        while (timeCount<0.5)
+        float p1Time = 0.5f;
+        
+        Vector3 p1Direction = new Vector3(Random.Range(-0.5f, 0.5f), 1f, 1f).normalized;
+        Vector3 p1StartPos = transform.position;
+        Vector3 p1FinalPos = transform.position + p1Direction * 2f;
+        while (timeCount<p1Time)
         {
+            print(Mathf.Log(65 * timeCount + 1, 10) / 1.5f);
+            transform.position = Vector3.Lerp(p1StartPos, p1FinalPos, Mathf.Log(20 * timeCount + 1, 10) / 1f);
             timeCount += Time.deltaTime;
             yield return new WaitForSeconds(0);
         }
+
         canGet = true;
-    }
+        Vector3 orgPos = transform.position;
 
-    /*
-    private void OnTriggerEnter(Collider other) //be picked up when near
-    {
-        if (canGet && other.gameObject.GetComponent<Inventory>())
-        {
-            Inventory.i.ObtainItem(thisSO);
-            Destroy(gameObject);
-        }
-    }*/
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (canGet && collision.gameObject.GetComponent<Inventory>())
+        while((PlayerInfo.i.getPlayerLocation() - transform.position).magnitude> 1)
         {
-            Inventory.i.ObtainItem(thisSO);
-            Destroy(gameObject);
+            transform.position = Vector3.Lerp(orgPos, PlayerInfo.i.getPlayerLocation(), timeCount - p1Time);
+            timeCount += Time.deltaTime;
+            yield return new WaitForSeconds(0);
         }
+
+        Inventory.i.AddItem(thisSO);
+        Destroy(gameObject);
     }
 
 }

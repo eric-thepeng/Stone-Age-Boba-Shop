@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UpGroundObj : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,10 @@ public class UpGroundObj : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        //print("trigger enter");
     }
 }
