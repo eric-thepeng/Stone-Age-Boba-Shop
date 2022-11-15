@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// A controller for UI display.
+/// </summary>
 [RequireComponent(typeof(CanvasGroup))]
 public class UI_Displayer : MonoBehaviour
 {
@@ -13,7 +16,7 @@ public class UI_Displayer : MonoBehaviour
     
     CanvasGroup cg;
     public AnimationCurve showCurver, hideCurve;
-    public float animationSpeed;
+    float animationSpeed = 1;
     
     void Awake()
     {
@@ -26,11 +29,22 @@ public class UI_Displayer : MonoBehaviour
     public void Blink()
     {
         StopAllCoroutines();
-        StartCoroutine(ShowPanel());
+        ShowPanel();
     }
 
-    public IEnumerator ShowPanel()
+    public void ShowPanel()
     {
+        StartCoroutine(ShowPanelCor());
+    }
+
+    public void HidePanel()
+    {
+        StartCoroutine(HidePanelCor());
+    }
+
+    IEnumerator ShowPanelCor()
+    {
+        print("show " + cg.alpha);
         float timer = 0;
         while (cg.alpha<1)
         {
@@ -43,8 +57,9 @@ public class UI_Displayer : MonoBehaviour
         afterShow();
     }
 
-    public IEnumerator HidePanel()
+    IEnumerator HidePanelCor()
     {
+        print("hide " + cg.alpha);
         float timer = 0;
         while (cg.alpha > 0)
         {

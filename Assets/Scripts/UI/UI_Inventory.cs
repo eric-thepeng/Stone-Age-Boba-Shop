@@ -6,20 +6,12 @@ using TMPro;
 
 public class UI_Inventory : MonoBehaviour
 {
-    public bool showing = false;
+    public bool showing = true;
     public Transform itemSlotContainer, itemSlotTemplate, itemDescriptionContainer, itemDescriptionImage;
+    UI_Displayer displayControl;
 
-    /// <summary>
-    /// Information to be displayed on each grid.
-    /// </summary>
-    class ItemInfo
-    {
-        public Transform uiBlock;
-        public string objectSprite, tetrisSprite;
-        public int amount;
-    }
 
-    Dictionary<Vector2, ItemInfo> itemCoord = new Dictionary<Vector2, ItemInfo>();
+    Dictionary<Vector2, Inventory.ItemInfo> itemCoord = new Dictionary<Vector2, Inventory.ItemInfo>();
     Vector2 selectedCoord;
 
     static UI_Inventory instance;
@@ -35,6 +27,8 @@ public class UI_Inventory : MonoBehaviour
     
     private void Awake()
     {
+        displayControl = GetComponent<UI_Displayer>();
+
         itemSlotContainer = transform.Find("ItemSlotContainer");
         itemSlotTemplate = itemSlotContainer.Find("ItemSlotTemplate");
 
@@ -46,7 +40,8 @@ public class UI_Inventory : MonoBehaviour
 
     private void Start()
     {
-        //GetComponent<UI_Displayer>().afterHide = AfterClose;
+        CloseBackpack();
+        displayControl.afterHide = AfterClose;
     }
 
     private void Update()
@@ -54,7 +49,7 @@ public class UI_Inventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Backspace) || Input.GetKeyDown(KeyCode.Backspace))
         {
             if (showing) CloseBackpack();
-            else SetUpCharms();
+            else OpenBackpack();
         }
 
         if (!showing) return;
@@ -68,12 +63,15 @@ public class UI_Inventory : MonoBehaviour
     
     public void CloseBackpack()
     {
-        //StartCoroutine(GetComponent<UI_Displayer>().HidePanel());
+        displayControl.HidePanel();
+        showing = false;
     }
 
     public void OpenBackpack()
     {
-
+        displayControl.ShowPanel();
+        SetUpBackpack();
+        showing = true;
     }
 
     public void AfterClose()
@@ -91,27 +89,22 @@ public class UI_Inventory : MonoBehaviour
         */
     }
 
-    public void SetUpCharms()
+    public void SetUpBackpack()
     {
-        /*
-        CloseBackpack();
-        showing = true;
-        equipmentDescriptionContainer.gameObject.SetActive(true);
-        charmDescriptionContainer.gameObject.SetActive(true);
         int x = 0;
         int y = 0;
         int itemSlotCellSize = 120;
-        /*itemCoord = new Dictionary<Vector2, Item>();
-        foreach (Item c in Inventory.i.MyCharms)
+        itemCoord = new Dictionary<Vector2, Inventory.ItemInfo>();
+        foreach (Inventory.ItemInfo ii in Inventory.i.Backpack)
         {
-            RectTransform itemSlotRectTransform = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
-            c.uiBlock = itemSlotRectTransform;
-            c.uiBlock.Find("Image").GetComponent<Image>().sprite = c.sprite;
-            c.uiBlock.gameObject.SetActive(true);
-            c.uiBlock.anchoredPosition += new Vector2(x * itemSlotCellSize, y * itemSlotCellSize);
-            itemCoord.Add(new Vector2(x, y), c);
+            print(ii.objectSprite);
+            ii.uiBlock = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
+            ii.uiBlock.gameObject.SetActive(true);
+            ii.uiBlock.Find("Image").GetComponent<Image>().sprite = ii.objectSprite;
+            ii.uiBlock.anchoredPosition += new Vector2(x * itemSlotCellSize, y * itemSlotCellSize);
+            itemCoord.Add(new Vector2(x, y), ii);
             x++;
-            if (x >= 4)
+            if (x >= 6)
             {
                 x = 0;
                 y--;
@@ -119,8 +112,6 @@ public class UI_Inventory : MonoBehaviour
         }
         selectedCoord = new Vector2(0, 0);
         ItemMoveSelectedCoord(new Vector2(0, 0));
-        StartCoroutine(GetComponent<UI_Displayer>().ShowPanel());
-        */
     }
 
     void ItemMoveSelectedCoord(Vector2 delta)

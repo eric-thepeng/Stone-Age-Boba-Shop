@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class mushroom : MonoBehaviour
 {
-    [SerializeField] ScriptableObject thisSO;
+    [SerializeField] ItemScriptableObject thisSO;
     bool canGet = false; //fly for 0.5s before it could be pickedup
     IEnumerator Start()
     {
@@ -18,7 +18,6 @@ public class mushroom : MonoBehaviour
         Vector3 p1FinalPos = transform.position + p1Direction * 2f;
         while (timeCount<p1Time)
         {
-            print(Mathf.Log(65 * timeCount + 1, 10) / 1.5f);
             transform.position = Vector3.Lerp(p1StartPos, p1FinalPos, Mathf.Log(20 * timeCount + 1, 10) / 1f);
             timeCount += Time.deltaTime;
             yield return new WaitForSeconds(0);

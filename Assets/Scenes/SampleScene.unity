@@ -9199,9 +9199,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7532774943800294910}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0.97
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &7532774943800294910
 GameObject:
@@ -9256,6 +9256,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73fb08e03cca34a0ca196d74f40b7b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showing: 0
+  itemSlotContainer: {fileID: 0}
+  itemSlotTemplate: {fileID: 0}
+  itemDescriptionContainer: {fileID: 0}
+  itemDescriptionImage: {fileID: 0}
 --- !u!114 &7532774943800294913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9316,7 +9321,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  animationSpeed: 0
 --- !u!1 &7532774944003121476
 GameObject:
   m_ObjectHideFlags: 0
@@ -9332,7 +9336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7532774944003121477
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9411,7 +9415,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ee00df971109ff345951546089747ec9, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9476,7 +9480,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6208920afd495fe44916c4d3fc92f97e, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

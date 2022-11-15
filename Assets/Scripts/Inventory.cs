@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public class Item
-    {
-
-    }
 
     static Inventory instance;
     public static Inventory i
@@ -20,38 +16,61 @@ public class Inventory : MonoBehaviour
 
     }
 
-    Dictionary<ScriptableObject, int> Backpack = new Dictionary<ScriptableObject, int>();
-
-    public void AddItem(ScriptableObject so)
+    /// <summary>
+    /// Information to be displayed on each grid.
+    /// </summary>
+    public class ItemInfo
     {
-        if (Backpack.ContainsKey(so))
+        public RectTransform uiBlock;
+        public ItemScriptableObject soForm;
+        public Sprite objectSprite, tetrisSprite;
+        public int amount;
+
+        public ItemInfo(ItemScriptableObject inSO)
         {
-            Backpack[so] += 1;
+            uiBlock = null;
+            soForm = inSO;
+            objectSprite = soForm.objectSprite;
+            tetrisSprite = soForm.tetrisSprite;
+            amount = 0;
         }
-        else
+
+        public void AddOne()
         {
-            Backpack.Add(so,1);
+            amount += 1;
         }
+
+        public void MinusOne()
+        {
+            amount -= 1;
+        }
+    }
+
+    public List<ItemInfo> Backpack = new List<ItemInfo>();
+
+    public void AddItem(ItemScriptableObject so)
+    {
+        foreach(ItemInfo ii in Backpack)
+        {
+            if(ii.soForm == so)
+            {
+                ii.AddOne();
+                return;
+            }
+        }
+        Backpack.Add(new ItemInfo(so));
     }
 
     public void DeleteItem(ScriptableObject so)
     {
-        if (Backpack.ContainsKey(so))
+        foreach (ItemInfo ii in Backpack)
         {
-            Backpack[so] -= 1;
-            if(Backpack[so] == 0)
+            if (ii.soForm == so)
             {
-                Backpack.Remove(so);
+                ii.MinusOne();
+                return;
             }
         }
-        else
-        {
-            print("Backpack does not have item" + so);
-        }
-    }
-
-    public void DisplayInventory()
-    {
-
+        print("Backpack does not have this item: " + so);
     }
 }
