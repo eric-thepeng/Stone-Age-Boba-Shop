@@ -97,7 +97,6 @@ public class UI_Inventory : MonoBehaviour
         itemCoord = new Dictionary<Vector2, Inventory.ItemInfo>();
         foreach (Inventory.ItemInfo ii in Inventory.i.Backpack)
         {
-            print(ii.objectSprite);
             ii.uiBlock = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
             ii.uiBlock.gameObject.SetActive(true);
             ii.uiBlock.Find("Image").GetComponent<Image>().sprite = ii.objectSprite;

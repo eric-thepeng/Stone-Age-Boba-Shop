@@ -31,3 +31,12 @@ MonoBehaviour:
     - m_Name: BerryOff
       m_Hash: -395621511
       m_Sprite: {fileID: -5476881057475932401, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+  - m_Name: Sd_BerryBush
+    m_Hash: 500098454
+    m_CategoryList:
+    - m_Name: Large
+      m_Hash: -1733687622
+      m_Sprite: {fileID: -5715846626540617327, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Small
+      m_Hash: -1266367209
+      m_Sprite: {fileID: -8296203259690243373, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}

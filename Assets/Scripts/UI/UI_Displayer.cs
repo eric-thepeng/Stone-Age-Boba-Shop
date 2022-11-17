@@ -44,7 +44,6 @@ public class UI_Displayer : MonoBehaviour
 
     IEnumerator ShowPanelCor()
     {
-        print("show " + cg.alpha);
         float timer = 0;
         while (cg.alpha<1)
         {
@@ -59,7 +58,6 @@ public class UI_Displayer : MonoBehaviour
 
     IEnumerator HidePanelCor()
     {
-        print("hide " + cg.alpha);
         float timer = 0;
         while (cg.alpha > 0)
         {

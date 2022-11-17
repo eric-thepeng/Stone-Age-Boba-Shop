@@ -67,3 +67,27 @@ MonoBehaviour:
     - m_Name: Sd_Tree_2
       m_Hash: -1879590483
       m_Sprite: {fileID: -7723019394761211078, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+  - m_Name: Sd_DecorBush
+    m_Hash: 1743072050
+    m_CategoryList:
+    - m_Name: Sd_Tree_1
+      m_Hash: 385804311
+      m_Sprite: {fileID: -4163400931218339853, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Sd_Tree_2
+      m_Hash: -1879590483
+      m_Sprite: {fileID: 3439414345747539802, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Sd_Tree_3
+      m_Hash: -118453957
+      m_Sprite: {fileID: 2504711434367527980, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Sd_Tree_4
+      m_Hash: 1720982680
+      m_Sprite: {fileID: -9078524491303417266, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Sd_Tree_5
+      m_Hash: 294857742
+      m_Sprite: {fileID: 3280557013092550686, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Sd_Tree_6
+      m_Hash: -2003141196
+      m_Sprite: {fileID: 2142174125237518869, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+    - m_Name: Sd_Tree_7
+      m_Hash: -23245534
+      m_Sprite: {fileID: 7663068755224775324, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
