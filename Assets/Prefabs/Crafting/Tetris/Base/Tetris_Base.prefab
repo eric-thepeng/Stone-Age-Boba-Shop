@@ -387,6 +387,7 @@ MonoBehaviour:
   dragDisplacement: {x: 0, y: 0}
   mouseDownPos: {x: 0, y: 0, z: 0}
   tetrisDownPos: {x: 0, y: 0, z: 0}
+  mergeProgressBar: {fileID: 6915116433594316768, guid: ea03f95884d324c7b8b65cc2165b7c45, type: 3}
   craftEffect: {fileID: 125726, guid: b5edce590af794008acebfc0e06fcb14, type: 3}
 --- !u!61 &6736768091077395257
 BoxCollider2D:

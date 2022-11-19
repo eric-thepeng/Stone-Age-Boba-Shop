@@ -27,23 +27,31 @@ public class Tetris : MonoBehaviour
     //Standart scale during play, used to snap during merge animation
     private Vector3 standardScale = new Vector3(0.2f, 0.2f, 1);
 
+    //Merging Progress Bar
+    [SerializeField] GameObject mergeProgressBar;
+
     //The special effect during merge
-    public Object craftEffect;
+    [SerializeField] GameObject craftEffect;
 
     //To trigger and check recipe-related actions
-    //public RecipeAction recipeAction;
+
+    public RecipeCombiator myRC;
 
     //The class that is passed on during recursive search to combine all the Tetris together and form a recipe
     public class RecipeCombiator
     {
+        GameObject mergeProgressBar;
         List<Tetris> pastTetris; //The list of Tetris that is already processed
         List<KeyValuePair<Vector2, ScriptableObject>> recipeGrid; //The final formed recipe in grid form
+        Tetris origionTetris;
 
         //Create and initialize the two variables.
-        public RecipeCombiator()
+        public RecipeCombiator(Tetris oT, GameObject mpb)
         {
+            origionTetris = oT;
             pastTetris = new List<Tetris>(); 
             recipeGrid = new List<KeyValuePair<Vector2, ScriptableObject>>();
+            mergeProgressBar = mpb;
         }
 
         /// <summary>
@@ -86,6 +94,8 @@ public class Tetris : MonoBehaviour
             }
         }
 
+       
+
         /// <summary>
         /// Has this Tetris been searched and added yet?
         /// </summary>
@@ -115,6 +125,7 @@ public class Tetris : MonoBehaviour
         /// </summary>
         public void Organize()
         {
+            BindRCForAll();
             Vector2 leftNTopBound = new Vector2(0, 0);
             foreach (KeyValuePair<Vector2, ScriptableObject> kvp in recipeGrid)
             {
@@ -147,6 +158,28 @@ public class Tetris : MonoBehaviour
             foreach (KeyValuePair<Vector2, ScriptableObject> kvp in recipeGrid)
             {
                 print(kvp.Key + " " + kvp.Value.name);
+            }
+        }
+
+        public void StartMerge(ItemScriptableObject iso)
+        {
+            origionTetris.StartCoroutine(origionTetris.MergeProgress(this,iso));
+        }
+
+        public void StopMerge()
+        {
+            foreach (Tetris t in getPastTetris())
+            {
+                t.terminateMergeProcess();
+            }
+            origionTetris.StopAllCoroutines();
+        }
+
+        public void BindRCForAll()
+        {
+            foreach(Tetris t in getPastTetris())
+            {
+                t.myRC = this;
             }
         }
 
@@ -183,6 +216,10 @@ public class Tetris : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if(stateNow == state.Merge)
+        {
+            myRC.StopMerge();
+        }
         if (stateNow != state.Wait) return;
         SetState(state.Drag);
         ResetEdges(); //so that rest of the recipe refreshes
@@ -201,11 +238,11 @@ public class Tetris : MonoBehaviour
         if (stateNow != state.Drag) return;
         SetState(state.Wait);
         RefreshEdges();
-        RecipeCombiator RC = new RecipeCombiator();
-        Search(RC, this, new Vector2(0,0), new Vector2(0, 0), new Vector2(0, 0));
-        CheckSnap(RC);
-        RC.Organize();
-        CheckRecipe(RC);
+        RecipeCombiator rc = new RecipeCombiator(this,mergeProgressBar);
+        Search(rc, this, new Vector2(0,0), new Vector2(0, 0), new Vector2(0, 0));
+        CheckSnap(rc);
+        rc.Organize();
+        CheckRecipe(rc);
     }
 
     public void RefreshEdges()
@@ -246,14 +283,51 @@ public class Tetris : MonoBehaviour
 
         if (product != null) //if there is a recipe match, destroyself and emerge new game object and add special effect
         {
-            Object newTetris = Instantiate(product.myPrefab, rc.CentralPosition(), Quaternion.identity);
-            foreach (Tetris t in rc.getPastTetris())
-            {
-                t.DestroySelf();
-            }
+            rc.StartMerge(product);
         }
     }
 
+    public IEnumerator MergeProgress(RecipeCombiator rc, ItemScriptableObject product)
+    {
+        foreach (Tetris t in rc.getPastTetris())
+        {
+            t.startMergeProcess();
+        }
+        float tCount = 0;
+        float tRequire = 1;
+        ProgressBar pb = Instantiate(mergeProgressBar, rc.CentralPosition(), Quaternion.identity).GetComponent<ProgressBar>();
+        pb.transform.position += new Vector3(0, 0, -0.5f);
+
+
+        while (tCount < tRequire)
+        {
+            tCount += Time.deltaTime;
+            pb.setTo(tCount / tRequire);
+            yield return new WaitForSeconds(0);
+        }
+
+        GameObject newTetris = Instantiate(product.myPrefab, rc.CentralPosition(), Quaternion.identity);
+        foreach (Tetris t in rc.getPastTetris())
+        {
+            t.DestroySelf();
+        }
+    }
+
+    public void startMergeProcess()
+    {
+        stateNow = state.Merge;
+    }
+
+    public void terminateMergeProcess()
+    {
+        StartCoroutine(terminateMergeProcessIenumerator());
+    }
+
+    IEnumerator terminateMergeProcessIenumerator()
+    {
+        yield return new WaitForEndOfFrame();
+        stateNow = state.Wait;
+    }
 
     /// <summary>
     /// Recursive search a Tetris
@@ -301,13 +375,14 @@ public class Tetris : MonoBehaviour
 
     IEnumerator BornSelfProgress()
     {
-
+        stateNow = state.Animation;
         while (transform.localScale.x < standardScale.x)
         {
             transform.localScale += standardScale * Time.deltaTime * 3;
             yield return new WaitForSeconds(0);
         }
         transform.localScale = standardScale;
+        stateNow = state.Wait;
     }
 
     //destroy animation
@@ -315,6 +390,7 @@ public class Tetris : MonoBehaviour
 
     IEnumerator DestroySelfProcess()
     {
+        stateNow = state.Animation;
         bool animStart = false;
         float t = 0;
         while (t < 0.3)

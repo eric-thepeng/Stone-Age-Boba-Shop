@@ -12,7 +12,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ItemScriptableObject", menuName = "ScriptableObjects/ItemScriptableObject")]
 public class ItemScriptableObject : SerializedScriptableObject
 {
-    public Object myPrefab = null; //For ITEM specifically (homogeneous)
+    public GameObject myPrefab = null; //For ITEM specifically (homogeneous)
     public ItemScriptableObject mergeOutput = null; //For MERGE specifically (composite)
     public List<Recipe> allRecipes = new List<Recipe>();
     public Sprite objectSprite;
