@@ -206,6 +206,7 @@ public class Tetris : MonoBehaviour
     {
         //return mouse position through main camera
         return Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
+        //return CameraManager.i.getPanelCamera().ScreenToViewportPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, CameraManager.i.getPanelCamera().transform.position.z * -1));
     }
 
     private void SetState(state newState)
