@@ -5,7 +5,7 @@ using UnityEngine;
 public class Tetris : MonoBehaviour
 {
     //Wait: Tetris sitting still. Drag: Tetris being clicked and dragged around. Animation: Tetris moving to snap. Merge: Tetris is Merging.
-    enum state {Wait, Drag, Animation, Merge}
+    enum state {Wait, Drag, Animation, Merge, Lift, Drop}
     state stateNow = state.Wait;
 
     //Delta between 
@@ -32,6 +32,10 @@ public class Tetris : MonoBehaviour
 
     //The special effect during merge
     [SerializeField] GameObject craftEffect;
+
+    //Shadowing and Animation
+    GameObject shadow = null;
+    Vector3 shadowOffsetStandard = new Vector3(-0.1f, -0.1f, 0.2f);
 
     //To trigger and check recipe-related actions
 
@@ -196,11 +200,27 @@ public class Tetris : MonoBehaviour
         public List<Tetris> getPastTetris() { return pastTetris; }
     }
 
+
     private void Start()
     {
-        //Born animation
-        BornSelf();
+        CreateShadow();
+        //BornSelf();
     }
+
+    private void CreateShadow()
+    {
+        shadow = new GameObject("shadow of " + gameObject.name);
+        //shadow.transform.position = gameObject.transform.position + shadowOffsetStandard;
+        shadow.transform.parent = this.transform;
+        shadow.transform.localPosition = new Vector3(0,0,0) + shadowOffsetStandard;
+        shadow.transform.localScale = new Vector3(1, 1, 1); //gameObject.transform.localScale;
+        shadow.AddComponent<SpriteRenderer>();
+        shadow.GetComponent<SpriteRenderer>().sprite = GetComponent<SpriteRenderer>().sprite;
+        shadow.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0);
+
+    }
+
+    
 
     private Vector3 GetMouseWorldPos()
     {
