@@ -13,9 +13,11 @@ public class TaskInfo : SerializedScriptableObject
     public Sprite personPic;
     public string descriptionText;
     public string tradeText;
-    public Dictionary<ItemScriptableObject, int> delivery;
+    public Dictionary<ItemScriptableObject, int> request;
+    public Dictionary<ItemScriptableObject, int> reward;
     /// <summary>
     /// 0: not assigned 1: assigned 2: completed
     /// </summary>
     public int completion;
+    public TaskInfo unlocks;
 }

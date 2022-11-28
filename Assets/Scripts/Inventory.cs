@@ -50,6 +50,10 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(ItemScriptableObject so)
     {
+        //add to crafting
+        CraftingManager.i.AddToCrafting(so.myPrefab);
+
+        //add to backpack
         foreach(ItemInfo ii in Backpack)
         {
             if(ii.soForm == so)

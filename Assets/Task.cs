@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Task : MonoBehaviour
-{
+{ 
     public TaskInfo myTi;
     public void SetUp(TaskInfo ti)
     {
@@ -14,5 +14,10 @@ public class Task : MonoBehaviour
     {
         print("mouse down");
         TaskManager.i.DisplayTask(myTi);
+    }
+
+    private void OnMouseOver()
+    {
+        
     }
 }
