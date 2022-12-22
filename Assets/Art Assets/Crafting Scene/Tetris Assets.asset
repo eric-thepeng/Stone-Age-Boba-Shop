@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
-  m_Name: ItemSprite
+  m_Name: Tetris Assets
   m_EditorClassIdentifier: 
   m_Labels:
   - m_Name: 1*1Max

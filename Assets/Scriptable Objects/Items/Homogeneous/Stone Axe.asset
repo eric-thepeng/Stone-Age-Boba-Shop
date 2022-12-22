@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72effb42c254bf04faaa49a204686017, type: 3}
-  m_Name: Wood Stick
+  m_Name: Stone Axe
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -60,8 +60,11 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: 
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 10
+      Data: 0
     - Name: 
       Entry: 6
       Data: 
@@ -75,14 +78,11 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: 
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 0
     - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 0
     - Name: 
       Entry: 6
       Data: 
@@ -164,6 +164,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  myPrefab: {fileID: 4378706526817123736, guid: e37c2b848cc0f204c97f18cc9ed871f8, type: 3}
+  myPrefab: {fileID: 1555385438000805696, guid: 0e5dab250b7e82a459072feb392bcfc7, type: 3}
   objectSprite: {fileID: 0}
   tetrisSprite: {fileID: 0}

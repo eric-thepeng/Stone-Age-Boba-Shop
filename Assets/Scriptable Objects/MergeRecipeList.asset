@@ -22,13 +22,5 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   list:
-  - {fileID: 11400000, guid: 2d532b553f2a5fe43b9be894510bf907, type: 2}
-  - {fileID: 11400000, guid: 57f6221303117cd46a20a7bf7a754d82, type: 2}
-  - {fileID: 11400000, guid: 40cef326d43e6d54e892d712307ada88, type: 2}
-  - {fileID: 11400000, guid: a5651def52ceff643b4f40b10efeedb7, type: 2}
-  - {fileID: 11400000, guid: b1de7f746bb48d6479430cb0334191b8, type: 2}
-  - {fileID: 11400000, guid: 67ab52df58a8dec44b9a7b954d1484ca, type: 2}
-  - {fileID: 11400000, guid: 11f5a6fe9c6daa841b74e6aa0101d0f4, type: 2}
   - {fileID: 11400000, guid: 27c454255295eb145a27f18a4aa0b4f5, type: 2}
-  - {fileID: 11400000, guid: c4d5f2fa533c35c498ddd61a0e446cc9, type: 2}
   - {fileID: 11400000, guid: c731017a9e4724f1fb435373ba53d34c, type: 2}

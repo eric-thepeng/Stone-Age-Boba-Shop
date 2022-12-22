@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: P1Tetris Asset
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: 1*1Max
+    m_Hash: -411541327
+    m_CategoryList:
+    - m_Name: Berry
+      m_Hash: -1957915177
+      m_Sprite: {fileID: -196169763218773290, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+    - m_Name: Grass
+      m_Hash: 1775022327
+      m_Sprite: {fileID: -5954377862457118630, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+    - m_Name: String
+      m_Hash: -1726826593
+      m_Sprite: {fileID: -1380563015822447564, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+    - m_Name: Rope
+      m_Hash: 288126985
+      m_Sprite: {fileID: -8743674235065198750, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+    - m_Name: Small Stone
+      m_Hash: 937909134
+      m_Sprite: {fileID: -1849690273646599466, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+    - m_Name: Sharp Small Stone
+      m_Hash: -1806573435
+      m_Sprite: {fileID: 2305069997240039378, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+  - m_Name: 2*2Max
+    m_Hash: 1935261169
+    m_CategoryList:
+    - m_Name: Medium Stone
+      m_Hash: -873942230
+      m_Sprite: {fileID: -6369539645939144554, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+    - m_Name: Sharp Medium Stone
+      m_Hash: 1553587225
+      m_Sprite: {fileID: -9047482760759557740, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+  - m_Name: 3*3Max
+    m_Hash: 12126513
+    m_CategoryList:
+    - m_Name: Shovel
+      m_Hash: -47339952
+      m_Sprite: {fileID: 943891389785200452, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+    - m_Name: Axe
+      m_Hash: 1411864780
+      m_Sprite: {fileID: 482026683277342115, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+    - m_Name: Wood Stick
+      m_Hash: 39753262
+      m_Sprite: {fileID: -6146061074465017974, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+  - m_Name: Tools
+    m_Hash: 725348723
+    m_CategoryList:
+    - m_Name: Board
+      m_Hash: -1718156221
+      m_Sprite: {fileID: -63260573773360945, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+    - m_Name: Pot
+      m_Hash: 653276655
+      m_Sprite: {fileID: -5609703727199617074, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}

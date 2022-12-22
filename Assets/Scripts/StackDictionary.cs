@@ -21,8 +21,4 @@ public class StackDictionary<T>
         dataBase[key] -= 1;
     }
 
-    public void GetAllKeys(T key)
-    {
-       //TODO
-    }
 }

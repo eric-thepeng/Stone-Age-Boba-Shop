@@ -13,7 +13,6 @@ using UnityEngine;
 public class ItemScriptableObject : SerializedScriptableObject
 {
     public GameObject myPrefab = null; //For ITEM specifically (homogeneous)
-    public ItemScriptableObject mergeOutput = null; //For MERGE specifically (composite)
     public List<Recipe> allRecipes = new List<Recipe>();
     public Sprite objectSprite;
     public Sprite tetrisSprite;
