@@ -19,6 +19,18 @@ PrefabInstance:
       propertyPath: itemSO
       value: 
       objectReference: {fileID: 11400000, guid: 40cef326d43e6d54e892d712307ada88, type: 2}
+    - target: {fileID: 5058743035990336587, guid: fc920d823a5c74c12affe7c4b1ff78cd, type: 3}
+      propertyPath: allItemListSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 33e29900e92d2e34caca34216bd89ca4, type: 2}
+    - target: {fileID: 5058743035990336587, guid: fc920d823a5c74c12affe7c4b1ff78cd, type: 3}
+      propertyPath: craftRecipeSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 05ec99f8a874344d18fe8bfdd2ea945f, type: 2}
+    - target: {fileID: 5058743035990336587, guid: fc920d823a5c74c12affe7c4b1ff78cd, type: 3}
+      propertyPath: groundRecipeSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 07be546b1d77e4939adc5bd1722ee223, type: 2}
     - target: {fileID: 5058743035990336596, guid: fc920d823a5c74c12affe7c4b1ff78cd, type: 3}
       propertyPath: m_RootOrder
       value: 0

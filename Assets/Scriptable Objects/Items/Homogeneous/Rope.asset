@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72effb42c254bf04faaa49a204686017, type: 3}
-  m_Name: Grind Board
+  m_Name: Rope
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -45,8 +45,17 @@ MonoBehaviour:
       Entry: 10
       Data: 0
     - Name: 
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 6
       Data: 
@@ -60,11 +69,17 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: 
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: 
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 6
       Data: 
@@ -78,11 +93,17 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: 
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: 
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 6
       Data: 
@@ -96,29 +117,11 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
       Entry: 6
       Data: 
     - Name: 
       Entry: 6
       Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 10
-      Data: 0
     - Name: 
       Entry: 6
       Data: 
@@ -132,11 +135,8 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 6
       Data: 
@@ -164,8 +164,8 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  isGround: 1
+  isGround: 0
   isCook: 0
-  myPrefab: {fileID: 2906859383419099448, guid: 088f84bf71bacea4ba810412d501faff, type: 3}
+  myPrefab: {fileID: 5335994768780075941, guid: d63ba42a51d75b84594445ece3a1d8d2, type: 3}
   objectSprite: {fileID: 0}
   tetrisSprite: {fileID: 0}

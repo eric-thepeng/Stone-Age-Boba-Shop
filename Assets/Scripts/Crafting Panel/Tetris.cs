@@ -13,8 +13,9 @@ public class Tetris : MonoBehaviour
 
     //The Scriptable Object this Tetris contains
     public ItemScriptableObject itemSO;
-    public ItemSOListScriptableObject allItemListSO; //List of all Items
-    public GroundRecipeScriptableObject allGroundSO; //List of all Grounding Recipe
+    public ItemSOListScriptableObject allItemListSO; //List of all Items4
+    public ItemSOListScriptableObject craftRecipeSO;
+    public GroundRecipeScriptableObject groundRecipeSO; //List of all Grounding Recipe
 
     //All the edges of this Tetris
     public List<Edge> allEdges = new List<Edge>();
@@ -44,10 +45,12 @@ public class Tetris : MonoBehaviour
     //The class that is passed on during recursive search to combine all the Tetris together and form a recipe
     public class RecipeCombiator
     {
+         enum mode {Combine, Grind, Cook }
+         mode Mode;
         GameObject mergeProgressBar;
         List<Tetris> pastTetris; //The list of Tetris that is already processed
         List<KeyValuePair<Vector2, ScriptableObject>> recipeGrid; //The final formed recipe in grid form
-        Tetris origionTetris;
+         Tetris origionTetris;
 
         //Create and initialize the two variables.
         public RecipeCombiator(Tetris oT, GameObject mpb)
@@ -56,6 +59,7 @@ public class Tetris : MonoBehaviour
             pastTetris = new List<Tetris>(); 
             recipeGrid = new List<KeyValuePair<Vector2, ScriptableObject>>();
             mergeProgressBar = mpb;
+            Mode = mode.Combine;
         }
 
         /// <summary>
@@ -68,6 +72,22 @@ public class Tetris : MonoBehaviour
         /// <param name="newCor">Coordination on the Tetris of the connected Edge of the new Tetris.</param>
         public void AddTetris(Tetris baseT, Tetris newT, Vector2 baseCor, Vector2 dir, Vector2 newCor)
         {
+            if(Mode == mode.Grind || Mode == mode.Cook)
+            {
+                return;
+            }
+
+            if (newT.itemSO.isGround)
+            {
+                Mode = mode.Grind;
+                return;
+            }
+           else if (newT.itemSO.isCook)
+            {
+                Mode = mode.Cook;
+                return;
+            }
+
             //Avoid Repetition (extra prevention
             if (Searched(newT)) return;
             pastTetris.Add(newT);
@@ -198,6 +218,9 @@ public class Tetris : MonoBehaviour
         /// </summary>
         /// <returns></returns>
         public List<Tetris> getPastTetris() { return pastTetris; }
+
+        public bool isGrind() { return Mode == mode.Grind; }
+        public bool isCook() { return Mode == mode.Cook; }
     }
 
 
@@ -292,13 +315,24 @@ public class Tetris : MonoBehaviour
     {
         ItemScriptableObject product = null;
         rc.DebugPrint();
-        foreach (ItemScriptableObject iso in allItemListSO.list)
+
+        if (rc.isGrind())
         {
-            if (iso == itemSO) { continue; } //skip if the recipe is itself
-            if (iso.CheckMatch(rc.getRecipeGrid())) //find the scriptableobject with same recipe, if there is one
+            product = groundRecipeSO.Ground(itemSO);
+        }else if (rc.isCook())
+        {
+
+        }
+        else
+        {
+            foreach (ItemScriptableObject iso in craftRecipeSO.list)
             {
-                product = iso;
-                break;
+                if (iso == itemSO) { continue; } //skip if the recipe is itself
+                if (iso.CheckMatch(rc.getRecipeGrid())) //find the scriptableobject with same recipe, if there is one
+                {
+                    product = iso;
+                    break;
+                }
             }
         }
 
@@ -375,7 +409,9 @@ public class Tetris : MonoBehaviour
 
     void CheckSnap(RecipeCombiator rc)//check if the Tetris is close enough to another to snap them together
     {
+        print("at 1");
         if (!rc.hasConnector()) return;
+        print("at 2");
         foreach (Edge e in allEdges)
         {
             if (e.isConnected())

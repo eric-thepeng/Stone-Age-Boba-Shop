@@ -40,3 +40,18 @@ MonoBehaviour:
     - m_Name: Small
       m_Hash: -1266367209
       m_Sprite: {fileID: -8296203259690243373, guid: 9fb3a1bc1a276444895df328f9a72466, type: 3}
+  - m_Name: Stones
+    m_Hash: -956292114
+    m_CategoryList:
+    - m_Name: Small
+      m_Hash: -1266367209
+      m_Sprite: {fileID: 910779694506556700, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
+    - m_Name: Medium
+      m_Hash: -1042333567
+      m_Sprite: {fileID: 2908824358096884421, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
+    - m_Name: Sd_small
+      m_Hash: -1882332010
+      m_Sprite: {fileID: -4109823247718457721, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
+    - m_Name: Sd_medium
+      m_Hash: 1532738070
+      m_Sprite: {fileID: -4473030943765370449, guid: 60966a956e1fd9948834460009bee0ef, type: 3}

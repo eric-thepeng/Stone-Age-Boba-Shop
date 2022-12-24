@@ -7,6 +7,7 @@ public class CameraManager : MonoBehaviour
 {
     [SerializeField] CinemachineVirtualCamera worldCMVC, craftingCMVC, taskCMVC, shopCMVC;
     [SerializeField] int CamNow = 2;
+    [SerializeField] GameObject panelBoarder;
 
     static CameraManager instance;
     public static CameraManager i
@@ -33,6 +34,15 @@ public class CameraManager : MonoBehaviour
     /// <param name="which">1: world 2: craft 3: task</param>
     public void switchCameraTo(int which)
     {
+        if(which == 1)
+        {
+            panelBoarder.SetActive(false);
+        }
+        else
+        {
+            panelBoarder.SetActive(true);
+        }
+
         if(which == 1)
         {
             Camera.main.orthographic = false;

@@ -1,7 +1,88 @@
 fileFormatVersion: 2
 guid: 60966a956e1fd9948834460009bee0ef
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3764448425251853747
+    second: p1 explore_0
+  - first:
+      213: 8116153669681935881
+    second: p1 explore_1
+  - first:
+      213: 7823652487520211316
+    second: p1 explore_4
+  - first:
+      213: -159836019894682285
+    second: p1 explore_6
+  - first:
+      213: -1681463011472065358
+    second: p1 explore_9
+  - first:
+      213: 7805959129286714074
+    second: p1 explore_10
+  - first:
+      213: 2983124332127617976
+    second: p1 explore_11
+  - first:
+      213: 610433528090089492
+    second: p1 explore_12
+  - first:
+      213: 1744460761389144112
+    second: p1 explore_13
+  - first:
+      213: 4487745537962372700
+    second: p1 explore_14
+  - first:
+      213: -7276650349779448794
+    second: p1 explore_15
+  - first:
+      213: 6290172157203710281
+    second: p1 explore_16
+  - first:
+      213: -4933579267383309435
+    second: p1 explore_17
+  - first:
+      213: -4164993158991408742
+    second: p1 explore_18
+  - first:
+      213: 8152328323354312983
+    second: p1 explore_19
+  - first:
+      213: 3507501762667585038
+    second: p1 explore_20
+  - first:
+      213: 7867980650074967944
+    second: p1 explore_21
+  - first:
+      213: 6532370670093180866
+    second: p1 explore_23
+  - first:
+      213: -3585406047005993269
+    second: p1 explore_24
+  - first:
+      213: -8567799685253993600
+    second: p1 explore_25
+  - first:
+      213: 4318529083015689068
+    second: p1 explore_31
+  - first:
+      213: 683103928825641082
+    second: p1 explore_32
+  - first:
+      213: -3883810104731467775
+    second: p1 explore_33
+  - first:
+      213: 910779694506556700
+    second: p1 explore_34
+  - first:
+      213: -4109823247718457721
+    second: p1 explore_35
+  - first:
+      213: 2908824358096884421
+    second: p1 explore_36
+  - first:
+      213: -4473030943765370449
+    second: p1 explore_37
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,8 +122,8 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
-  spriteExtrude: 1
+  spriteMode: 2
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -75,9 +156,600 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: p1 explore_0
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1919
+        width: 185
+        height: 114
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b55a6ad5e10e3430800000000000000
+      internalID: 3764448425251853747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_1
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1917
+        width: 182
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906ffd7e2ce52a070800000000000000
+      internalID: 8116153669681935881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_4
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1940
+        width: 131
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4715eb46c72339c60800000000000000
+      internalID: 7823652487520211316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_6
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 1947
+        width: 126
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d7ddb9cf528cdf0800000000000000
+      internalID: -159836019894682285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_9
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1861
+        width: 202
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcbf32cc4e3aa8e0800000000000000
+      internalID: -1681463011472065358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_10
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1857
+        width: 203
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad22a586876545c60800000000000000
+      internalID: 7805959129286714074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_11
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1878
+        width: 128
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b38a4956cf266920800000000000000
+      internalID: 2983124332127617976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_12
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 1883
+        width: 128
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4185cc04f02b87800800000000000000
+      internalID: 610433528090089492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_13
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1246
+        width: 323
+        height: 514
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0381537e1d1953810800000000000000
+      internalID: 1744460761389144112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_14
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1229
+        width: 255
+        height: 503
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e67982acca74e30800000000000000
+      internalID: 4487745537962372700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_15
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 1250
+        width: 306
+        height: 489
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c8caa6f05240b90800000000000000
+      internalID: -7276650349779448794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_16
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 1627
+        width: 5
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9410e2e004e2b4750800000000000000
+      internalID: 6290172157203710281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_17
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1255
+        width: 90
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bc268abc7688bb0800000000000000
+      internalID: -4933579267383309435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_18
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 1240
+        width: 60
+        height: 197
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91926af9c8f236c0800000000000000
+      internalID: -4164993158991408742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_19
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1122
+        width: 251
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711c3edca63e22170800000000000000
+      internalID: 8152328323354312983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_20
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1126
+        width: 244
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e9bd405462da030800000000000000
+      internalID: 3507501762667585038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_21
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 1145
+        width: 201
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f8d5307bea03d60800000000000000
+      internalID: 7867980650074967944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_23
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 1160
+        width: 98
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf9514b384a7aa50800000000000000
+      internalID: 6532370670093180866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_24
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 1159
+        width: 98
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc69ba052341e3ec0800000000000000
+      internalID: -3585406047005993269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_25
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 980
+        width: 94
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b6bb5949f091980800000000000000
+      internalID: -8567799685253993600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_31
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 987
+        width: 79
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63f759025f7eeb30800000000000000
+      internalID: 4318529083015689068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_32
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 929
+        width: 96
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78735e676fda7900800000000000000
+      internalID: 683103928825641082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_33
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 933
+        width: 101
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100886c794fe91ac0800000000000000
+      internalID: -3883810104731467775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_34
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 756
+        width: 51
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1db3bf7e4db3ac00800000000000000
+      internalID: 910779694506556700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_35
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 710
+        width: 60
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e591ee789f6f6c0800000000000000
+      internalID: -4109823247718457721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_36
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 552
+        width: 83
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c25e5297583e5820800000000000000
+      internalID: 2908824358096884421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p1 explore_37
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 511
+        width: 97
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9e8874e0a9ce1c0800000000000000
+      internalID: -4473030943765370449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

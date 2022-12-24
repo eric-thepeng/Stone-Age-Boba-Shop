@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72effb42c254bf04faaa49a204686017, type: 3}
-  m_Name: CF Stone Scythe
+  m_Name: CF Rope
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: c4d5f2fa533c35c498ddd61a0e446cc9, type: 2}
-    - {fileID: 11400000, guid: 67ab52df58a8dec44b9a7b954d1484ca, type: 2}
+    - {fileID: 11400000, guid: 54f885acd39ebb144a418c6cf68edc47, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -46,23 +45,23 @@ MonoBehaviour:
       Entry: 10
       Data: 0
     - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
       Entry: 10
       Data: 0
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 10
-      Data: 1
     - Name: 
       Entry: 6
       Data: 
@@ -173,31 +172,31 @@ MonoBehaviour:
       Data: 6|6
     - Name: 
       Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 10
       Data: 0
     - Name: 
       Entry: 10
       Data: 0
     - Name: 
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 6
       Data: 
@@ -294,6 +293,8 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  myPrefab: {fileID: 8140800353589756935, guid: 221c8846857fae44183fa285d7405eed, type: 3}
+  isGround: 0
+  isCook: 0
+  myPrefab: {fileID: 6213155385449512694, guid: d63ba42a51d75b84594445ece3a1d8d2, type: 3}
   objectSprite: {fileID: 0}
   tetrisSprite: {fileID: 0}

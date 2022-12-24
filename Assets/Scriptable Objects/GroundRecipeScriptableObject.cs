@@ -16,8 +16,10 @@ public class GroundRecipeScriptableObject : SerializedScriptableObject
 
     public ItemScriptableObject Ground(ItemScriptableObject from)
     {
-        ItemScriptableObject to = null;
-        to = groundRecipe[from];
-        return to;
+        if (groundRecipe.ContainsKey(from))
+        {
+            return groundRecipe[from];
+        }
+        return null;
     }
 }
