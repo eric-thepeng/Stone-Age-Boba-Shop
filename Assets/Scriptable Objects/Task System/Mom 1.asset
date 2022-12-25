@@ -21,32 +21,11 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: delivery
-      Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[ItemScriptableObject, Assembly-CSharp],[System.Int32,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[ItemScriptableObject,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
+    - Name: request
+      Entry: 6
       Data: 
   category: 0
-  taskName: Mom 1 - Berry Jam
-  personNam: Mom
-  personPic: {fileID: -7194776937067417985, guid: 98a64be4c94dab041b95f97446d7ee29, type: 3}
-  descriptionText: Hi son, could you fetch me some red berry and make some berry
-    jam for me? Should be pretty Simple, just take the berry, and put them into the
-    grind!
-  tradeText: trade text
+  taskName: Mom 1 - Greetings
+  descriptionText: Hi Son, \n I head 123
   completion: 0
+  unlocks: {fileID: 0}

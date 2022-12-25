@@ -10,7 +10,7 @@ public class TaskManager : MonoBehaviour
     {
         get
         {
-            if(instance == null)
+            if (instance == null)
             {
                 instance = FindObjectOfType<TaskManager>();
             }
@@ -18,9 +18,10 @@ public class TaskManager : MonoBehaviour
         }
     }
 
-    List<Task> taskBoard = new List<Task>();
-    [SerializeField]AllTaskInfo ati=null;
+    [SerializeField] List<Task> taskBoard = new List<Task>();
+    [SerializeField] AllTaskInfo ati = null;
     [SerializeField] GameObject taskTemplate;
+    [SerializeField] List<Transform> taskPlaces;
     TaskInfo displayingNow = null;
     Transform taskDescription;
 
@@ -32,6 +33,8 @@ public class TaskManager : MonoBehaviour
     private void Start()
     {
         addTask(ati.info[0]);
+        addTask(ati.info[0]);
+        addTask(ati.info[0]);
     }
 
     public void addTask(TaskInfo ti)
@@ -39,16 +42,31 @@ public class TaskManager : MonoBehaviour
         if (ti.completion != 0) return;
         if (!canAddTask()) return;
 
-        Task newTask = Instantiate(taskTemplate).GetComponent<Task>();
-        taskBoard.Add(newTask);
-        newTask.SetUp(ti);
+        GameObject newTask = Instantiate(taskTemplate);
+        print("taskBoard.count: "+ taskBoard.Count);
+        print("targetPosition: " + taskPlaces[taskBoard.Count].transform.position);
+        newTask.transform.position = taskPlaces[taskBoard.Count].transform.position;
+        taskBoard.Add(newTask.GetComponentInChildren<Task>());
+        newTask.GetComponentInChildren<Task>().SetUp(ti);
     }
 
-    public void DisplayTask(TaskInfo ti)
+     void DisplayTask(TaskInfo ti)
     {
         displayingNow = ti;
         taskDescription.GetComponent<TextMeshPro>().text = ti.descriptionText;
+    }
 
+    public void SelectTask(Task t)
+    {
+        foreach(Task i in taskBoard)
+        {
+            if (t != i) 
+            {
+                print("deselect: " + i.transform.parent.gameObject.name);
+                i.Deselect(); 
+            }
+        }
+        DisplayTask(t.myTi);
     }
 
     public void CompleteTask()
