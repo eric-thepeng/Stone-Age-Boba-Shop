@@ -13,7 +13,7 @@ public class TaskInfo : SerializedScriptableObject
     public string descriptionText;
     public Dictionary<ItemScriptableObject, int> request;
     /// <summary>
-    /// 0: not assigned 1: assigned 2: completed
+    /// 0: not assigned 1: assigned 2: completed 3: discarded
     /// </summary>
     public int completion;
     public TaskInfo unlocks;

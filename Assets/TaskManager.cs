@@ -24,6 +24,7 @@ public class TaskManager : MonoBehaviour
     [SerializeField] GameObject taskTemplate;
     [SerializeField] List<Transform> taskPlaces;
     TaskInfo displayingNow = null;
+    Task displayingTask = null;
     Transform taskDescription;
 
     private void Awake()
@@ -49,12 +50,48 @@ public class TaskManager : MonoBehaviour
         newTask.transform.position = taskPlaces[taskBoard.Count].transform.position;
         taskBoard.Add(newTask.GetComponentInChildren<Task>());
         newTask.GetComponentInChildren<Task>().SetUp(ti);
+        ti.completion = 1;
+    }
+
+    public void ClickComplete()
+    {
+        taskBoard.Remove(displayingTask);
+        displayingNow.completion = 3;
+        displayingNow = null;
+        Destroy(displayingTask.transform.parent.gameObject);
+        displayingTask = null;
+
+        transform.Find("Task Figure").gameObject.SetActive(false);
+        transform.Find("Task Description").gameObject.SetActive(false);
+        transform.Find("Task UI Background").gameObject.SetActive(false);
+        transform.Find("Task Complete Button").gameObject.SetActive(false);
+
+        for(int i =0; i<taskBoard.Count; i++)
+        {
+           taskBoard[i].transform.parent.transform.position = taskPlaces[i].transform.position;
+        }
     }
 
      void DisplayTask(TaskInfo ti)
     {
+        if (displayingNow ==null)
+        {
+            transform.Find("Task Figure").gameObject.SetActive(true);
+            transform.Find("Task Description").gameObject.SetActive(true);
+            transform.Find("Task UI Background").gameObject.SetActive(true);
+        }
+
         displayingNow = ti;
-        taskDescription.GetComponent<TextMeshPro>().text = ti.descriptionText;
+        taskDescription.GetComponent<TextMeshPro>().text = displayingNow.descriptionText;
+        if (displayingNow.completion == 2)
+        {
+            transform.Find("Task Complete Button").gameObject.SetActive(true);
+        }
+        else
+        {
+            transform.Find("Task Complete Button").gameObject.SetActive(false);
+        }
+
         if (ti.category == TaskInfo.Category.Jessie)
         {
             transform.Find("Task Figure").GetComponent<SpriteResolver>().SetCategoryAndLabel("Standing Figures", "Jessie");
@@ -88,6 +125,7 @@ public class TaskManager : MonoBehaviour
             }
         }
         DisplayTask(t.myTi);
+        displayingTask = t;
     }
 
     public void CompleteTask()
