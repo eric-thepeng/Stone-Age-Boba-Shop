@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Experimental.U2D.Animation;
 
 public class TaskManager : MonoBehaviour
 {
@@ -54,6 +55,26 @@ public class TaskManager : MonoBehaviour
     {
         displayingNow = ti;
         taskDescription.GetComponent<TextMeshPro>().text = ti.descriptionText;
+        if (ti.category == TaskInfo.Category.Jessie)
+        {
+            transform.Find("Task Figure").GetComponent<SpriteResolver>().SetCategoryAndLabel("Standing Figures", "Jessie");
+        }
+        else if (ti.category == TaskInfo.Category.Adam)
+        {
+            transform.Find("Task Figure").GetComponent<SpriteResolver>().SetCategoryAndLabel("Standing Figures", "Adam");
+        }
+        else if (ti.category == TaskInfo.Category.Charles)
+        {
+            transform.Find("Task Figure").GetComponent<SpriteResolver>().SetCategoryAndLabel("Standing Figures", "Charles");
+        }
+        else if (ti.category == TaskInfo.Category.Julie)
+        {
+            transform.Find("Task Figure").GetComponent<SpriteResolver>().SetCategoryAndLabel("Standing Figures", "Julie");
+        }
+        else if (ti.category == TaskInfo.Category.Smith)
+        {
+            transform.Find("Task Figure").GetComponent<SpriteResolver>().SetCategoryAndLabel("Standing Figures", "Smith");
+        }
     }
 
     public void SelectTask(Task t)

@@ -37,3 +37,21 @@ MonoBehaviour:
     - m_Name: Down Arrow
       m_Hash: 1382358521
       m_Sprite: {fileID: 8356074903240900185, guid: 9ba2a26138bd9a743bb72a5b33b82691, type: 3}
+  - m_Name: Standing Figures
+    m_Hash: -1820683273
+    m_CategoryList:
+    - m_Name: Jessie
+      m_Hash: -402002730
+      m_Sprite: {fileID: 907170605283607090, guid: f45ef779bb18e564b9d7dff50af02ee2, type: 3}
+    - m_Name: Julie
+      m_Hash: 1084919846
+      m_Sprite: {fileID: 5425799886767835751, guid: f45ef779bb18e564b9d7dff50af02ee2, type: 3}
+    - m_Name: Adam
+      m_Hash: 47695035
+      m_Sprite: {fileID: -1574105042640940543, guid: f45ef779bb18e564b9d7dff50af02ee2, type: 3}
+    - m_Name: Charles
+      m_Hash: -116947353
+      m_Sprite: {fileID: -7175921765203529713, guid: f45ef779bb18e564b9d7dff50af02ee2, type: 3}
+    - m_Name: Smith
+      m_Hash: 1071761647
+      m_Sprite: {fileID: 3263061697854409520, guid: f45ef779bb18e564b9d7dff50af02ee2, type: 3}
