@@ -24,8 +24,8 @@ MonoBehaviour:
     - Name: request
       Entry: 6
       Data: 
-  category: 0
+  category: 2
   taskName: Mom 1 - Greetings
-  descriptionText: Hi Son, \n I head 123
+  descriptionText: Hi Son, <br>    I head 123456
   completion: 0
   unlocks: {fileID: 0}

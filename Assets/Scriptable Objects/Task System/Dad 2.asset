@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c779361e9f57a4f468e17912900a5a1f, type: 3}
-  m_Name: AllTaskInfo
+  m_Script: {fileID: 11500000, guid: 5ff0a1ac76dec4017bcb6b4c1418ce68, type: 3}
+  m_Name: Dad 2
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -20,8 +20,12 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
-  info:
-  - {fileID: 11400000, guid: 53c580cd313ec4b77a1b97dc2b69b862, type: 2}
-  - {fileID: 11400000, guid: e228224ff8956e94eba4325fc6dc5b70, type: 2}
-  - {fileID: 11400000, guid: 5226d252679e39840aed0992d0aebda3, type: 2}
+    SerializationNodes:
+    - Name: request
+      Entry: 6
+      Data: 
+  category: 0
+  taskName: Test Task 2
+  descriptionText: Hi Brother, <br>    I head abcde
+  completion: 0
+  unlocks: {fileID: 0}

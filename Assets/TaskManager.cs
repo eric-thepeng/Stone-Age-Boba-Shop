@@ -33,8 +33,8 @@ public class TaskManager : MonoBehaviour
     private void Start()
     {
         addTask(ati.info[0]);
-        addTask(ati.info[0]);
-        addTask(ati.info[0]);
+        addTask(ati.info[1]);
+        addTask(ati.info[2]);
     }
 
     public void addTask(TaskInfo ti)

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.U2D.Animation;
 
 public class Task : MonoBehaviour
 { 
@@ -9,6 +10,26 @@ public class Task : MonoBehaviour
     public void SetUp(TaskInfo ti)
     {
         myTi = ti;
+        if(ti.category == TaskInfo.Category.Jessie)
+        {
+            GetComponent<SpriteResolver>().SetCategoryAndLabel("Task Heads","Jessie");
+        }
+        else if (ti.category == TaskInfo.Category.Adam)
+        {
+            GetComponent<SpriteResolver>().SetCategoryAndLabel("Task Heads", "Adam");
+        }
+        else if (ti.category == TaskInfo.Category.Charles)
+        {
+            GetComponent<SpriteResolver>().SetCategoryAndLabel("Task Heads", "Charles");
+        }
+        else if (ti.category == TaskInfo.Category.Julie)
+        {
+            GetComponent<SpriteResolver>().SetCategoryAndLabel("Task Heads", "Julie");
+        }
+        else if (ti.category == TaskInfo.Category.Smith)
+        {
+            GetComponent<SpriteResolver>().SetCategoryAndLabel("Task Heads", "Smith");
+        }
     }
 
     public void Deselect()
