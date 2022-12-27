@@ -7,7 +7,7 @@ public class PlayerAction : MonoBehaviour
     UpGroundObj tarObj;
     //Gatherable tarGatherable;
     CapsuleCollider myCollider;
-    public enum tool {Hand, Scythe, Axe}
+    public enum tool {Hand, Shovel, Axe}
     tool toolNow = tool.Axe;
 
     GameObject tarHighlight = null;

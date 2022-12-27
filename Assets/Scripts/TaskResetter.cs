@@ -16,6 +16,11 @@ public class TaskResetter : MonoBehaviour
             FunctionToRun();
         }
     }
+
+    private void Awake()
+    {
+        FunctionToRun();
+    }
     private void FunctionToRun()
     {
         foreach(TaskInfo ti in ati.info)

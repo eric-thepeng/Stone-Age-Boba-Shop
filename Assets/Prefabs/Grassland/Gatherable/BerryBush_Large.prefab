@@ -316,7 +316,7 @@ MonoBehaviour:
   targetCategroy: BerryBush_Large
   fullSpriteLabel: BerryOn
   emptySpriteLabel: BerryOff
-  myType: 2
+  myType: 0
   bornState: 1
   objProduce: {fileID: 6364644185954913908, guid: e288feda10ac1484f8a1592ce58ef242, type: 3}
 --- !u!136 &1600630466
