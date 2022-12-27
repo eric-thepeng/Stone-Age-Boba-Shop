@@ -9,7 +9,7 @@ public class CameraManager : MonoBehaviour
     /// <summary>
     /// 1: world 2: craft 3: task 4: shop
     /// </summary>
-    [SerializeField] int CamNow = 2;
+    [SerializeField] int CamNow;
     [SerializeField] GameObject panelBoarder;
 
     static CameraManager instance;

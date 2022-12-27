@@ -36,6 +36,7 @@ public class PlayerAction : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 tarObj.isPickable().PickUp();
+                CanvasManager.i.CloseTargetInfo();
             }
         }
     }
@@ -59,7 +60,7 @@ public class PlayerAction : MonoBehaviour
             tarHighlight.AddComponent<SpriteRenderer>();
             tarHighlight.GetComponent<SpriteRenderer>().sprite = other.GetComponent<SpriteRenderer>().sprite;
             tarHighlight.GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 0.5f);*/
-
+            CanvasManager.i.SetUpTargetInfo(other.gameObject.name);
             tarObj = other.gameObject.GetComponent<UpGroundObj>();
         }
     }
@@ -74,7 +75,7 @@ public class PlayerAction : MonoBehaviour
         }
 
         //Destroy(tarHighlight);
-
+        CanvasManager.i.CloseTargetInfo();
         tarObj = null;
     }
 }
