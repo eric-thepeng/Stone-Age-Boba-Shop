@@ -77,11 +77,31 @@ PrefabInstance:
       objectReference: {fileID: 2908824358096884421, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
     - target: {fileID: 4074336150826584233, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
       propertyPath: m_Name
-      value: Medium Stone
+      value: Medium Stone Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5774432721751564114, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
       propertyPath: m_labelHash
       value: 6.1847624e+16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160420464530847702, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.066
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160420464530847702, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160420464530847702, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9092362
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160420464530847702, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.41628075
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160420464530847702, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 49.2
       objectReference: {fileID: 0}
     - target: {fileID: 8887841843208554616, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
       propertyPath: m_Height

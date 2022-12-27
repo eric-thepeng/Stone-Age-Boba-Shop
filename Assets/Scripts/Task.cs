@@ -63,7 +63,6 @@ public class Task : MonoBehaviour
     private void OnMouseEnter()
     {
         shadow = new GameObject("shadow of " + gameObject.name);
-        //shadow.transform.position = gameObject.transform.position + shadowOffsetStandard;
         shadow.transform.parent = this.transform;
         shadow.transform.localPosition = new Vector3(0, 0.2f, 0.1f);
         shadow.transform.localScale = new Vector3(1.1f, 1.1f, 1); //gameObject.transform.localScale;
