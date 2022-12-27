@@ -28,6 +28,7 @@ public class TaskCompleteButton : MonoBehaviour
 
     private void OnMouseUp()
     {
+        transform.Find("Button").GetComponent<SpriteRenderer>().color = new Color(1, 1, 1);
         TaskManager.i.ClickComplete();
     }
 

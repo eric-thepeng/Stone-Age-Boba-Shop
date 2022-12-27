@@ -16,6 +16,19 @@ public class Inventory : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            print("Inventory Information:");
+            foreach(ItemInfo ii in Backpack)
+            {
+                print(ii.soForm.name + "  " + ii.amount);
+            }
+            print("End of Inventory Information:");
+        }
+    }
+
     /// <summary>
     /// Information to be displayed on each grid.
     /// </summary>
@@ -32,7 +45,7 @@ public class Inventory : MonoBehaviour
             soForm = inSO;
             objectSprite = soForm.objectSprite;
             tetrisSprite = soForm.tetrisSprite;
-            amount = 0;
+            amount = 1;
         }
 
         public void AddOne()
@@ -48,33 +61,42 @@ public class Inventory : MonoBehaviour
 
     public List<ItemInfo> Backpack = new List<ItemInfo>();
 
-    public void AddItem(ItemScriptableObject so)
+    public int AmountOf(ItemScriptableObject iso)
+    {
+        foreach(ItemInfo ii in Backpack)
+        {
+            if (ii.soForm == iso) return ii.amount;
+        }
+        return 0;
+    }
+
+    public void AddItem(ItemScriptableObject iso)
     {
         //add to crafting
-        CraftingManager.i.AddToCrafting(so.myPrefab);
+        CraftingManager.i.AddToCrafting(iso.myPrefab);
 
         //add to backpack
         foreach(ItemInfo ii in Backpack)
         {
-            if(ii.soForm == so)
+            if(ii.soForm == iso)
             {
                 ii.AddOne();
                 return;
             }
         }
-        Backpack.Add(new ItemInfo(so));
+        Backpack.Add(new ItemInfo(iso));
     }
 
-    public void DeleteItem(ScriptableObject so)
+    public void DeleteItem(ScriptableObject iso)
     {
         foreach (ItemInfo ii in Backpack)
         {
-            if (ii.soForm == so)
+            if (ii.soForm == iso)
             {
                 ii.MinusOne();
                 return;
             }
         }
-        print("Backpack does not have this item: " + so);
+        print("Backpack does not have this item: " + iso);
     }
 }

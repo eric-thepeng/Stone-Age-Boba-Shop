@@ -47,6 +47,14 @@ public class Task : MonoBehaviour
         GetComponentInParent<Animator>().SetBool("Selected", true);
     }
 
+    public void SelectInScript()
+    {
+        print("selected on runtime down");
+        TaskManager.i.SelectTask(this);
+        //GetComponentInParent<Animator>().SetTrigger("Select");
+        GetComponentInParent<Animator>().SetBool("Selected", true);
+    }
+
     private void OnMouseOver()
     {
         

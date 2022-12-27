@@ -16,5 +16,5 @@ public class TaskInfo : SerializedScriptableObject
     /// 0: not assigned 1: assigned 2: completed 3: discarded
     /// </summary>
     public int completion;
-    public TaskInfo unlocks;
+    public TaskInfo[] unlocks;
 }

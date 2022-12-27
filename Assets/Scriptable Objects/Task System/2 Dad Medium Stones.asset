@@ -63,5 +63,7 @@ MonoBehaviour:
     what, try to pick up three large stones for me! I\u2019ll teach you how to craft
     with them.<br>                                                              Love
     ya!<br>                                                              -- Dad"
-  completion: 0
-  unlocks: {fileID: 0}
+  completion: 3
+  unlocks:
+  - {fileID: 11400000, guid: c3b32fd9d763b0f4facb70cd78e8d577, type: 2}
+  - {fileID: 11400000, guid: 2943187e61f19544fbe5a3f3cb7b8699, type: 2}

@@ -33,5 +33,7 @@ MonoBehaviour:
     [Complete] button! <br>                                                             
     Hope you Have fun!<br>                                                             
     -- Mom
-  completion: 0
-  unlocks: {fileID: 0}
+  completion: 3
+  unlocks:
+  - {fileID: 11400000, guid: e228224ff8956e94eba4325fc6dc5b70, type: 2}
+  - {fileID: 11400000, guid: 5226d252679e39840aed0992d0aebda3, type: 2}
