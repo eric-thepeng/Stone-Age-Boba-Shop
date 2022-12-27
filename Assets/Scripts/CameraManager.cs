@@ -6,6 +6,9 @@ using Cinemachine;
 public class CameraManager : MonoBehaviour
 {
     [SerializeField] CinemachineVirtualCamera worldCMVC, craftingCMVC, taskCMVC, shopCMVC;
+    /// <summary>
+    /// 1: world 2: craft 3: task
+    /// </summary>
     [SerializeField] int CamNow = 2;
     [SerializeField] GameObject panelBoarder;
 

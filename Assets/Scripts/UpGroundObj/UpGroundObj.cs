@@ -4,21 +4,46 @@ using UnityEngine;
 
 public class UpGroundObj : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
-    void Start()
+    bool setUpTypeComplete = false;
+    Gatherable myGatherable = null;
+    Pickable myPickable = null;
+    public Gatherable isGatherable()
     {
-        
+        if (myGatherable != null) return myGatherable;
+
+        SetUpType();
+
+        if (myGatherable != null) return myGatherable;
+
+        return null;
+    }
+    public Pickable isPickable()
+    {
+        if (myPickable != null) return myPickable;
+
+        SetUpType();
+
+        if (myPickable != null) return myPickable;
+
+        return null;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetUpType()
     {
-        
+        if (setUpTypeComplete) return;
+
+        if (GetComponent<Gatherable>() != null)
+        {
+            myGatherable = GetComponent<Gatherable>();
+        }
+
+        if (GetComponent<Pickable>() != null)
+        {
+            myPickable = GetComponent<Pickable>();
+        }
+
+        setUpTypeComplete = true;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        //print("trigger enter");
-    }
+
 }

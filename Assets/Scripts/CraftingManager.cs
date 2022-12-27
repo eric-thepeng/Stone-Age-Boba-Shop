@@ -8,7 +8,7 @@ public class CraftingManager : SerializedMonoBehaviour
     Transform topLeft, bottomRight;
     [SerializeField] List<ItemScriptableObject> startingTetris = new List<ItemScriptableObject>();
 
-    [SerializeField] Dictionary<ItemScriptableObject, int> testDic = new Dictionary<ItemScriptableObject, int>();
+    //[SerializeField] Dictionary<ItemScriptableObject, int> testDic = new Dictionary<ItemScriptableObject, int>();
 
     List<GameObject> allTetris = new List<GameObject>();
     float unitLength = 0.2f;
@@ -49,7 +49,7 @@ public class CraftingManager : SerializedMonoBehaviour
         Vector3 tempPos = RandomTetrisPos();
         bool avaiable = false;
         int tryCount = 0;
-        while(avaiable == false)
+        while (avaiable == false && tryCount <= 10) 
         {
             tempPos = RandomTetrisPos();
             avaiable = true;

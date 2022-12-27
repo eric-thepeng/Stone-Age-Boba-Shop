@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
 {
-    Gatherable tarGatherable;
+    UpGroundObj tarObj;
+    //Gatherable tarGatherable;
     CapsuleCollider myCollider;
     public enum tool {Hand, Scythe, Axe}
     tool toolNow = tool.Axe;
@@ -16,17 +17,25 @@ public class PlayerAction : MonoBehaviour
 
     private void Update()
     {
-        if (tarGatherable == null) return;
-        if (Input.GetMouseButton(0))
+        if (tarObj == null) return;
+        if (tarObj.isGatherable() != null)
         {
-            tarGatherable.Gather(toolNow);
-        }
-        if (tarGatherable.CheckEmpty())
+            if (Input.GetMouseButton(0))
+            {
+                tarObj.isGatherable().Gather(toolNow);
+            }
+            if (tarObj.isGatherable().CheckEmpty())
+            {
+                tarObj = null;
+                refreshCollider();
+            }
+        }else if (tarObj.isPickable() !=null)
         {
-            tarGatherable = null;
-            refreshCollider();
+            if (Input.GetMouseButtonDown(0))
+            {
+                tarObj.isPickable().PickUp();
+            }
         }
-
     }
 
     void refreshCollider()
@@ -37,19 +46,21 @@ public class PlayerAction : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (tarGatherable == null && other.gameObject.GetComponent<Gatherable>() != null)
+        if (tarObj == null && other.gameObject.GetComponent<UpGroundObj>() != null)
         {
-            tarGatherable = other.gameObject.GetComponent<Gatherable>();
+            tarObj = other.gameObject.GetComponent<UpGroundObj>();
         }
     }
 
     private void OnTriggerExit(Collider other) //exit a area
     {
-        if (other.gameObject.GetComponent<Gatherable>() == null) return; //ignore if not gatherable
-        if(tarGatherable != null && tarGatherable == other.gameObject.GetComponent<Gatherable>()) //isGatherable and is tarGatherable, abandonGather and dislink
+        if (other.gameObject.GetComponent<UpGroundObj>() == null) return; //ignore if not UpGroundObj
+
+        if(tarObj != null && tarObj.isGatherable()) //isGatherable and is tarGatherable, abandonGather and dislink
         {
-            tarGatherable.AbandonGather();
-            tarGatherable = null;
+            tarObj.isGatherable().AbandonGather();
         }
+
+        tarObj = null;
     }
 }

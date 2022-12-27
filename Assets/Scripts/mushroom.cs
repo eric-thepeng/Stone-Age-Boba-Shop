@@ -5,7 +5,7 @@ using UnityEngine;
 public class mushroom : MonoBehaviour
 {
     [SerializeField] ItemScriptableObject thisSO;
-    bool canGet = false; //fly for 0.5s before it could be pickedup
+    //bool canGet = false; //fly for 0.5s before it could be pickedup
     IEnumerator Start()
     {
         //stage one, fly for a while
@@ -23,7 +23,7 @@ public class mushroom : MonoBehaviour
             yield return new WaitForSeconds(0);
         }
 
-        canGet = true;
+       // canGet = true;
         Vector3 orgPos = transform.position;
 
 
@@ -36,6 +36,12 @@ public class mushroom : MonoBehaviour
 
         Inventory.i.AddItem(thisSO);
         Destroy(gameObject);
+    }
+
+    public void SetUp(Sprite newSprite, ItemScriptableObject newISO)
+    {
+        GetComponent<SpriteRenderer>().sprite = newSprite;
+        thisSO = newISO;
     }
 
 }

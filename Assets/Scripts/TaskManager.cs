@@ -61,9 +61,11 @@ public class TaskManager : MonoBehaviour
         Destroy(displayingTask.transform.parent.gameObject);
         displayingTask = null;
 
+        
         transform.Find("Task Figure").gameObject.SetActive(false);
         transform.Find("Task Description").gameObject.SetActive(false);
         transform.Find("Task UI Background").gameObject.SetActive(false);
+
         transform.Find("Task Complete Button").gameObject.SetActive(false);
 
         for(int i =0; i<taskBoard.Count; i++)
@@ -75,7 +77,7 @@ public class TaskManager : MonoBehaviour
      void DisplayTask(TaskInfo ti)
     {
         if (displayingNow ==null)
-        {
+        {            
             transform.Find("Task Figure").gameObject.SetActive(true);
             transform.Find("Task Description").gameObject.SetActive(true);
             transform.Find("Task UI Background").gameObject.SetActive(true);
