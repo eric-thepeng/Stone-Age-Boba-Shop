@@ -20,6 +20,7 @@ public class Gatherable : UpGroundObj
     public state bornState;
 
     [SerializeField] GameObject objProduce;
+    [SerializeField]List<ItemScriptableObject> produceList = new List<ItemScriptableObject>();
 
     Animator animator;
 
@@ -129,10 +130,21 @@ public class Gatherable : UpGroundObj
         ChangeStateTo(state.Empty);
         if(objProduce != null)
         {
-            GameObject ngo = Instantiate(objProduce, transform.parent);
-            ngo.transform.position = transform.position;
+            StartCoroutine("ProduceIE");
         }
     }
+
+    IEnumerator ProduceIE()
+    {
+        foreach(ItemScriptableObject iso in produceList)
+        {
+            GameObject ngo = Instantiate(objProduce, transform.parent);
+            ngo.transform.position = transform.position;
+            ngo.GetComponent<mushroom>().SetUp(iso.objectSprite,iso);
+            yield return new WaitForSeconds(0.25f);
+        }
+    }
+
     public bool CheckEmpty() { return stateNow == state.Empty; }
 
     public toolMatchness GetToolMatchness(PlayerAction.tool inTool)

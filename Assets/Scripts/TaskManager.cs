@@ -76,7 +76,7 @@ public class TaskManager : MonoBehaviour
             {
                  foreach(KeyValuePair<ItemScriptableObject, int> kvp in t.myTi.request)
                 {
-                    if(Inventory.i.AmountOf(kvp.Key) < kvp.Value)
+                    if(CraftingManager.i.CheckAmountISO(kvp.Key) < kvp.Value)//Inventory.i.AmountOf(kvp.Key) < kvp.Value)
                     {
                         completion = false;
                     }

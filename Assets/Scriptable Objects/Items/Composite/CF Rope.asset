@@ -295,6 +295,6 @@ MonoBehaviour:
       Data: 
   isGround: 0
   isCook: 0
-  myPrefab: {fileID: 6213155385449512694, guid: d63ba42a51d75b84594445ece3a1d8d2, type: 3}
+  myPrefab: {fileID: 5335994768780075941, guid: d63ba42a51d75b84594445ece3a1d8d2, type: 3}
   objectSprite: {fileID: 0}
   tetrisSprite: {fileID: 0}

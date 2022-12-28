@@ -11,7 +11,7 @@ public class CraftingManager : SerializedMonoBehaviour
     //[SerializeField] Dictionary<ItemScriptableObject, int> testDic = new Dictionary<ItemScriptableObject, int>();
 
     List<GameObject> allTetris = new List<GameObject>();
-    float unitLength = 0.2f;
+    float unitLength = 0.15f;
 
     static CraftingManager instance;
     public static CraftingManager i
@@ -40,7 +40,7 @@ public class CraftingManager : SerializedMonoBehaviour
     {
         GameObject newTetris = Instantiate(go,transform);
         newTetris.transform.position = AvaiableTetrisPos();
-        newTetris.transform.localScale = new Vector3(0.2f, 0.2f, 1f);
+        newTetris.transform.localScale = new Vector3(0.15f, 0.15f, 1f);
         allTetris.Add(newTetris);
     }
 
@@ -49,7 +49,7 @@ public class CraftingManager : SerializedMonoBehaviour
         Vector3 tempPos = RandomTetrisPos();
         bool avaiable = false;
         int tryCount = 0;
-        while (avaiable == false && tryCount <= 10) 
+        while (avaiable == false && tryCount <= 50) 
         {
             tempPos = RandomTetrisPos();
             avaiable = true;
@@ -72,6 +72,18 @@ public class CraftingManager : SerializedMonoBehaviour
     }
     public void RemoveFromCrafting(GameObject go)
     {
+        allTetris.Remove(go);
+    }
 
+    public int CheckAmountISO(ItemScriptableObject toCheck)
+    {
+        int output = 0;
+
+        foreach(GameObject go in allTetris)
+        {
+            if (go.GetComponent<Tetris>().itemSO == toCheck) output += 1;
+        }
+
+        return output;
     }
 }

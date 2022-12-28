@@ -447,6 +447,7 @@ public class Tetris : MonoBehaviour
 
     IEnumerator DestroySelfProcess()
     {
+        CraftingManager.i.RemoveFromCrafting(gameObject);
         stateNow = state.Animation;
         bool animStart = false;
         float t = 0;

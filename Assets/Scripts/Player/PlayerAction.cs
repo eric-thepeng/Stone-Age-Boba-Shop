@@ -9,9 +9,6 @@ public class PlayerAction : MonoBehaviour
     CapsuleCollider myCollider;
     public enum tool {Hand, Shovel, Axe}
     tool toolNow = tool.Axe;
-
-    GameObject tarHighlight = null;
-
     private void Awake()
     {
         myCollider = GetComponent<CapsuleCollider>();

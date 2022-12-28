@@ -6,6 +6,7 @@ using TMPro;
 
 public class UI_Inventory : MonoBehaviour
 {
+    /* HERE
     public bool showing = true;
     public Transform itemSlotContainer, itemSlotTemplate, itemDescriptionContainer, itemDescriptionImage;
     UI_Displayer displayControl;
@@ -87,8 +88,9 @@ public class UI_Inventory : MonoBehaviour
         equipmentDescriptionContainer.gameObject.SetActive(false);
         charmDescriptionContainer.gameObject.SetActive(false);
         */
-    }
+    //} HERE
 
+/*HERE
     public void SetUpBackpack()
     {
         int x = 0;
@@ -122,6 +124,5 @@ public class UI_Inventory : MonoBehaviour
         itemCoord[selectedCoord].uiBlock.Find("WhenSelected").gameObject.SetActive(true);
       */
         
-    }
-    
+    //}HERE
 }

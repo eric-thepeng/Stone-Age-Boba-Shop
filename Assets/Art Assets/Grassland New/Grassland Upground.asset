@@ -55,3 +55,15 @@ MonoBehaviour:
     - m_Name: Sd_medium
       m_Hash: 1532738070
       m_Sprite: {fileID: -4473030943765370449, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
+  - m_Name: Grass
+    m_Hash: 1775022327
+    m_CategoryList:
+    - m_Name: Grass_Full
+      m_Hash: -695961960
+      m_Sprite: {fileID: -8567799685253993600, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
+    - m_Name: Grass_Empty
+      m_Hash: 1089699576
+      m_Sprite: {fileID: 4318529083015689068, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
+    - m_Name: Sd_Grass
+      m_Hash: -1824211342
+      m_Sprite: {fileID: 683103928825641082, guid: 60966a956e1fd9948834460009bee0ef, type: 3}

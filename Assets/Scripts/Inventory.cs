@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    /*
 
     static Inventory instance;
     public static Inventory i
@@ -99,4 +100,5 @@ public class Inventory : MonoBehaviour
         }
         print("Backpack does not have this item: " + iso);
     }
+    */
 }

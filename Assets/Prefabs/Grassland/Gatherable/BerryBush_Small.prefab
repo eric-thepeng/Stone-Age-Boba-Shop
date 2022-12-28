@@ -349,6 +349,9 @@ MonoBehaviour:
   myType: 0
   bornState: 1
   objProduce: {fileID: 6364644185954913908, guid: e288feda10ac1484f8a1592ce58ef242, type: 3}
+  produceList:
+  - {fileID: 11400000, guid: 40cef326d43e6d54e892d712307ada88, type: 2}
+  gatherTimeRequire: 1
 --- !u!136 &7952502657959233554
 CapsuleCollider:
   m_ObjectHideFlags: 0

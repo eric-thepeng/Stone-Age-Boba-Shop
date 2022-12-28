@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class mushroom : MonoBehaviour
 {
-    [SerializeField] ItemScriptableObject thisSO;
+    ItemScriptableObject thisSO;
     //bool canGet = false; //fly for 0.5s before it could be pickedup
     IEnumerator Start()
     {
@@ -34,13 +34,19 @@ public class mushroom : MonoBehaviour
             yield return new WaitForSeconds(0);
         }
 
-        Inventory.i.AddItem(thisSO);
+        //Inventory.i.AddItem(thisSO);
+        CraftingManager.i.AddToCrafting(thisSO.myPrefab);
         Destroy(gameObject);
     }
 
     public void SetUp(Sprite newSprite, ItemScriptableObject newISO)
     {
         GetComponent<SpriteRenderer>().sprite = newSprite;
+        thisSO = newISO;
+    }
+
+    public void SetUp(ItemScriptableObject newISO)
+    {
         thisSO = newISO;
     }
 
