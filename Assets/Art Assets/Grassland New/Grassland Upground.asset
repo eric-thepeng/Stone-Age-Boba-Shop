@@ -67,3 +67,24 @@ MonoBehaviour:
     - m_Name: Sd_Grass
       m_Hash: -1824211342
       m_Sprite: {fileID: 683103928825641082, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
+  - m_Name: Corpse
+    m_Hash: -1889434024
+    m_CategoryList:
+    - m_Name: Bones
+      m_Hash: 345719343
+      m_Sprite: {fileID: 2906849565135864632, guid: e8b005a721fb0534d823611593960f68, type: 3}
+    - m_Name: Leather_1
+      m_Hash: 1709475014
+      m_Sprite: {fileID: 1384366147945830781, guid: e8b005a721fb0534d823611593960f68, type: 3}
+    - m_Name: Leather_2
+      m_Hash: -51522180
+      m_Sprite: {fileID: 3275052463577272579, guid: e8b005a721fb0534d823611593960f68, type: 3}
+    - m_Name: Leather_3
+      m_Hash: -1947539990
+      m_Sprite: {fileID: -4679278911476231543, guid: e8b005a721fb0534d823611593960f68, type: 3}
+    - m_Name: Head
+      m_Hash: 130111906
+      m_Sprite: {fileID: -742075963255970335, guid: e8b005a721fb0534d823611593960f68, type: 3}
+    - m_Name: Shadow
+      m_Hash: 1926924059
+      m_Sprite: {fileID: 937730456958714045, guid: e8b005a721fb0534d823611593960f68, type: 3}

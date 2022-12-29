@@ -2487,7 +2487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379176024}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: -0.2, z: 20.78}
+  m_LocalPosition: {x: -0.33, y: -0.2, z: 6.28}
   m_LocalScale: {x: 0.065, y: 0.065, z: 1}
   m_Children:
   - {fileID: 1514978912}
@@ -3267,7 +3267,7 @@ Camera:
   far clip plane: 1000
   field of view: 16
   orthographic: 1
-  orthographic size: 1.8
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3290,8 +3290,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -99.25, y: 32.94, z: -12.9}
+  m_LocalRotation: {x: 0.38268176, y: -0.0027795832, z: 0.0011312767, w: 0.92387533}
+  m_LocalPosition: {x: -0.12282007, y: 36.216003, z: -28.014051}
   m_LocalScale: {x: 1, y: 0.12206574, z: 1.8779342}
   m_Children:
   - {fileID: 976504441}
@@ -3363,7 +3363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe40d3d2ac5e94c9cb559d3b10967eec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerState: 1
+  playerState: 0
 --- !u!114 &519420036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4072,6 +4072,7 @@ Transform:
   - {fileID: 713984234}
   - {fileID: 70425311}
   - {fileID: 1294163646}
+  - {fileID: 1810549775}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6559,7 +6560,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 10
+  m_Priority: 11
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 379176025}
@@ -6586,7 +6587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119217063}
   m_LocalRotation: {x: 0.38268176, y: -0.0027795834, z: 0.0011312767, w: 0.92387545}
-  m_LocalPosition: {x: 0.20717993, y: 36.216, z: -13.514049}
+  m_LocalPosition: {x: -0.12282007, y: 36.216003, z: -28.014051}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 555571269}
@@ -7020,7 +7021,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 11
+  m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
@@ -8991,6 +8992,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7517913293184065700, guid: 3fc0286fe6ac14491a647005b5861b05, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517913293184065700, guid: 3fc0286fe6ac14491a647005b5861b05, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517913293184065700, guid: 3fc0286fe6ac14491a647005b5861b05, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7866680183023494754, guid: 3fc0286fe6ac14491a647005b5861b05, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.58
@@ -10616,6 +10629,11 @@ Transform:
   m_Father: {fileID: 9094558}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!4 &1810549775 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5308408788486324858, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
+  m_PrefabInstance: {fileID: 5308408790287175285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1814957391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12123,6 +12141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NTetris_LogChunk
       objectReference: {fileID: 0}
+    - target: {fileID: 5403729691990306619, guid: 8a968c1b7be3dad498e36e69f48529c3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a968c1b7be3dad498e36e69f48529c3, type: 3}
 --- !u!1001 &1123961723844337913
@@ -12138,7 +12160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5335994768780075941, guid: d63ba42a51d75b84594445ece3a1d8d2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5335994768780075943, guid: d63ba42a51d75b84594445ece3a1d8d2, type: 3}
       propertyPath: m_RootOrder
@@ -12199,7 +12221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2094149295007211637, guid: 280d711911b14cb41b5c23f869716ede, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2094149295007211639, guid: 280d711911b14cb41b5c23f869716ede, type: 3}
       propertyPath: m_RootOrder
@@ -12304,7 +12326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4396463157496264378, guid: 3e99894aa8e437f459eae01560143df8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e99894aa8e437f459eae01560143df8, type: 3}
@@ -12470,7 +12492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8740603807408829902, guid: 7b7c56b531255194995c2abce7aa520b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8740603807408829907, guid: 7b7c56b531255194995c2abce7aa520b, type: 3}
       propertyPath: itemSO
@@ -12488,6 +12510,10 @@ PrefabInstance:
     - target: {fileID: 6250987439908843904, guid: 5ced517113c5aff4d9efb298558920d3, type: 3}
       propertyPath: m_Name
       value: NTetris_WoodBoard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250987439908843904, guid: 5ced517113c5aff4d9efb298558920d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6250987439908843906, guid: 5ced517113c5aff4d9efb298558920d3, type: 3}
       propertyPath: m_RootOrder
@@ -12613,7 +12639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4378706526817123736, guid: e37c2b848cc0f204c97f18cc9ed871f8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4378706526817123738, guid: e37c2b848cc0f204c97f18cc9ed871f8, type: 3}
       propertyPath: m_RootOrder
@@ -12715,6 +12741,10 @@ PrefabInstance:
     - target: {fileID: 5423728622697403358, guid: dfe19e93d804b2c4595d741c488da366, type: 3}
       propertyPath: m_Name
       value: NTetris_Skirt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423728622697403358, guid: dfe19e93d804b2c4595d741c488da366, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfe19e93d804b2c4595d741c488da366, type: 3}
@@ -12907,7 +12937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9203426961415685871, guid: 024b187ccf1ac9f47bf3390ac0ad53cf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 024b187ccf1ac9f47bf3390ac0ad53cf, type: 3}
@@ -12965,6 +12995,10 @@ PrefabInstance:
     - target: {fileID: 5527458078007678862, guid: 9410fba9a3621bd43b1facf8a14d570c, type: 3}
       propertyPath: m_Name
       value: NTetris_Chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527458078007678862, guid: 9410fba9a3621bd43b1facf8a14d570c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9410fba9a3621bd43b1facf8a14d570c, type: 3}
@@ -13027,6 +13061,10 @@ PrefabInstance:
     - target: {fileID: 8226322177736429911, guid: a7ba5094273fab742816717fdaa27def, type: 3}
       propertyPath: m_Name
       value: NTetris_BoneNeedle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226322177736429911, guid: a7ba5094273fab742816717fdaa27def, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7ba5094273fab742816717fdaa27def, type: 3}
@@ -13142,6 +13180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NTetris_SoftenedLeather
       objectReference: {fileID: 0}
+    - target: {fileID: 8486933246631521662, guid: 32968a9201efc6348a5a1d5e6e37b1ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32968a9201efc6348a5a1d5e6e37b1ca, type: 3}
 --- !u!1001 &4521777922504245219
@@ -13201,7 +13243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3035129324713725070, guid: 8a0e11e134e4ec543a1b2cac9f5bfd25, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a0e11e134e4ec543a1b2cac9f5bfd25, type: 3}
@@ -13580,6 +13622,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b6466bab65a5481887af6b60dbaaec0, type: 3}
+--- !u!1001 &5308408790287175285
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 613789253}
+    m_Modifications:
+    - target: {fileID: 5308408788486324858, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308408788486324858, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308408788486324858, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308408788486324858, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308408788486324858, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308408788486324858, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308408788486324858, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308408788486324858, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308408788486324858, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308408788486324858, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308408788486324858, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308408788486324859, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
+      propertyPath: m_Name
+      value: Corpse
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 45d39fdf498b17447be8dfc95ee7d1ce, type: 3}
 --- !u!1001 &5494386564883204764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13593,7 +13692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1555385438000805696, guid: 0e5dab250b7e82a459072feb392bcfc7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1555385438000805698, guid: 0e5dab250b7e82a459072feb392bcfc7, type: 3}
       propertyPath: m_RootOrder
@@ -13766,6 +13865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NTetris_Bone
       objectReference: {fileID: 0}
+    - target: {fileID: 1296615257988859934, guid: 603e16c2954465c46be507ca687c54a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 603e16c2954465c46be507ca687c54a1, type: 3}
 --- !u!1001 &6439669779630597483
@@ -13781,7 +13884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1295257949230152329, guid: 836bb09085c80e5489680e1985aadb78, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1295257949230152331, guid: 836bb09085c80e5489680e1985aadb78, type: 3}
       propertyPath: m_RootOrder
@@ -13839,6 +13942,10 @@ PrefabInstance:
     - target: {fileID: 1677528487280051801, guid: fa6db42bf47c17742a44c2442c53ac8c, type: 3}
       propertyPath: m_Name
       value: NTetris_BoneNeedleWithString
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677528487280051801, guid: fa6db42bf47c17742a44c2442c53ac8c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1677528487280051803, guid: fa6db42bf47c17742a44c2442c53ac8c, type: 3}
       propertyPath: m_RootOrder
@@ -13919,7 +14026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2906859383419099448, guid: 088f84bf71bacea4ba810412d501faff, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2906859383419099450, guid: 088f84bf71bacea4ba810412d501faff, type: 3}
       propertyPath: m_RootOrder
@@ -14617,6 +14724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NTetris_Leather
       objectReference: {fileID: 0}
+    - target: {fileID: 6128545279755309516, guid: f82f228513c0f9a448a153889ced3e05, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6128545279755309518, guid: f82f228513c0f9a448a153889ced3e05, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -14846,7 +14957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8140800353589756935, guid: 221c8846857fae44183fa285d7405eed, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8140800353589756954, guid: 221c8846857fae44183fa285d7405eed, type: 3}
       propertyPath: itemSO
@@ -14928,7 +15039,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905004352818466232, guid: 765941b93bf6c064ba09e1b883717f50, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 905004352818466234, guid: 765941b93bf6c064ba09e1b883717f50, type: 3}
       propertyPath: m_RootOrder
@@ -15126,7 +15237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286367, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
