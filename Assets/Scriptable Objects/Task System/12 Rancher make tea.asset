@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff0a1ac76dec4017bcb6b4c1418ce68, type: 3}
+  m_Name: 12 Rancher make tea
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: request
+      Entry: 6
+      Data: 
+  category: 4
+  taskName: 12 Rancher make tea
+  descriptionText: "Hi kid,<br>      What a wonderful job! Now that you\u2019ve got
+    a cup, you should learn to make the drinks!<br>      Can\u2019t be more straight
+    forward, just pour any liquid in the cup, and of course, add the tea leaves in
+    it, and put the entire cup to boil!<br>                                                             
+    Simple work make the best product!<br>                                                             
+    -- Charles"
+  completion: 0
+  unlocks: []

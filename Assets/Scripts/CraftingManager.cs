@@ -10,7 +10,7 @@ public class CraftingManager : SerializedMonoBehaviour
 
     //[SerializeField] Dictionary<ItemScriptableObject, int> testDic = new Dictionary<ItemScriptableObject, int>();
 
-    List<GameObject> allTetris = new List<GameObject>();
+    public List<GameObject> allTetris = new List<GameObject>();
     float unitLength = 0.15f;
 
     static CraftingManager instance;
@@ -42,6 +42,11 @@ public class CraftingManager : SerializedMonoBehaviour
         newTetris.transform.position = AvaiableTetrisPos();
         newTetris.transform.localScale = new Vector3(0.15f, 0.15f, 1f);
         allTetris.Add(newTetris);
+    }
+
+    public void AddToAllTetris(GameObject go)
+    {
+        allTetris.Add(go);
     }
 
     Vector3 AvaiableTetrisPos()

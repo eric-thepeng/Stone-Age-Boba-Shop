@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ff0a1ac76dec4017bcb6b4c1418ce68, type: 3}
-  m_Name: 4 Dad Make ground table
+  m_Name: 8 Rancher make a cup
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 43d6b8aba7a5c754594b28f419e8db32, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -35,35 +34,21 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 10
       Data: 0
-    - Name: $v
-      Entry: 3
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
-  category: 3
-  taskName: 4 Dad Make ground table
-  descriptionText: "Hey son,<br>      Good job, you got them! Oh wait, what, you
-    said Boba Shop not Baba Shop... Ah! I feel so embarrassed.<br>      I see you\u2019ve
-    gotten the large stones! On your crafting table, try to combine three large stones
-    side by side, you would craft a grounding table that allow you to ground or sharpen
-    these stones and unlock infinite possibilities!<br>                                                             
-    Good Luck,<br>                                                              --
-    Dad"
+  category: 4
+  taskName: 8 Rancher make a cup
+  descriptionText: "Hey Kiddo,<br>      Long time no see! It\u2019s your neighborhood
+    rancher Mr. Charles. Your mother ask me to check in on you, she says she never
+    even taught you how to make the cups?<br>      It\u2019s super easy! Just get
+    7 little stones, and combine them in a \u201CU\u201D shape! Easy Peasy<br>                                                             
+    Let me know when you are done!<br>                                                             
+    -- Charles"
   completion: 0
   unlocks:
-  - {fileID: 11400000, guid: 0527926106e8831499d923005c736021, type: 2}
-  - {fileID: 11400000, guid: a9a7201ec1cd66943bbbf1598c65d4bb, type: 2}
+  - {fileID: 11400000, guid: 02a7a9bfce0d3314b866ae74c9ff6158, type: 2}

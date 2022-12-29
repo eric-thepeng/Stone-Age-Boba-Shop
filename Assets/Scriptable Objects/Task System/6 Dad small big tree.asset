@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ff0a1ac76dec4017bcb6b4c1418ce68, type: 3}
-  m_Name: 4 Dad Make ground table
+  m_Name: 6 Dad small big tree
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 43d6b8aba7a5c754594b28f419e8db32, type: 2}
+    - {fileID: 11400000, guid: 04d5627403522224a822d33b56031571, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -55,15 +55,16 @@ MonoBehaviour:
       Entry: 8
       Data: 
   category: 3
-  taskName: 4 Dad Make ground table
-  descriptionText: "Hey son,<br>      Good job, you got them! Oh wait, what, you
-    said Boba Shop not Baba Shop... Ah! I feel so embarrassed.<br>      I see you\u2019ve
-    gotten the large stones! On your crafting table, try to combine three large stones
-    side by side, you would craft a grounding table that allow you to ground or sharpen
-    these stones and unlock infinite possibilities!<br>                                                             
-    Good Luck,<br>                                                              --
+  taskName: 6 Dad small big tree
+  descriptionText: "Hi son,<br>      You probably realized when you are gathering
+    around the area, the smaller trees you can break easily, but there are larger
+    trees that you could not take down.<br>      That\u2019s because what separates
+    us stone age people with the beasts in the wild is the use of tools! You need
+    to build an Axe! Get a wood stick, a sharpened large stone, and tie them together
+    with a rope, then you could use the axe to bring down larger trees!<br>                                                             
+    Craft on!<br>                                                              --
     Dad"
   completion: 0
   unlocks:
-  - {fileID: 11400000, guid: 0527926106e8831499d923005c736021, type: 2}
-  - {fileID: 11400000, guid: a9a7201ec1cd66943bbbf1598c65d4bb, type: 2}
+  - {fileID: 11400000, guid: b867f72299ddf9f4c9fafd8528228aa1, type: 2}
+  - {fileID: 11400000, guid: e85730f7cbd79df48aaf21470e9e2d21, type: 2}

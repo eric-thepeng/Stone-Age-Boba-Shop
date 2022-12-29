@@ -18,7 +18,7 @@ PrefabInstance:
     - target: {fileID: 5254040197621286338, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: itemSO
       value: 
-      objectReference: {fileID: 11400000, guid: c731017a9e4724f1fb435373ba53d34c, type: 2}
+      objectReference: {fileID: 11400000, guid: 04d5627403522224a822d33b56031571, type: 2}
     - target: {fileID: 5254040197621286339, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_Size.x
       value: 2
@@ -89,7 +89,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286367, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_Name
-      value: NTetris_Axe
+      value: NTetris_Axe Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6932079680682127483, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_IsActive

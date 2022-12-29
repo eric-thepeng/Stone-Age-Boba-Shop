@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ff0a1ac76dec4017bcb6b4c1418ce68, type: 3}
-  m_Name: 4 Dad Make ground table
+  m_Name: 7 Sister grass string
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 43d6b8aba7a5c754594b28f419e8db32, type: 2}
+    - {fileID: 11400000, guid: 1e2763bd561fe754fbde912e09361fe2, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -54,16 +54,14 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  category: 3
-  taskName: 4 Dad Make ground table
-  descriptionText: "Hey son,<br>      Good job, you got them! Oh wait, what, you
-    said Boba Shop not Baba Shop... Ah! I feel so embarrassed.<br>      I see you\u2019ve
-    gotten the large stones! On your crafting table, try to combine three large stones
-    side by side, you would craft a grounding table that allow you to ground or sharpen
-    these stones and unlock infinite possibilities!<br>                                                             
-    Good Luck,<br>                                                              --
-    Dad"
+  category: 0
+  taskName: '7 Sister grass string '
+  descriptionText: Hi little brother,<br>      Wow what a busy business you have
+    going on!<br>      Have you been gathering the grass outside? They are super
+    useful! They would be grounded into strings that could either be used with a
+    needle or you can combine them into bunches and you would have ropes! For now
+    could you go make me a rope?<br>                                        Love!<br>                                       
+    -- Best person in the world, Jessie
   completion: 0
   unlocks:
-  - {fileID: 11400000, guid: 0527926106e8831499d923005c736021, type: 2}
-  - {fileID: 11400000, guid: a9a7201ec1cd66943bbbf1598c65d4bb, type: 2}
+  - {fileID: 11400000, guid: efc283834dffcf4439da53b2e34fee7f, type: 2}

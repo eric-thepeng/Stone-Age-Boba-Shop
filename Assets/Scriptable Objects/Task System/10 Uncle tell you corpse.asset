@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ff0a1ac76dec4017bcb6b4c1418ce68, type: 3}
-  m_Name: 4 Dad Make ground table
+  m_Name: 10 Uncle tell you corpse
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 43d6b8aba7a5c754594b28f419e8db32, type: 2}
+    - {fileID: 11400000, guid: e34b0ee19b021e847a8424420c337c4d, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -54,16 +54,13 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  category: 3
-  taskName: 4 Dad Make ground table
-  descriptionText: "Hey son,<br>      Good job, you got them! Oh wait, what, you
-    said Boba Shop not Baba Shop... Ah! I feel so embarrassed.<br>      I see you\u2019ve
-    gotten the large stones! On your crafting table, try to combine three large stones
-    side by side, you would craft a grounding table that allow you to ground or sharpen
-    these stones and unlock infinite possibilities!<br>                                                             
-    Good Luck,<br>                                                              --
-    Dad"
+  category: 1
+  taskName: 10 Uncle tell you corpse
+  descriptionText: "Hey nephew,<br>      How\u2019s your little shop going! hope
+    I\u2019m not interrupting, but I was just hunting with your dad, and there\u2019s
+    a deer body far in the north if you want to go check it out!<br>      Bring back
+    some leather will ya? Your sister would definitely know what to do with them!<br>                                                             
+    Best,<br>                                                              -- Uncle
+    Adam"
   completion: 0
-  unlocks:
-  - {fileID: 11400000, guid: 0527926106e8831499d923005c736021, type: 2}
-  - {fileID: 11400000, guid: a9a7201ec1cd66943bbbf1598c65d4bb, type: 2}
+  unlocks: []

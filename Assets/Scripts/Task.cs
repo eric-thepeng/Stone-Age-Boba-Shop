@@ -81,8 +81,7 @@ public class Task : MonoBehaviour
         float timeCount = 0;
         while (timeCount < timeNeeded)
         {
-            print("position at: " + timeCount / timeNeeded);
-            transform.parent.position = Vector3.Lerp(startingPos, finalPos, timeCount / timeNeeded);
+            transform.parent.position = Vector3.Lerp(startingPos, finalPos, ac.Evaluate(timeCount / timeNeeded));
 
             timeCount += Time.deltaTime;
             yield return new WaitForSeconds(0);

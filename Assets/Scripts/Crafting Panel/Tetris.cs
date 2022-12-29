@@ -362,6 +362,7 @@ public class Tetris : MonoBehaviour
         }
 
         GameObject newTetris = Instantiate(product.myPrefab, rc.CentralPosition(), Quaternion.identity);
+        CraftingManager.i.AddToAllTetris(newTetris);
         foreach (Tetris t in rc.getPastTetris())
         {
             t.DestroySelf();
