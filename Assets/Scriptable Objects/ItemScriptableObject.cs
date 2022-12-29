@@ -40,7 +40,7 @@ public class ItemScriptableObject : SerializedScriptableObject
     {
         //The content of the Recipe
         //[TableMatrix(HorizontalTitle = "Recipe Matrix", SquareCells = false)
-        public ScriptableObject[,] recipe = new ScriptableObject[6, 6];
+        public ScriptableObject[,] recipe = new ScriptableObject[8, 6];
 
         //Get CoordForm of Recipe, the only form accessible.
         public List<KeyValuePair<Vector2, ScriptableObject>> getCoordForm()
