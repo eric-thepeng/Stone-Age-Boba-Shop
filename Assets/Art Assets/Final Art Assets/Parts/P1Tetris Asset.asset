@@ -34,6 +34,12 @@ MonoBehaviour:
     - m_Name: Sharp Small Stone
       m_Hash: -1806573435
       m_Sprite: {fileID: 2305069997240039378, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+    - m_Name: Bone Needle
+      m_Hash: -714160678
+      m_Sprite: {fileID: 1097241583502879805, guid: bf96acccaefb68444b519fc599be49cb, type: 3}
+    - m_Name: Bone Needle with String
+      m_Hash: 669523488
+      m_Sprite: {fileID: -2002773191614872594, guid: bf96acccaefb68444b519fc599be49cb, type: 3}
   - m_Name: 2*2Max
     m_Hash: 1935261169
     m_CategoryList:
@@ -43,6 +49,21 @@ MonoBehaviour:
     - m_Name: Sharp Medium Stone
       m_Hash: 1553587225
       m_Sprite: {fileID: -9047482760759557740, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+    - m_Name: Bone
+      m_Hash: -1787555767
+      m_Sprite: {fileID: -2142174799594696490, guid: bf96acccaefb68444b519fc599be49cb, type: 3}
+    - m_Name: Leather
+      m_Hash: -424402234
+      m_Sprite: {fileID: -8661060512416956215, guid: bf96acccaefb68444b519fc599be49cb, type: 3}
+    - m_Name: Softened Leather
+      m_Hash: 326255972
+      m_Sprite: {fileID: 1366542701679349558, guid: bf96acccaefb68444b519fc599be49cb, type: 3}
+    - m_Name: Wood Board
+      m_Hash: 364091323
+      m_Sprite: {fileID: -1829835231336673752, guid: bf96acccaefb68444b519fc599be49cb, type: 3}
+    - m_Name: Log Chunk
+      m_Hash: 205293760
+      m_Sprite: {fileID: 8552448285943813795, guid: bf96acccaefb68444b519fc599be49cb, type: 3}
   - m_Name: 3*3Max
     m_Hash: 12126513
     m_CategoryList:
@@ -64,3 +85,12 @@ MonoBehaviour:
     - m_Name: Pot
       m_Hash: 653276655
       m_Sprite: {fileID: -5609703727199617074, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+  - m_Name: Final Products
+    m_Hash: -681876768
+    m_CategoryList:
+    - m_Name: Chair
+      m_Hash: 1690463105
+      m_Sprite: {fileID: -6084201509257647052, guid: bf96acccaefb68444b519fc599be49cb, type: 3}
+    - m_Name: Skirt
+      m_Hash: 1490119930
+      m_Sprite: {fileID: 1718394525205819728, guid: bf96acccaefb68444b519fc599be49cb, type: 3}

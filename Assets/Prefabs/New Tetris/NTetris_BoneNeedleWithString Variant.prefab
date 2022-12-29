@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &209236240056034938
+--- !u!1001 &6894411785168356230
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,71 +9,71 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5254040196060017019, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.05203247
+      value: 0.055999756
       objectReference: {fileID: 0}
     - target: {fileID: 5254040196060017019, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.57298785
+      value: -0.5090027
       objectReference: {fileID: 0}
     - target: {fileID: 5254040196381047462, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.552
+      value: 0.55599976
       objectReference: {fileID: 0}
     - target: {fileID: 5254040196381047462, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.073
+      value: -0.009002686
       objectReference: {fileID: 0}
     - target: {fileID: 5254040196424143295, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.05203247
+      value: 0.055999756
       objectReference: {fileID: 0}
     - target: {fileID: 5254040196424143295, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.42701212
+      value: 0.4909973
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197175441480, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.44796753
+      value: -0.444
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197175441480, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.07298788
+      value: -0.009
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286338, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: itemSO
       value: 
-      objectReference: {fileID: 11400000, guid: 1e2763bd561fe754fbde912e09361fe2, type: 2}
+      objectReference: {fileID: 11400000, guid: 55857ee0d232ea14f9dd9163c6ea9116, type: 2}
     - target: {fileID: 5254040197621286339, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_Offset.x
-      value: 0.06
+      value: 0.056
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286339, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_Offset.y
-      value: -0.08
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286339, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.2096775
+      value: 1.2055432
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286339, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.2096775
+      value: 1.0684931
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286364, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -8743674235065198750, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+      objectReference: {fileID: -2002773191614872594, guid: bf96acccaefb68444b519fc599be49cb, type: 3}
     - target: {fileID: 5254040197621286365, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286365, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -99.278
+      value: -98.39
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286365, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 32.415
+      value: 32.4
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286365, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_LocalPosition.z
@@ -109,11 +109,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286367, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_Name
-      value: NTetris_Rope Variant
+      value: NTetris_BoneNeedleWithString
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254040197621286367, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8870944911820171859, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_labelHash
-      value: 1.3605396e-28
+      value: 6.4425597e-15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}

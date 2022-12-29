@@ -74,7 +74,7 @@ public class CameraManager : MonoBehaviour
             taskCMVC.Priority = 11;
             shopCMVC.Priority = 10;
 
-            TaskManager.i.CheckTasksCompleteState();
+            TaskManager.i.CheckTasksComplete();
         }
         else if (which == 4) //switch to shop
         {

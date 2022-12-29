@@ -6,6 +6,7 @@ using UnityEngine.Experimental.U2D.Animation;
 public class Task : MonoBehaviour
 { 
     public TaskInfo myTi;
+    public AnimationCurve ac;
     GameObject shadow;
     public void SetUp(TaskInfo ti)
     {
@@ -54,12 +55,6 @@ public class Task : MonoBehaviour
         //GetComponentInParent<Animator>().SetTrigger("Select");
         GetComponentInParent<Animator>().SetBool("Selected", true);
     }
-
-    private void OnMouseOver()
-    {
-        
-    }
-
     private void OnMouseEnter()
     {
         shadow = new GameObject("shadow of " + gameObject.name);
@@ -73,5 +68,24 @@ public class Task : MonoBehaviour
     private void OnMouseExit()
     {
         Destroy(shadow);
+    }
+
+    public void MoveTo(Vector3 finalPos)
+    {
+        StartCoroutine(MoveToInSec(finalPos,1f));
+    }
+
+    IEnumerator MoveToInSec(Vector3 inputFinalPos, float timeNeeded)
+    {
+        Vector3 startingPos = transform.parent.position, finalPos = inputFinalPos;
+        float timeCount = 0;
+        while (timeCount < timeNeeded)
+        {
+            print("position at: " + timeCount / timeNeeded);
+            transform.parent.position = Vector3.Lerp(startingPos, finalPos, timeCount / timeNeeded);
+
+            timeCount += Time.deltaTime;
+            yield return new WaitForSeconds(0);
+        }
     }
 }

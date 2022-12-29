@@ -36,7 +36,7 @@ public class TaskManager : MonoBehaviour
     {
         addTask(ati.info[0]);
         //SelectTask(taskBoard[0]);
-        CheckTasksCompleteState();
+        CheckTasksComplete();
         taskBoard[0].SelectInScript();
         //addTask(ati.info[1]);
         //addTask(ati.info[2]);
@@ -48,15 +48,21 @@ public class TaskManager : MonoBehaviour
         if (!canAddTask()) return;
 
         GameObject newTask = Instantiate(taskTemplate);
-        //("taskBoard.count: "+ taskBoard.Count);
-        //print("targetPosition: " + taskPlaces[taskBoard.Count].transform.position);
-        newTask.transform.position = taskPlaces[taskBoard.Count].transform.position;
+        if (ti == ati.info[0])
+        {
+            newTask.transform.position = taskPlaces[taskBoard.Count].transform.position;
+        }
+        else
+        {
+            newTask.transform.position = taskPlaces[taskBoard.Count].transform.position + new Vector3(7f, 0f, 0f);
+            newTask.GetComponentInChildren<Task>().MoveTo(taskPlaces[taskBoard.Count].transform.position);
+        }
         taskBoard.Add(newTask.GetComponentInChildren<Task>());
         newTask.GetComponentInChildren<Task>().SetUp(ti);
         ti.completion = 1;
     }
 
-    public void CheckTasksCompleteState()
+    public void CheckTasksComplete()
     {
         foreach(Task t in taskBoard)
         {
@@ -91,11 +97,7 @@ public class TaskManager : MonoBehaviour
                 }
             }
         }
-        RefreshCompletion();
-    }
 
-    void RefreshCompletion()
-    {
         if (displayingNow == null) return;
         if (displayingNow.completion == 2)
         {
@@ -106,6 +108,7 @@ public class TaskManager : MonoBehaviour
             transform.Find("Task Complete Button").gameObject.SetActive(false);
         }
     }
+
 
     public void ClickComplete()
     {
@@ -121,7 +124,7 @@ public class TaskManager : MonoBehaviour
 
         for (int i =0; i<taskBoard.Count; i++)
         {
-           taskBoard[i].transform.parent.transform.position = taskPlaces[i].transform.position;
+            taskBoard[i].MoveTo(taskPlaces[i].transform.position);//.transform.parent.transform.position = taskPlaces[i].transform.position;
         }
 
         foreach(TaskInfo iso in displayingNow.unlocks)
@@ -131,6 +134,7 @@ public class TaskManager : MonoBehaviour
 
         displayingNow.completion = 3;
         displayingNow = null;
+
     }
 
      void DisplayTask(TaskInfo ti)
@@ -145,7 +149,7 @@ public class TaskManager : MonoBehaviour
         displayingNow = ti;
         taskDescription.GetComponent<TextMeshPro>().text = displayingNow.descriptionText;
 
-        RefreshCompletion();
+        CheckTasksComplete();
 
         if (ti.category == TaskInfo.Category.Jessie)
         {
