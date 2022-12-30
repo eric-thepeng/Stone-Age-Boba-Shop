@@ -164,6 +164,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: Stone Axe
+  isGround: 0
+  isCook: 0
   myPrefab: {fileID: 1555385438000805696, guid: 0e5dab250b7e82a459072feb392bcfc7, type: 3}
   objectSprite: {fileID: 0}
   tetrisSprite: {fileID: 0}

@@ -326,12 +326,13 @@ public class Tetris : MonoBehaviour
     void CheckMerging(RecipeCombiator rc)
     {
         ItemScriptableObject product = null;
-        //rc.DebugPrint();
+        rc.DebugPrint();
 
         if (rc.isGrind())
         {
             product = groundRecipeSO.Ground(itemSO);
-        }else if (rc.isCook())
+        }
+        else if (rc.isCook())
         {
             product = boilRecipeSO.Ground(itemSO);
         }
@@ -375,6 +376,7 @@ public class Tetris : MonoBehaviour
 
         GameObject newTetris = Instantiate(product.myPrefab, rc.CentralPosition(), Quaternion.identity);
         CraftingManager.i.AddToAllTetris(newTetris);
+
         foreach (Tetris t in rc.getPastTetris())
         {
             t.DestroySelf();
@@ -464,7 +466,7 @@ public class Tetris : MonoBehaviour
         stateNow = state.Animation;
         bool animStart = false;
         float t = 0;
-        while (t < 0.3)
+        while (t < 0.5)
         {
             if(animStart == false && t > 0.15)
             {

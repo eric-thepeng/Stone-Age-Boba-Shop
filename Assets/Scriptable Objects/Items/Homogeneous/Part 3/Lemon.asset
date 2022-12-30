@@ -200,6 +200,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: Whole Lemon
   isGround: 0
   isCook: 0
   myPrefab: {fileID: 4769519577590411599, guid: 6065411d9ccb729429d1725db543c7d7, type: 3}

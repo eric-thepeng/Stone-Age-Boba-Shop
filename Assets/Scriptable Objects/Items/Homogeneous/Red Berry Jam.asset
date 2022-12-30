@@ -164,7 +164,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: Berry Jam
+  isGround: 0
+  isCook: 0
   myPrefab: {fileID: 0}
-  mergeOutput: {fileID: 0}
   objectSprite: {fileID: 21300000, guid: 6208920afd495fe44916c4d3fc92f97e, type: 3}
   tetrisSprite: {fileID: -5885673762636401614, guid: b9bd25d2fa3684bb29fdc3a8f57a46e3, type: 3}

@@ -164,6 +164,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: Threaded Needle
   isGround: 0
   isCook: 0
   myPrefab: {fileID: 1677528487280051801, guid: fa6db42bf47c17742a44c2442c53ac8c, type: 3}

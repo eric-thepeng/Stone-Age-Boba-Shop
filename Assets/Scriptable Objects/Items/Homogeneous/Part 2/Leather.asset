@@ -164,6 +164,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: Raw Leather
   isGround: 0
   isCook: 0
   myPrefab: {fileID: 6128545279755309516, guid: f82f228513c0f9a448a153889ced3e05, type: 3}

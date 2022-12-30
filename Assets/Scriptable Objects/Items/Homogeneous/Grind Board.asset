@@ -164,6 +164,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: Grounding Board
   isGround: 1
   isCook: 0
   myPrefab: {fileID: 2906859383419099448, guid: 088f84bf71bacea4ba810412d501faff, type: 3}

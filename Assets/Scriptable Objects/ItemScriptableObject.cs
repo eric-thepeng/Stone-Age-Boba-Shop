@@ -12,6 +12,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ItemScriptableObject", menuName = "ScriptableObjects/ItemScriptableObject")]
 public class ItemScriptableObject : SerializedScriptableObject
 {
+    public string tetrisHoverName = "not set";
     public bool isGround = false, isCook = false;
     public GameObject myPrefab = null; //For ITEM specifically (homogeneous)
     public List<Recipe> allRecipes = new List<Recipe>();

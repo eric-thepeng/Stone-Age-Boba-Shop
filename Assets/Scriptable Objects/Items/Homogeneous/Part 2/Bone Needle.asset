@@ -164,6 +164,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: Bone Needle
   isGround: 0
   isCook: 0
   myPrefab: {fileID: 8226322177736429911, guid: a7ba5094273fab742816717fdaa27def, type: 3}

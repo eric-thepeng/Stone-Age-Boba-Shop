@@ -200,6 +200,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: Raw Taro
   isGround: 0
   isCook: 0
   myPrefab: {fileID: 356576066445141787, guid: addf88f795722554ebe9238abe5f0f33, type: 3}

@@ -7,11 +7,19 @@ public class Pickable : UpGroundObj
     [SerializeField] GameObject objProduce;
     [SerializeField] int produceAmount = 1;
     [SerializeField] ItemScriptableObject isoToGet;
+    [SerializeField] Sprite staticPop = null;
     // Start is called before the first frame update
+    bool staticCanPickUp = true;
 
     public void PickUp()
     {
-        if (objProduce != null)
+        if(staticPop != null)
+        {
+            if (!staticCanPickUp) return;
+            staticCanPickUp = false;
+            StartCoroutine(StaticPickUpIE());
+        }
+        else if (objProduce != null)
         {
             StartCoroutine(PickUpIE());
         }
@@ -36,5 +44,14 @@ public class Pickable : UpGroundObj
             }
             yield return new WaitForSeconds(0.3f);
         }
+    }
+    IEnumerator StaticPickUpIE()
+    {
+
+        GameObject ngo = Instantiate(objProduce, transform.parent);
+        ngo.transform.position = transform.position;
+        ngo.GetComponent<mushroom>().SetUp(staticPop, isoToGet);
+        yield return new WaitForSeconds(1f);
+        staticCanPickUp = true;
     }
 }

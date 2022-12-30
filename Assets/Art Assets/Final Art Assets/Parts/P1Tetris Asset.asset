@@ -94,6 +94,21 @@ MonoBehaviour:
     - m_Name: Skirt
       m_Hash: 1490119930
       m_Sprite: {fileID: 1774631848261400959, guid: 3aa6347c473c55847a2f1874ff1ca3d7, type: 3}
+    - m_Name: Red Bean Milk Tea
+      m_Hash: 1954932051
+      m_Sprite: {fileID: -8738443562925851010, guid: 6377b6ba84cf3b346b5ec9ae89fcd380, type: 3}
+    - m_Name: Taro Milk Tea
+      m_Hash: -1522942617
+      m_Sprite: {fileID: 3117862209102829032, guid: 6377b6ba84cf3b346b5ec9ae89fcd380, type: 3}
+    - m_Name: Lemon Tea
+      m_Hash: -1696729958
+      m_Sprite: {fileID: 5631502668423887460, guid: 6377b6ba84cf3b346b5ec9ae89fcd380, type: 3}
+    - m_Name: Honey Tea
+      m_Hash: 339921719
+      m_Sprite: {fileID: -3152204174092356823, guid: 6377b6ba84cf3b346b5ec9ae89fcd380, type: 3}
+    - m_Name: Table
+      m_Hash: 937992258
+      m_Sprite: {fileID: -239340834657981313, guid: 6377b6ba84cf3b346b5ec9ae89fcd380, type: 3}
   - m_Name: 1*1 Part3
     m_Hash: -1506661626
     m_CategoryList:
@@ -118,3 +133,45 @@ MonoBehaviour:
     - m_Name: Red Bean
       m_Hash: 1357292828
       m_Sprite: {fileID: -7965936062899599359, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+  - m_Name: Drinks
+    m_Hash: -310667713
+    m_CategoryList:
+    - m_Name: Water Still
+      m_Hash: 480023952
+      m_Sprite: {fileID: 8222626419020289559, guid: 3aa6347c473c55847a2f1874ff1ca3d7, type: 3}
+    - m_Name: Water Boil
+      m_Hash: 122224240
+      m_Sprite: {fileID: 7857756172115017733, guid: 3aa6347c473c55847a2f1874ff1ca3d7, type: 3}
+    - m_Name: Milk
+      m_Hash: 471085864
+      m_Sprite: {fileID: -6413392391474513002, guid: 3aa6347c473c55847a2f1874ff1ca3d7, type: 3}
+    - m_Name: Cup
+      m_Hash: -1882188284
+      m_Sprite: {fileID: 2689276503028845041, guid: 6377b6ba84cf3b346b5ec9ae89fcd380, type: 3}
+    - m_Name: Cup Water Leaves
+      m_Hash: -1110956029
+      m_Sprite: {fileID: -1072640240350623525, guid: 6377b6ba84cf3b346b5ec9ae89fcd380, type: 3}
+    - m_Name: Cup Milk Leaves
+      m_Hash: 590474734
+      m_Sprite: {fileID: -928696487072921674, guid: 6377b6ba84cf3b346b5ec9ae89fcd380, type: 3}
+  - m_Name: New Category
+    m_Hash: -1887952825
+    m_CategoryList:
+    - m_Name: Water Still
+      m_Hash: 480023952
+      m_Sprite: {fileID: 8222626419020289559, guid: 3aa6347c473c55847a2f1874ff1ca3d7, type: 3}
+    - m_Name: Water Boil
+      m_Hash: 122224240
+      m_Sprite: {fileID: 7857756172115017733, guid: 3aa6347c473c55847a2f1874ff1ca3d7, type: 3}
+    - m_Name: Milk
+      m_Hash: 471085864
+      m_Sprite: {fileID: -6413392391474513002, guid: 3aa6347c473c55847a2f1874ff1ca3d7, type: 3}
+    - m_Name: Cup
+      m_Hash: -1882188284
+      m_Sprite: {fileID: -4572755070053031185, guid: 3aa6347c473c55847a2f1874ff1ca3d7, type: 3}
+    - m_Name: Cup Water Leaves
+      m_Hash: -1110956029
+      m_Sprite: {fileID: -8362495894953863115, guid: 8198feffcd99e7543a3a325a30576ea8, type: 3}
+    - m_Name: Cup Milk Leaves
+      m_Hash: 590474734
+      m_Sprite: {fileID: -7629328893885925916, guid: 8198feffcd99e7543a3a325a30576ea8, type: 3}

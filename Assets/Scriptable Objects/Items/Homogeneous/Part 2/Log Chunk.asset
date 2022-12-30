@@ -164,6 +164,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: Log Chunk
   isGround: 0
   isCook: 0
   myPrefab: {fileID: 5403729691990306619, guid: 8a968c1b7be3dad498e36e69f48529c3, type: 3}

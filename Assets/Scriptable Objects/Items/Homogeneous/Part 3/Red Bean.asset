@@ -200,6 +200,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: Red Bean
   isGround: 0
   isCook: 0
   myPrefab: {fileID: 7176902390720655456, guid: f9b63a21d6c669d41b63cb9dc53526b8, type: 3}

@@ -164,6 +164,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: Sharp Small Stone
+  isGround: 0
+  isCook: 0
   myPrefab: {fileID: 2094149295007211637, guid: 280d711911b14cb41b5c23f869716ede, type: 3}
   objectSprite: {fileID: 0}
   tetrisSprite: {fileID: 0}

@@ -164,6 +164,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: Grass
   isGround: 0
   isCook: 0
   myPrefab: {fileID: 9203426961415685871, guid: 024b187ccf1ac9f47bf3390ac0ad53cf, type: 3}

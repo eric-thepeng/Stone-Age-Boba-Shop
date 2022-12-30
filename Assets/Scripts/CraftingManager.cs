@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using TMPro;
 
 public class CraftingManager : SerializedMonoBehaviour
 {
@@ -106,6 +107,7 @@ public class CraftingManager : SerializedMonoBehaviour
         Vector3 toSet = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, transform.Find("NameUI").transform.position.z);
         transform.Find("NameUI").transform.position = toSet;
         transform.Find("NameUI").gameObject.SetActive(true);
+        transform.Find("NameUI").gameObject.GetComponentInChildren<TextMeshPro>().text = iso.tetrisHoverName;
 
     }
     public void mouseClickTetris()
