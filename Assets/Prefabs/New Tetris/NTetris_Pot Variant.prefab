@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5584574705770321785}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.63, y: 1.75, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 8740603807408829900}
   m_RootOrder: 6
@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFacing: 0
+  shape: 5
   attachedCoordination: {x: 0, y: 0}
   myTetris: {fileID: 0}
   oppositeTetris: {fileID: 0}
@@ -168,7 +169,7 @@ Transform:
   m_GameObject: {fileID: 7085019038911010346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.58, y: 1.75, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 8740603807408829900}
   m_RootOrder: 5
@@ -258,6 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFacing: 0
+  shape: 5
   attachedCoordination: {x: 0, y: 0}
   myTetris: {fileID: 0}
   oppositeTetris: {fileID: 0}
@@ -307,7 +309,7 @@ Transform:
   m_GameObject: {fileID: 8287018622610910985}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.47, y: 1.75, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 8740603807408829900}
   m_RootOrder: 4
@@ -397,6 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFacing: 0
+  shape: 5
   attachedCoordination: {x: 0, y: 0}
   myTetris: {fileID: 0}
   oppositeTetris: {fileID: 0}
@@ -435,6 +438,14 @@ PrefabInstance:
     - target: {fileID: 3009161820232355706, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254040196424143295, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254040196424143295, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5254040196424143295, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -510,7 +521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286367, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_Name
-      value: NTetris_Pot
+      value: NTetris_Pot Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6932079680682127483, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_IsActive

@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2751584857554432805, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
+      propertyPath: shape
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551068791040409770, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
+      propertyPath: shape
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286338, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: itemSO
       value: 
@@ -69,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286367, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_Name
-      value: NTetris_SharpSmallStone
+      value: NTetris_SharpSmallStone Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8870944911820171859, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_labelHash

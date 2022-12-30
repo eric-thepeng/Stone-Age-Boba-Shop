@@ -53,7 +53,7 @@ public class ProgressBar : MonoBehaviour
 
     void Update()
     {
-        print(tCount + "   " +(lastTimeScale - targetTransform.localScale).magnitude);
+        //print(tCount + "   " +(lastTimeScale - targetTransform.localScale).magnitude);
         if(tCount > tRefresh)
         {
             if (lastTimeScale == targetTransform.localScale)

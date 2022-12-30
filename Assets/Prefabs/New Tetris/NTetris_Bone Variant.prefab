@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFacing: 0
+  shape: 5
   attachedCoordination: {x: 1, y: 0}
   myTetris: {fileID: 0}
   oppositeTetris: {fileID: 0}
@@ -258,6 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFacing: 1
+  shape: 5
   attachedCoordination: {x: 1, y: 0}
   myTetris: {fileID: 0}
   oppositeTetris: {fileID: 0}

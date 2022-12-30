@@ -8,7 +8,7 @@ public class PlayerAction : MonoBehaviour
     //Gatherable tarGatherable;
     CapsuleCollider myCollider;
     public enum tool {Hand, Shovel, Axe}
-    tool toolNow = tool.Axe;
+    tool toolNow = tool.Hand;
     private void Awake()
     {
         myCollider = GetComponent<CapsuleCollider>();
@@ -16,6 +16,42 @@ public class PlayerAction : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetMouseButtonDown(1))
+        {
+            //Hand -> Shovel -> Axe -> Hand
+            if (toolNow == tool.Hand)
+            {
+                if (UI_Tools.i.hasShovel())
+                {
+                    toolNow = tool.Shovel;
+                    UI_Tools.i.switchTool(2);
+                }
+                else if (UI_Tools.i.hasAxe())
+                {
+                    toolNow = tool.Axe;
+                    UI_Tools.i.switchTool(3);
+                }
+            }
+            else if (toolNow == tool.Shovel)
+            {
+                if (UI_Tools.i.hasAxe())
+                {
+                    toolNow = tool.Axe;
+                    UI_Tools.i.switchTool(3);
+                }
+                else
+                {
+                    toolNow = tool.Hand;
+                    UI_Tools.i.switchTool(1);
+                }
+            }
+            else if (toolNow == tool.Axe)
+            {
+                toolNow = tool.Hand;
+                UI_Tools.i.switchTool(1);
+            }
+        }
+
         if (tarObj == null) return;
         if (tarObj.isGatherable() != null)
         {
@@ -36,6 +72,8 @@ public class PlayerAction : MonoBehaviour
                 CanvasManager.i.CloseTargetInfo();
             }
         }
+
+        
     }
 
     void refreshCollider()

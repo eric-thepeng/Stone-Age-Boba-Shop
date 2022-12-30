@@ -7,6 +7,9 @@ public class Edge : MonoBehaviour
     public enum facing {Up, Down, Left, Right}
     public facing myFacing;
 
+    public enum Shape {TrianglePos, TriangleNeg, Square, Circle, Smooth, Wave}
+    public Shape shape = Shape.Smooth;
+
     public Vector2 attachedCoordination;
 
     public Tetris myTetris;
@@ -47,7 +50,7 @@ public class Edge : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) //To log if there is a connected edge
     {
-        if (collision.GetComponent<Edge>() != null && checkFacingMatch(myFacing, collision.GetComponent<Edge>().myFacing))
+        if (collision.GetComponent<Edge>() != null && checkFacingMatch(myFacing, collision.GetComponent<Edge>().myFacing) && checkShapeMatch(shape, collision.GetComponent<Edge>().shape) )
         {
             touchingEdges.Add(collision.GetComponent<Edge>());
         }
@@ -78,6 +81,21 @@ public class Edge : MonoBehaviour
 
         print("error at getAttachToDirection()");
         return new Vector2(0, 0);
+    }
+
+    public bool checkShapeMatch(Shape one, Shape two)
+    {
+        if(one == Shape.TriangleNeg)
+        {
+            if (two == Shape.TrianglePos) return true;
+        }
+        else if(one == Shape.TrianglePos)
+        {
+            if (two == Shape.TriangleNeg) return true;
+        }
+        else if(one == two) return true;
+
+        return false;
     }
 
     //Check if the two edges are facing each other so that they can be connected

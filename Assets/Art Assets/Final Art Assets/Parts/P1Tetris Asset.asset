@@ -18,7 +18,7 @@ MonoBehaviour:
     m_CategoryList:
     - m_Name: Berry
       m_Hash: -1957915177
-      m_Sprite: {fileID: -196169763218773290, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+      m_Sprite: {fileID: 2576410293824126915, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
     - m_Name: Grass
       m_Hash: 1775022327
       m_Sprite: {fileID: -5954377862457118630, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
@@ -94,3 +94,27 @@ MonoBehaviour:
     - m_Name: Skirt
       m_Hash: 1490119930
       m_Sprite: {fileID: 1718394525205819728, guid: bf96acccaefb68444b519fc599be49cb, type: 3}
+  - m_Name: 1*1 Part3
+    m_Hash: -1506661626
+    m_CategoryList:
+    - m_Name: Lemon
+      m_Hash: 1605969440
+      m_Sprite: {fileID: 5349890354615082825, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: Lemon Slice
+      m_Hash: -1030442202
+      m_Sprite: {fileID: -2916588129576266563, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: Taro
+      m_Hash: -331710141
+      m_Sprite: {fileID: -5676432377886418806, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: Taro Jam
+      m_Hash: 1457375609
+      m_Sprite: {fileID: -5405975322714597247, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: Honey
+      m_Hash: -1090604144
+      m_Sprite: {fileID: -7123279281847417720, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: Tea Leaves
+      m_Hash: -1118496036
+      m_Sprite: {fileID: 8474606459734264878, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: Red Bean
+      m_Hash: 1357292828
+      m_Sprite: {fileID: -7965936062899599359, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}

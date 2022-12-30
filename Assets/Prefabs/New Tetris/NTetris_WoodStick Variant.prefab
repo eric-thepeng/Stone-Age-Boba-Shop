@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFacing: 3
+  shape: 4
   attachedCoordination: {x: 0, y: 2}
   myTetris: {fileID: 0}
   oppositeTetris: {fileID: 0}
@@ -258,6 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFacing: 3
+  shape: 1
   attachedCoordination: {x: 0, y: 0}
   myTetris: {fileID: 0}
   oppositeTetris: {fileID: 0}
@@ -397,6 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFacing: 2
+  shape: 1
   attachedCoordination: {x: 0, y: 0}
   myTetris: {fileID: 0}
   oppositeTetris: {fileID: 0}
@@ -536,6 +539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFacing: 2
+  shape: 4
   attachedCoordination: {x: 0, y: 2}
   myTetris: {fileID: 0}
   oppositeTetris: {fileID: 0}
@@ -564,11 +568,27 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1114030798369044892, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
+      propertyPath: shape
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114030798369044892, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: attachedCoordination.y
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2751584857554432805, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
+      propertyPath: shape
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2751584857554432805, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: attachedCoordination.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962787996787934976, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
+      propertyPath: shape
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551068791040409770, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
+      propertyPath: shape
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4551068791040409770, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
@@ -649,7 +669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286367, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_Name
-      value: NTetris_WoodStick
+      value: NTetris_WoodStick Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8870944911820171859, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_labelHash

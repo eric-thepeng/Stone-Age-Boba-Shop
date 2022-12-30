@@ -7,6 +7,7 @@ public class CraftingManager : SerializedMonoBehaviour
 {
     Transform topLeft, bottomRight;
     [SerializeField] List<ItemScriptableObject> startingTetris = new List<ItemScriptableObject>();
+    [SerializeField] ItemScriptableObject axeISO, shovelISO;
 
     //[SerializeField] Dictionary<ItemScriptableObject, int> testDic = new Dictionary<ItemScriptableObject, int>();
 
@@ -47,6 +48,14 @@ public class CraftingManager : SerializedMonoBehaviour
     public void AddToAllTetris(GameObject go)
     {
         allTetris.Add(go);
+        if(go.GetComponent<Tetris>().itemSO == axeISO)
+        {
+            UI_Tools.i.addAxe();
+        }
+        else if(go.GetComponent<Tetris>().itemSO == shovelISO)
+        {
+            UI_Tools.i.addShovel();
+        }
     }
 
     Vector3 AvaiableTetrisPos()
@@ -90,5 +99,21 @@ public class CraftingManager : SerializedMonoBehaviour
         }
 
         return output;
+    }
+
+    public void mouseEnterTetris(ItemScriptableObject iso)
+    {
+        Vector3 toSet = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, transform.Find("NameUI").transform.position.z);
+        transform.Find("NameUI").transform.position = toSet;
+        transform.Find("NameUI").gameObject.SetActive(true);
+
+    }
+    public void mouseClickTetris()
+    {
+        transform.Find("NameUI").gameObject.SetActive(false);
+    }
+    public void mouseExitTetris()
+    {
+        transform.Find("NameUI").gameObject.SetActive(false);
     }
 }

@@ -258,8 +258,19 @@ public class Tetris : MonoBehaviour
         stateNow = newState;
     }
 
+    private void OnMouseEnter()
+    {
+        CraftingManager.i.mouseEnterTetris(itemSO);
+    }
+
+    private void OnMouseExit()
+    {
+        CraftingManager.i.mouseExitTetris();
+    }
+
     private void OnMouseDown()
     {
+        CraftingManager.i.mouseClickTetris();
         if(stateNow == state.Merge)
         {
             myRC.StopMerge();
@@ -314,7 +325,7 @@ public class Tetris : MonoBehaviour
     void CheckMerging(RecipeCombiator rc)
     {
         ItemScriptableObject product = null;
-        rc.DebugPrint();
+        //rc.DebugPrint();
 
         if (rc.isGrind())
         {
