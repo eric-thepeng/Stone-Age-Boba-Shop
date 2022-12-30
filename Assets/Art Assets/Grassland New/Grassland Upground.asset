@@ -88,3 +88,33 @@ MonoBehaviour:
     - m_Name: Shadow
       m_Hash: 1926924059
       m_Sprite: {fileID: 937730456958714045, guid: e8b005a721fb0534d823611593960f68, type: 3}
+  - m_Name: Digs
+    m_Hash: -1853604545
+    m_CategoryList:
+    - m_Name: TaroOn
+      m_Hash: -572961248
+      m_Sprite: {fileID: -8904591383201899170, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: TaroOff
+      m_Hash: -2051450770
+      m_Sprite: {fileID: 5271467622880218444, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: RedBeanOn
+      m_Hash: 1378189812
+      m_Sprite: {fileID: 2672235065980903658, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: TeaOn
+      m_Hash: -1816713307
+      m_Sprite: {fileID: -2761018692833028406, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: TeaOff
+      m_Hash: 405094824
+      m_Sprite: {fileID: 3357834378750764985, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: Sd_Tea
+      m_Hash: -1920049725
+      m_Sprite: {fileID: 3357834378750764985, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: Sd_Taro
+      m_Hash: 1795778397
+      m_Sprite: {fileID: 6027129209706939596, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: Sd_RedBean
+      m_Hash: 353131713
+      m_Sprite: {fileID: 8691174202979584133, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
+    - m_Name: RedBeanOff
+      m_Hash: 76067436
+      m_Sprite: {fileID: 2672235065980903658, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}

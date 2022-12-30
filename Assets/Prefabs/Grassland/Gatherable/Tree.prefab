@@ -335,6 +335,7 @@ MonoBehaviour:
   myType: 2
   bornState: 1
   objProduce: {fileID: 0}
+  produceList: []
   gatherTimeRequire: 3
 --- !u!136 &8678139661735274996
 CapsuleCollider:

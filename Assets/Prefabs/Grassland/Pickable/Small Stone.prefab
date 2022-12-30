@@ -89,7 +89,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4074336150826584233}
-  m_LocalRotation: {x: 0.38268343, y: -0, z: -0, w: 0.92387956}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 2.65, y: -0.095, z: 6.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -189,7 +189,7 @@ CapsuleCollider:
   m_Radius: 0.22584823
   m_Height: 1.1292411
   m_Direction: 0
-  m_Center: {x: 0.09091668, y: 0.38583806, z: -0.00059315766}
+  m_Center: {x: 0.09091668, y: 0.18, z: -0.09}
 --- !u!114 &1516308008160128293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,8 +202,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624d3b4a8381e0045b9e26349ee2b67c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayName: Small Stone
   objProduce: {fileID: 6364644185954913908, guid: e288feda10ac1484f8a1592ce58ef242, type: 3}
+  produceAmount: 1
   isoToGet: {fileID: 11400000, guid: 11f5a6fe9c6daa841b74e6aa0101d0f4, type: 2}
+  staticPop: {fileID: 0}
 --- !u!1 &4369558224869700550
 GameObject:
   m_ObjectHideFlags: 0

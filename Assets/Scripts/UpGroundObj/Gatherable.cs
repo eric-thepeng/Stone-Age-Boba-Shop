@@ -140,8 +140,8 @@ public class Gatherable : UpGroundObj
         {
             GameObject ngo = Instantiate(objProduce, transform.parent);
             ngo.transform.position = transform.position;
-            ngo.GetComponent<mushroom>().SetUp(iso.objectSprite,iso);
-            yield return new WaitForSeconds(0.25f);
+            ngo.GetComponent<mushroom>().SetUp(iso.objectSprite,iso, 0.7f);
+            yield return new WaitForSeconds(0.5f);
         }
     }
 

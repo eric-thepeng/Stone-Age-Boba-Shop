@@ -36,7 +36,7 @@ public class Pickable : UpGroundObj
         {
             GameObject ngo = Instantiate(objProduce, transform.parent);
             ngo.transform.position = transform.position;
-            ngo.GetComponent<mushroom>().SetUp(GetComponent<SpriteRenderer>().sprite, isoToGet);
+            ngo.GetComponent<mushroom>().SetUp(GetComponent<SpriteRenderer>().sprite, isoToGet, 1.5f);
             amount += 1;
             if(amount == produceAmount)
             {
@@ -50,8 +50,8 @@ public class Pickable : UpGroundObj
 
         GameObject ngo = Instantiate(objProduce, transform.parent);
         ngo.transform.position = transform.position;
-        ngo.GetComponent<mushroom>().SetUp(staticPop, isoToGet);
-        yield return new WaitForSeconds(1f);
+        ngo.GetComponent<mushroom>().SetUp(staticPop, isoToGet, 1.5f);
+        yield return new WaitForSeconds(0.5f);
         staticCanPickUp = true;
     }
 }

@@ -28,11 +28,13 @@ public class PlayerAction : MonoBehaviour
                 {
                     toolNow = tool.Shovel;
                     UI_Tools.i.switchTool(2);
+                    worldToolUISwitch(2);
                 }
                 else if (UI_Tools.i.hasAxe())
                 {
                     toolNow = tool.Axe;
                     UI_Tools.i.switchTool(3);
+                    worldToolUISwitch(3);
                 }
             }
             else if (toolNow == tool.Shovel)
@@ -41,17 +43,20 @@ public class PlayerAction : MonoBehaviour
                 {
                     toolNow = tool.Axe;
                     UI_Tools.i.switchTool(3);
+                    worldToolUISwitch(3);
                 }
                 else
                 {
                     toolNow = tool.Hand;
                     UI_Tools.i.switchTool(1);
+                    worldToolUISwitch(1);
                 }
             }
             else if (toolNow == tool.Axe)
             {
                 toolNow = tool.Hand;
                 UI_Tools.i.switchTool(1);
+                worldToolUISwitch(1);
             }
         }
 
@@ -76,13 +81,38 @@ public class PlayerAction : MonoBehaviour
             {
                 tarInfo.SetActive(false);
                 tarObj.isPickable().PickUp();
-                //CanvasManager.i.CloseTargetInfo();
             }
         }
 
         
     }
 
+    /// <summary>
+    /// switch world tool ui, 1: hand 2: shovel 3: axe
+    /// </summary>
+    /// <param name="to"></param>
+    void worldToolUISwitch(int to)
+    {
+        if(to == 1)
+        {
+            transform.Find("Tool Info").Find("Hand").gameObject.SetActive(true);
+            transform.Find("Tool Info").Find("Axe").gameObject.SetActive(false);
+            transform.Find("Tool Info").Find("Shovel").gameObject.SetActive(false);
+        } else if (to == 2)
+        {
+            transform.Find("Tool Info").Find("Hand").gameObject.SetActive(false);
+            transform.Find("Tool Info").Find("Axe").gameObject.SetActive(false);
+            transform.Find("Tool Info").Find("Shovel").gameObject.SetActive(true);
+
+        } else if (to == 3)
+        {
+            transform.Find("Tool Info").Find("Hand").gameObject.SetActive(false);
+            transform.Find("Tool Info").Find("Axe").gameObject.SetActive(true);
+            transform.Find("Tool Info").Find("Shovel").gameObject.SetActive(false);
+
+        }
+
+    }
     void refreshCollider()
     {
         myCollider.enabled = false;
@@ -95,9 +125,8 @@ public class PlayerAction : MonoBehaviour
         {
             tarInfo = transform.Find("Target Info").gameObject;
             tarInfo.SetActive(true);
-            tarInfo.GetComponent<TextMeshPro>().text = other.gameObject.name;
+            tarInfo.GetComponent<TextMeshPro>().text = other.GetComponent<UpGroundObj>().displayName;//other.gameObject.name;
 
-            //CanvasManager.i.SetUpTargetInfo(other.gameObject.name);
             tarObj = other.gameObject.GetComponent<UpGroundObj>();
         }
     }

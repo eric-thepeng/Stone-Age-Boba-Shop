@@ -15,7 +15,7 @@ public class mushroom : MonoBehaviour
         
         Vector3 p1Direction = new Vector3(Random.Range(-0.5f, 0.5f), 1f, 1f).normalized;
         Vector3 p1StartPos = transform.position;
-        Vector3 p1FinalPos = transform.position + p1Direction * 2f;
+        Vector3 p1FinalPos = transform.position + p1Direction * 3f;
         while (timeCount<p1Time)
         {
             transform.position = Vector3.Lerp(p1StartPos, p1FinalPos, Mathf.Log(20 * timeCount + 1, 10) / 1f);
@@ -39,10 +39,11 @@ public class mushroom : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void SetUp(Sprite newSprite, ItemScriptableObject newISO)
+    public void SetUp(Sprite newSprite, ItemScriptableObject newISO, float size)
     {
         GetComponent<SpriteRenderer>().sprite = newSprite;
         thisSO = newISO;
+        transform.localScale = transform.localScale * size;
     }
 
     public void SetUp(ItemScriptableObject newISO)

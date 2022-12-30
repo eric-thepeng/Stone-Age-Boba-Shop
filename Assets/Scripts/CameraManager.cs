@@ -43,7 +43,7 @@ public class CameraManager : MonoBehaviour
         }
         else //switch to anyother panels
         {
-            CanvasManager.i.CloseTargetInfo();
+            //CanvasManager.i.CloseTargetInfo();
             panelBoarder.SetActive(true);
         }
 

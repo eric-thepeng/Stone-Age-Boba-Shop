@@ -7,6 +7,7 @@ public class UpGroundObj : MonoBehaviour
     bool setUpTypeComplete = false;
     Gatherable myGatherable = null;
     Pickable myPickable = null;
+    public string displayName = "not set";
     public Gatherable isGatherable()
     {
         if (myGatherable != null) return myGatherable;

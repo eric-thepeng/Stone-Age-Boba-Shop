@@ -21,25 +21,25 @@ MonoBehaviour:
       m_Sprite: {fileID: -4933579267383309435, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
     - m_Name: Tree_Small_Empty
       m_Hash: -591952793
-      m_Sprite: {fileID: -4164993158991408742, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
+      m_Sprite: {fileID: -7318761110801041278, guid: e7d88f71522a800428e1c810475448a8, type: 3}
     - m_Name: Tree_Honey_Full
       m_Hash: 1969477266
       m_Sprite: {fileID: 4487745537962372700, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
     - m_Name: Tree_Honey_Empty
       m_Hash: -1601867706
-      m_Sprite: {fileID: -4164993158991408742, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
+      m_Sprite: {fileID: 6107521226020884922, guid: e7d88f71522a800428e1c810475448a8, type: 3}
     - m_Name: Tree_Chunk_Full
       m_Hash: -2077582661
       m_Sprite: {fileID: 1744460761389144112, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
     - m_Name: Tree_Chunk_Empty
       m_Hash: -490299034
-      m_Sprite: {fileID: -4164993158991408742, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
+      m_Sprite: {fileID: -1674419680036279454, guid: e7d88f71522a800428e1c810475448a8, type: 3}
     - m_Name: Tree_Lemon_Full
       m_Hash: -578119944
       m_Sprite: {fileID: -7276650349779448794, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
     - m_Name: Tree_Lemon_Empty
       m_Hash: 222957888
-      m_Sprite: {fileID: -4164993158991408742, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
+      m_Sprite: {fileID: 6721778666290157463, guid: e7d88f71522a800428e1c810475448a8, type: 3}
   - m_Name: DecorBush
     m_Hash: 432949616
     m_CategoryList:
