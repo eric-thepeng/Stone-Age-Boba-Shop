@@ -32,4 +32,16 @@ public class CanvasManager : MonoBehaviour
         transform.Find("TargetInfo").gameObject.SetActive(true);
         transform.Find("TargetInfo").Find("Text").GetComponent<TMP_Text>().text = info;
     }
+
+    public void TutorialUIDisplay(bool state)
+    {
+        if(state == true)
+        {
+            transform.Find("UI_Tutorial").gameObject.SetActive(true);
+        }
+        else
+        {
+            transform.Find("UI_Tutorial").gameObject.SetActive(false);
+        }
+    }
 }

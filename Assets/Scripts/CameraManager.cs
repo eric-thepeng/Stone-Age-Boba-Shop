@@ -26,11 +26,6 @@ public class CameraManager : MonoBehaviour
     }
     
 
-    /*public Camera getPanelCamera()
-    {
-        return panelRC;
-    }*/
-
     /// <summary>
     /// Switch camera accroding to int.
     /// </summary>
@@ -40,11 +35,13 @@ public class CameraManager : MonoBehaviour
         if(which == 1) //switch to world
         {
             panelBoarder.SetActive(false);
+            CanvasManager.i.TutorialUIDisplay(true);
         }
         else //switch to anyother panels
         {
             //CanvasManager.i.CloseTargetInfo();
             panelBoarder.SetActive(true);
+            CanvasManager.i.TutorialUIDisplay(false);
         }
 
         if(which == 1) //switch to world

@@ -18,6 +18,7 @@ public class PlayerAction : MonoBehaviour
 
     private void Update()
     {
+
         //switch tools
         if (Input.GetMouseButtonDown(1))
         {
@@ -60,6 +61,7 @@ public class PlayerAction : MonoBehaviour
             }
         }
 
+        if (!MasterManager.i.inExploration()) { return; }
 
         if (tarObj == null) return;
         if (tarObj.isGatherable() != null)
@@ -75,12 +77,21 @@ public class PlayerAction : MonoBehaviour
                 refreshCollider();
                 tarInfo.SetActive(false);
             }
-        }else if (tarObj.isPickable() !=null)
+        }
+        else if (tarObj.isPickable() !=null)
         {
             if (Input.GetMouseButtonDown(0))
             {
                 tarInfo.SetActive(false);
                 tarObj.isPickable().PickUp();
+            }
+        }
+        else if(tarObj.isHome() != null)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                tarInfo.SetActive(false);
+                tarObj.isHome().GoHome();
             }
         }
 

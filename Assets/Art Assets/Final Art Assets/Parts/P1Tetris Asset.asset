@@ -75,7 +75,7 @@ MonoBehaviour:
       m_Sprite: {fileID: 3558230418301606111, guid: 8198feffcd99e7543a3a325a30576ea8, type: 3}
     - m_Name: Wood Stick
       m_Hash: 39753262
-      m_Sprite: {fileID: -6146061074465017974, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+      m_Sprite: {fileID: -5236706281258095135, guid: 3aa6347c473c55847a2f1874ff1ca3d7, type: 3}
   - m_Name: Tools
     m_Hash: 725348723
     m_CategoryList:

@@ -59,6 +59,8 @@ public class PlayerMovement : MonoBehaviour
             PlayerInfo.i.refreshPlayerTransform(this.transform);
         }
 
+        if (!MasterManager.i.inExploration()) { return; }
+
         if (Input.GetKey(KeyCode.Space))
         {
             movingSpeed = 5;
@@ -68,41 +70,6 @@ public class PlayerMovement : MonoBehaviour
             movingSpeed = 3;
         }
 
-        /*
-        if (CURSOR_CONTROL)
-        {
-            //Get Cursor Data
-            cursorDir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-            cursorDir = VectorChangeSingle(cursorDir, 3, 0);
-            float angle = Mathf.Atan2(cursorDir.y, cursorDir.x) * Mathf.Rad2Deg;
-
-            //Rotation of RotateComp
-            if (ROTATION_MODE == eRotationMode.Instant)
-            {
-                Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-                rotateComp.transform.rotation = rotation;
-            }
-            else if (ROTATION_MODE == eRotationMode.Fix)
-            {
-                float currentAngle = ChangeToRotateFromRight(rotateComp.transform.rotation.eulerAngles.z);
-                if (Mathf.Abs(angle - currentAngle) >= 3)
-                {
-                    rotateComp.transform.rotation = Quaternion.AngleAxis(currentAngle + rotationSpeed * (Mathf.Sign(angle - currentAngle)) * Time.deltaTime, Vector3.forward);
-                }
-            }
-            else if (ROTATION_MODE == eRotationMode.Ratio)
-            {
-                Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-                rotateComp.transform.rotation = Quaternion.Lerp(rotateComp.transform.rotation, rotation, rotationSpeed / 20 * Time.deltaTime);
-            }
-
-            if (CURSOR_INDICATOR)
-            {
-                cursorComp.transform.position = VectorChangeSingle(Camera.main.ScreenToWorldPoint(Input.mousePosition), 3, 0);
-            }
-            ChangeFacing(cursorDir);
-        }
-        */
 
         //Update Input
         inputNow = new Vector2(0, 0);

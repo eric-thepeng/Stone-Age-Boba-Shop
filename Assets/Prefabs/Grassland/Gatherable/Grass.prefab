@@ -91,7 +91,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3701919425512590018}
-  m_LocalRotation: {x: 0.38268343, y: -0, z: -0, w: 0.92387956}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0.97, y: -0.092, z: 12.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -230,6 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 871fc1e7812a66844bd0bdc2b140ed90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayName: Grass
   spriteLibrary: {fileID: 0}
   targetResolver: {fileID: 0}
   targetCategroy: Grass
@@ -239,7 +240,7 @@ MonoBehaviour:
   bornState: 1
   objProduce: {fileID: 6364644185954913908, guid: e288feda10ac1484f8a1592ce58ef242, type: 3}
   produceList:
-  - {fileID: 11400000, guid: 40cef326d43e6d54e892d712307ada88, type: 2}
+  - {fileID: 11400000, guid: 2d532b553f2a5fe43b9be894510bf907, type: 2}
   gatherTimeRequire: 1
 --- !u!136 &8107282178394180115
 CapsuleCollider:

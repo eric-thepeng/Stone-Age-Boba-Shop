@@ -7,6 +7,7 @@ public class UpGroundObj : MonoBehaviour
     bool setUpTypeComplete = false;
     Gatherable myGatherable = null;
     Pickable myPickable = null;
+    Home myHome = null;
     public string displayName = "not set";
     public Gatherable isGatherable()
     {
@@ -29,6 +30,17 @@ public class UpGroundObj : MonoBehaviour
         return null;
     }
 
+    public Home isHome()
+    {
+        if (myHome != null) return myHome;
+
+        SetUpType();
+
+        if (myHome != null) return myHome;
+
+        return null;
+    }
+
     public void SetUpType()
     {
         if (setUpTypeComplete) return;
@@ -41,6 +53,11 @@ public class UpGroundObj : MonoBehaviour
         if (GetComponent<Pickable>() != null)
         {
             myPickable = GetComponent<Pickable>();
+        }
+
+        if (GetComponent<Home>() != null)
+        {
+            myHome = GetComponent<Home>();
         }
 
         setUpTypeComplete = true;

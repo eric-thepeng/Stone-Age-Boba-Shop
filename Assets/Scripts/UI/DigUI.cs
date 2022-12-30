@@ -5,7 +5,7 @@ using UnityEngine;
 public class DigUI : MonoBehaviour
 {
     static DigUI instance;
-    SpriteRenderer mySR, fillerSR;
+    SpriteRenderer mySR, fillerSR, bgSR;
     public static DigUI i
     {
         get
@@ -22,6 +22,7 @@ public class DigUI : MonoBehaviour
     {
         mySR = GetComponent<SpriteRenderer>();
         fillerSR = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        bgSR = transform.GetChild(1).GetComponent<SpriteRenderer>();
     }
     private void Start()
     {
@@ -31,6 +32,7 @@ public class DigUI : MonoBehaviour
     {
         if (mySR.enabled == false) mySR.enabled = true;
         if (fillerSR.enabled == false) fillerSR.enabled = true;
+        if (bgSR.enabled == false) bgSR.enabled = true;
         transform.GetChild(0).transform.localScale = new Vector3(setTo, setTo, 1);
     }
 
@@ -38,5 +40,6 @@ public class DigUI : MonoBehaviour
     {
         mySR.enabled = false;
         fillerSR.enabled = false;
+        bgSR.enabled = false;
     }
 }

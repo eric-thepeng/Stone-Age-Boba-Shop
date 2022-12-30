@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: isoToGet
       value: 
       objectReference: {fileID: 11400000, guid: 57f6221303117cd46a20a7bf7a754d82, type: 2}
+    - target: {fileID: 1516308008160128293, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
+      propertyPath: displayName
+      value: Medium Stone
+      objectReference: {fileID: 0}
     - target: {fileID: 1921622920496563237, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -33,15 +37,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4074336150826584230, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.38
+      value: -7.42
       objectReference: {fileID: 0}
     - target: {fileID: 4074336150826584230, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.095
+      value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: 4074336150826584230, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.65
+      value: 11.74
       objectReference: {fileID: 0}
     - target: {fileID: 4074336150826584230, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -77,7 +81,7 @@ PrefabInstance:
       objectReference: {fileID: 2908824358096884421, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
     - target: {fileID: 4074336150826584233, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
       propertyPath: m_Name
-      value: Medium Stone Variant
+      value: Medium Stone
       objectReference: {fileID: 0}
     - target: {fileID: 5774432721751564114, guid: e1833d90470af4342af85a84c62b7c4a, type: 3}
       propertyPath: m_labelHash

@@ -5,7 +5,7 @@ using UnityEngine;
 public class MasterManager : MonoBehaviour
 {
     static MasterManager instance=null;
-    static MasterManager i
+    public static MasterManager i
     {
         get
         {
@@ -58,7 +58,11 @@ public class MasterManager : MonoBehaviour
         }
     }
 
-
+    public bool inExploration()
+    {
+        if (playerState == PlayerState.World) return true;
+            return false;
+    }
     public void GoHome()
     {
         CameraManager.i.switchCameraTo(2);
