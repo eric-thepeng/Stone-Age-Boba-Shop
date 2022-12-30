@@ -25,16 +25,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5058743035990336586, guid: fc920d823a5c74c12affe7c4b1ff78cd, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.0967742
+      value: 1.1232877
       objectReference: {fileID: 0}
     - target: {fileID: 5058743035990336586, guid: fc920d823a5c74c12affe7c4b1ff78cd, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.0967742
+      value: 1.1236534
       objectReference: {fileID: 0}
     - target: {fileID: 5058743035990336587, guid: fc920d823a5c74c12affe7c4b1ff78cd, type: 3}
       propertyPath: itemSO
       value: 
       objectReference: {fileID: 11400000, guid: 40cef326d43e6d54e892d712307ada88, type: 2}
+    - target: {fileID: 5058743035990336587, guid: fc920d823a5c74c12affe7c4b1ff78cd, type: 3}
+      propertyPath: boilRecipeSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 6702d505678bc3c4fafe0aeadeecfe03, type: 2}
     - target: {fileID: 5058743035990336587, guid: fc920d823a5c74c12affe7c4b1ff78cd, type: 3}
       propertyPath: allItemListSO
       value: 
@@ -102,7 +106,7 @@ PrefabInstance:
     - target: {fileID: 5058743035990336597, guid: fc920d823a5c74c12affe7c4b1ff78cd, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -196169763218773290, guid: 554db5643a4e0d04f88a290d6d8b6588, type: 3}
+      objectReference: {fileID: 2576410293824126915, guid: 66a866515589f094f94fe93e4ab022d3, type: 3}
     - target: {fileID: 5058743035990336598, guid: fc920d823a5c74c12affe7c4b1ff78cd, type: 3}
       propertyPath: m_Name
       value: NTetris_RedBerry

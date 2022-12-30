@@ -13,9 +13,10 @@ public class Tetris : MonoBehaviour
 
     //The Scriptable Object this Tetris contains
     public ItemScriptableObject itemSO;
-    public ItemSOListScriptableObject allItemListSO; //List of all Items4
+    public ItemSOListScriptableObject allItemListSO; //List of all Items
     public ItemSOListScriptableObject craftRecipeSO;
     public GroundRecipeScriptableObject groundRecipeSO; //List of all Grounding Recipe
+    public GroundRecipeScriptableObject boilRecipeSO; //List of all Boiling Recipe
 
     //All the edges of this Tetris
     public List<Edge> allEdges = new List<Edge>();
@@ -332,7 +333,7 @@ public class Tetris : MonoBehaviour
             product = groundRecipeSO.Ground(itemSO);
         }else if (rc.isCook())
         {
-
+            product = boilRecipeSO.Ground(itemSO);
         }
         else
         {

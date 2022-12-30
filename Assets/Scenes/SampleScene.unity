@@ -16034,14 +16034,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NTetris_Pot
       objectReference: {fileID: 0}
-    - target: {fileID: 8740603807408829902, guid: 7b7c56b531255194995c2abce7aa520b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8740603807408829907, guid: 7b7c56b531255194995c2abce7aa520b, type: 3}
-      propertyPath: itemSO
-      value: 
-      objectReference: {fileID: 11400000, guid: 6d5688ee900bccc4cb63dc627e7dd1c6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b7c56b531255194995c2abce7aa520b, type: 3}
 --- !u!1001 &2185915211095869914
@@ -18703,6 +18695,14 @@ PrefabInstance:
       propertyPath: m_labelHash
       value: -1.4426249e+37
       objectReference: {fileID: 0}
+    - target: {fileID: 5708412205019240001, guid: 221c8846857fae44183fa285d7405eed, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.0547945
+      objectReference: {fileID: 0}
+    - target: {fileID: 5708412205019240001, guid: 221c8846857fae44183fa285d7405eed, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.0958905
+      objectReference: {fileID: 0}
     - target: {fileID: 8140800353589756932, guid: 221c8846857fae44183fa285d7405eed, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -18763,6 +18763,14 @@ PrefabInstance:
       propertyPath: itemSO
       value: 
       objectReference: {fileID: 11400000, guid: 38a1f66dd1b1b024bbb47a35ccf116c5, type: 2}
+    - target: {fileID: 8140800353589756955, guid: 221c8846857fae44183fa285d7405eed, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.0547945
+      objectReference: {fileID: 0}
+    - target: {fileID: 8140800353589756955, guid: 221c8846857fae44183fa285d7405eed, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.0958905
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 221c8846857fae44183fa285d7405eed, type: 3}
 --- !u!1001 &8189999144072421733
@@ -19049,6 +19057,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1224599836}
     m_Modifications:
+    - target: {fileID: 5254040197621286339, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.1232877
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254040197621286339, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.1236534
+      objectReference: {fileID: 0}
     - target: {fileID: 5254040197621286364, guid: 55fe2f810fcf1364b91a53bc92741896, type: 3}
       propertyPath: m_Sprite
       value: 
