@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerAction : MonoBehaviour
 {
     UpGroundObj tarObj;
     //Gatherable tarGatherable;
     CapsuleCollider myCollider;
+    GameObject tarInfo;
     public enum tool {Hand, Shovel, Axe}
     tool toolNow = tool.Hand;
     private void Awake()
@@ -16,6 +18,7 @@ public class PlayerAction : MonoBehaviour
 
     private void Update()
     {
+        //switch tools
         if (Input.GetMouseButtonDown(1))
         {
             //Hand -> Shovel -> Axe -> Hand
@@ -52,24 +55,28 @@ public class PlayerAction : MonoBehaviour
             }
         }
 
+
         if (tarObj == null) return;
         if (tarObj.isGatherable() != null)
         {
             if (Input.GetMouseButton(0))
             {
+                tarInfo.SetActive(false);
                 tarObj.isGatherable().Gather(toolNow);
             }
             if (tarObj.isGatherable().CheckEmpty())
             {
                 tarObj = null;
                 refreshCollider();
+                tarInfo.SetActive(false);
             }
         }else if (tarObj.isPickable() !=null)
         {
             if (Input.GetMouseButtonDown(0))
             {
+                tarInfo.SetActive(false);
                 tarObj.isPickable().PickUp();
-                CanvasManager.i.CloseTargetInfo();
+                //CanvasManager.i.CloseTargetInfo();
             }
         }
 
@@ -86,16 +93,11 @@ public class PlayerAction : MonoBehaviour
     {
         if (tarObj == null && other.gameObject.GetComponent<UpGroundObj>() != null)
         {
-            /*
-            tarHighlight = new GameObject("shadow of " + other.gameObject.name);
-            tarHighlight.transform.parent = other.transform;
-            tarHighlight.transform.localPosition = new Vector3(0, 0.0f, 0.1f);
-            tarHighlight.transform.localScale = new Vector3(1.2f, 1.2f, 1); //gameObject.transform.localScale;
-            tarHighlight.transform.localRotation = Quaternion.identity;
-            tarHighlight.AddComponent<SpriteRenderer>();
-            tarHighlight.GetComponent<SpriteRenderer>().sprite = other.GetComponent<SpriteRenderer>().sprite;
-            tarHighlight.GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 0.5f);*/
-            CanvasManager.i.SetUpTargetInfo(other.gameObject.name);
+            tarInfo = transform.Find("Target Info").gameObject;
+            tarInfo.SetActive(true);
+            tarInfo.GetComponent<TextMeshPro>().text = other.gameObject.name;
+
+            //CanvasManager.i.SetUpTargetInfo(other.gameObject.name);
             tarObj = other.gameObject.GetComponent<UpGroundObj>();
         }
     }
@@ -109,8 +111,8 @@ public class PlayerAction : MonoBehaviour
             tarObj.isGatherable().AbandonGather();
         }
 
-        //Destroy(tarHighlight);
-        CanvasManager.i.CloseTargetInfo();
+        tarInfo.SetActive(false);
+        //CanvasManager.i.CloseTargetInfo();
         tarObj = null;
     }
 }
