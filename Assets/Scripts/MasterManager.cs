@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MasterManager : MonoBehaviour
 {
@@ -93,5 +94,17 @@ public class MasterManager : MonoBehaviour
         playerState = PlayerState.Shop;
     }
 
+    public void ExitDoorButtonClick(Button btn)
+    {
+        print("exit door button");
+        if(playerState == PlayerState.World)
+        {
+            GoHome();
+        }
+        else
+        {
+            LeaveHome();
+        }
+    }
 
 }
