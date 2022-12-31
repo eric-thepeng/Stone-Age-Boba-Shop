@@ -16,6 +16,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 1e2763bd561fe754fbde912e09361fe2, type: 2}
     - {fileID: 11400000, guid: c4d5f2fa533c35c498ddd61a0e446cc9, type: 2}
     - {fileID: 11400000, guid: 67ab52df58a8dec44b9a7b954d1484ca, type: 2}
     SerializedBytesString: 
@@ -47,25 +48,25 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 10
-      Data: 0
+      Data: 1
     - Name: 
       Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
+      Data: 1
     - Name: 
       Entry: 10
       Data: 1
     - Name: 
       Entry: 6
       Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 10
+      Data: 2
     - Name: 
       Entry: 6
       Data: 
@@ -172,6 +173,33 @@ MonoBehaviour:
       Entry: 1
       Data: 6|6
     - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
       Entry: 10
       Data: 1
     - Name: 
@@ -190,33 +218,6 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
       Entry: 6
       Data: 
     - Name: 
@@ -294,6 +295,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: not set
+  isGround: 0
+  isCook: 0
   myPrefab: {fileID: 8140800353589756935, guid: 221c8846857fae44183fa285d7405eed, type: 3}
   objectSprite: {fileID: 0}
   tetrisSprite: {fileID: 0}

@@ -58,9 +58,10 @@ MonoBehaviour:
   taskName: 10 Uncle tell you corpse
   descriptionText: "Hey nephew,<br>      How\u2019s your little shop going! hope
     I\u2019m not interrupting, but I was just hunting with your dad, and there\u2019s
-    a deer body far in the north if you want to go check it out!<br>      Bring back
-    some leather will ya? Your sister would definitely know what to do with them!<br>                                                             
-    Best,<br>                                                              -- Uncle
-    Adam"
+    a deer body far in the East by the river if you want to go check it out!<br>     
+    Bring back some leather will ya? Your sister would definitely know what to do
+    with them!<br>                                                              Best,<br>                                                             
+    -- Uncle Adam"
   completion: 0
-  unlocks: []
+  unlocks:
+  - {fileID: 11400000, guid: f3da2b46d7576f94a8f371bd9b8ae412, type: 2}

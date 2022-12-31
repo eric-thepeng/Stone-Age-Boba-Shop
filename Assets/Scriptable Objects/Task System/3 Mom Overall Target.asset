@@ -15,25 +15,134 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 2d468213976d3944a91ed9ce97c04ba0, type: 2}
+    - {fileID: 11400000, guid: 5d8b7f53986bd2d46bed8a6407b09a32, type: 2}
+    - {fileID: 11400000, guid: 28bcaef3940a76847ba976e231d910d5, type: 2}
+    - {fileID: 11400000, guid: 33b960cae6232734ba98aa439a5a9604, type: 2}
+    - {fileID: 11400000, guid: 789947da66f9a75479eff8bb97b44606, type: 2}
+    - {fileID: 11400000, guid: 997a8b1f6c82112438f049f830641bf6, type: 2}
+    - {fileID: 11400000, guid: d4706f44f164f4c4abcf837f8f614af3, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
     - Name: request
-      Entry: 6
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[ItemScriptableObject, Assembly-CSharp],[System.Int32,
+        mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[ItemScriptableObject,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 7
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 0
+    - Name: $v
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 1
+    - Name: $v
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 2
+    - Name: $v
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 3
+    - Name: $v
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 4
+    - Name: $v
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 5
+    - Name: $v
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 6
+    - Name: $v
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
   category: 2
   taskName: 3 Mom Overall Target
   descriptionText: "Hi son,<br>      Good job! Now, building a shop from scratch
-    take a lot of efforts. You need to have at least three products, which means
-    designing three unique types of Boba drink recipes. You\u2019ll also need to
-    build a table and a chair for customers to use, and the final piece of the picture:
-    a dress uniform! It makes your shop looks so much more professional!<br>     
+    take a lot of efforts. Just to give you an overview, you need to have at least
+    4 products, which means making 4 unique types of Boba drinks. You\u2019ll also
+    need to build 1 table and 2 chairs for customers to use, and the final piece
+    of the picture: 1 dress uniform! It makes your shop looks so much more professional!<br>     
     Keep working on building them, and I\u2019m sure the day your shop opens, it
     would be a great hit!<br>                                                             
     Good Luck!<br>                                                              --
     Mom"
   completion: 0
-  unlocks: {fileID: 0}
+  unlocks:
+  - {fileID: 0}

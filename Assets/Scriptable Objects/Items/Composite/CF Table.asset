@@ -534,6 +534,6 @@ MonoBehaviour:
   tetrisHoverName: not set
   isGround: 0
   isCook: 0
-  myPrefab: {fileID: 0}
+  myPrefab: {fileID: 7858922834094684634, guid: d5379487bf45bb244ac678f64fb49ad7, type: 3}
   objectSprite: {fileID: 0}
   tetrisSprite: {fileID: 0}

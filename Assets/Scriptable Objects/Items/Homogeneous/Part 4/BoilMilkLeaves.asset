@@ -203,6 +203,6 @@ MonoBehaviour:
   tetrisHoverName: Milk Tea
   isGround: 0
   isCook: 0
-  myPrefab: {fileID: 0}
+  myPrefab: {fileID: 1492318153887242459, guid: e8a9ac400355ce94291db2af7d78e21a, type: 3}
   objectSprite: {fileID: 0}
   tetrisSprite: {fileID: 0}

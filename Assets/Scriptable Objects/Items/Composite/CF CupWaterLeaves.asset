@@ -367,8 +367,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  tetrisHoverName: not set
   isGround: 0
   isCook: 0
-  myPrefab: {fileID: 0}
+  myPrefab: {fileID: 120893738984461274, guid: 652d69b61deb44c409965b3e57034675, type: 3}
   objectSprite: {fileID: 0}
   tetrisSprite: {fileID: 0}

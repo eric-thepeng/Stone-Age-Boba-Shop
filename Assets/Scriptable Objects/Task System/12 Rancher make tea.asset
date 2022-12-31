@@ -15,22 +15,53 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 1ab5bd4f7a09e7b49989f7ff37cb6871, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
     - Name: request
-      Entry: 6
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[ItemScriptableObject, Assembly-CSharp],[System.Int32,
+        mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[ItemScriptableObject,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 0
+    - Name: $v
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
   category: 4
   taskName: 12 Rancher make tea
   descriptionText: "Hi kid,<br>      What a wonderful job! Now that you\u2019ve got
     a cup, you should learn to make the drinks!<br>      Can\u2019t be more straight
-    forward, just pour any liquid in the cup, and of course, add the tea leaves in
-    it, and put the entire cup to boil!<br>                                                             
-    Simple work make the best product!<br>                                                             
+    forward, just pour any liquid in the cup, and of course, don\u2019t forget the
+    tea, and then boil it! Once you finish the basic tea, be creative!<br>                                         
+    I\u2019ll be waiting for your hot tea!<br>                                         
     -- Charles"
   completion: 0
-  unlocks: []
+  unlocks:
+  - {fileID: 11400000, guid: 8ea9f6ee45dbd54478a8e9e039305c6f, type: 2}
