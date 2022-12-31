@@ -306,8 +306,8 @@ MonoBehaviour:
   - {fileID: 3279167251596889270}
   - {fileID: 3279167250632328215}
   m_Bounds:
-    m_Center: {x: -0.051528215, y: 0.7712492, z: 0.00000003568597}
-    m_Extent: {x: 2.0016398, y: 1.0983245, z: 0.00000003576487}
+    m_Center: {x: -0.051527023, y: 0.7712505, z: 0.00000003568597}
+    m_Extent: {x: 2.0016398, y: 1.0983241, z: 0.00000003576487}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!95 &3279167252204816577
@@ -363,7 +363,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.22584823
-  m_Height: 4.2445035
+  m_Radius: 0.32
+  m_Height: 4.6
   m_Direction: 0
   m_Center: {x: -0.09676546, y: 0.38583806, z: -0.00059314835}

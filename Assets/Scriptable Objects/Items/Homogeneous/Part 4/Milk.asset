@@ -204,5 +204,5 @@ MonoBehaviour:
   isGround: 0
   isCook: 0
   myPrefab: {fileID: 4646935255548444185, guid: 64e133a1e6f2f5a4d9a9348b454b6e06, type: 3}
-  objectSprite: {fileID: 0}
+  objectSprite: {fileID: -6322907903486043210, guid: 295ee4823a85c5b4780838c5ad385fb0, type: 3}
   tetrisSprite: {fileID: 0}
