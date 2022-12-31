@@ -37,20 +37,10 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        //sr = GetComponent<SpriteRenderer>();
         am = GetComponentInChildren(typeof(Animator)) as Animator;
     }
 
-    void Start()
-    {
-        /* now
-        rotateComp = transform.Find("Rotate Comp").gameObject;
-        cursorComp = transform.Find("Cursor Comp").gameObject;
-        if (!CURSOR_CONTROL) rotateComp.SetActive(false);
-        if (!CURSOR_INDICATOR) cursorComp.SetActive(false); */
-    }
 
-    // Update is called once per frame
     void Update()
     {
         refreshCounter += Time.deltaTime;
@@ -59,24 +49,15 @@ public class PlayerMovement : MonoBehaviour
             PlayerInfo.i.refreshPlayerTransform(this.transform);
         }
 
-        if (!MasterManager.i.inExploration()) { return; }
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            movingSpeed = 5;
-        }
-        else
-        {
-            movingSpeed = 3;
-        }
-
-
         //Update Input
         inputNow = new Vector2(0, 0);
-        if (Input.GetKey(KeyCode.W)) inputNow.y += 1;
-        if (Input.GetKey(KeyCode.S)) inputNow.y -= 1;
-        if (Input.GetKey(KeyCode.A)) inputNow.x -= 1;
-        if (Input.GetKey(KeyCode.D)) inputNow.x += 1;
+        if (MasterManager.i.inExploration())
+        {
+            if (Input.GetKey(KeyCode.W)) inputNow.y += 1;
+            if (Input.GetKey(KeyCode.S)) inputNow.y -= 1;
+            if (Input.GetKey(KeyCode.A)) inputNow.x -= 1;
+            if (Input.GetKey(KeyCode.D)) inputNow.x += 1;
+        }
 
         //Calculate current momentum
         if (inputNow.magnitude == 0) //no movement key pressed 

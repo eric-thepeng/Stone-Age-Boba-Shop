@@ -11,6 +11,14 @@ public class ProgressControl : MonoBehaviour
     [SerializeField] TaskInfo task1;
     bool task1_freed = false, task1_viewedShop = false, task1_viewedCraft = false;
 
+    [SerializeField] TaskInfo task2;
+    bool pc_task2 = false;
+    [SerializeField] GameObject task2_ExitButton;
+
+    [SerializeField] TaskInfo task10;
+    bool pc_task10= false;
+    [SerializeField] GameObject task10_Corpse;
+
     public static ProgressControl i
     {
         get
@@ -50,20 +58,20 @@ public class ProgressControl : MonoBehaviour
         
     }
 
-    private void Awake()
+    public void TaskOpened(TaskInfo ti)
     {
-        //completedPCTasks.Add(task1);
+        if(ti == task2)
+        {
+            if (pc_task2) return;
+            pc_task2 = true;
+            task2_ExitButton.SetActive(true);
+        }
+        if(ti == task10)
+        {
+            if (pc_task10) return;
+            pc_task10 = true;
+            task10_Corpse.SetActive(true);
+        }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

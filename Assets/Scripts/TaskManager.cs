@@ -179,11 +179,11 @@ public class TaskManager : MonoBehaviour
         {
             if (t != i) 
             {
-                //print("deselect: " + i.transform.parent.gameObject.name);
                 i.Deselect(); 
             }
         }
         DisplayTask(t.myTi);
+        ProgressControl.i.TaskOpened(t.myTi);
         displayingTask = t;
     }
 

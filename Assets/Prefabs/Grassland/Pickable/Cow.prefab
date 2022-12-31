@@ -147,7 +147,7 @@ MonoBehaviour:
   objProduce: {fileID: 6364644185954913908, guid: e288feda10ac1484f8a1592ce58ef242, type: 3}
   produceAmount: 1
   isoToGet: {fileID: 11400000, guid: 11f5a6fe9c6daa841b74e6aa0101d0f4, type: 2}
-  staticPop: {fileID: -6413392391474513002, guid: 3aa6347c473c55847a2f1874ff1ca3d7, type: 3}
+  staticPop: {fileID: -6322907903486043210, guid: 295ee4823a85c5b4780838c5ad385fb0, type: 3}
 --- !u!1 &8796365704327899811
 GameObject:
   m_ObjectHideFlags: 0

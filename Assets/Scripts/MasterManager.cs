@@ -25,17 +25,19 @@ public class MasterManager : MonoBehaviour
     {
         if(playerState == PlayerState.World) //Player at exploration
         {
+            /*
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 GoHome();
-            }
+            }*/
         }
         else //Player at Home
         {
+            /*
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 LeaveHome();
-            }
+            }*/
 
             if(playerState == PlayerState.Crafting && Input.GetKeyDown(KeyCode.A)) //Crafting -> Shop
             {
@@ -76,19 +78,19 @@ public class MasterManager : MonoBehaviour
         playerState = PlayerState.World;
     }
 
-    void GoToCrafting()
+    public void GoToCrafting()
     {
         CameraManager.i.switchCameraTo(2);
         playerState = PlayerState.Crafting;
     }
 
-    void GoToTask()
+    public void GoToTask()
     {
         CameraManager.i.switchCameraTo(3);
         playerState = PlayerState.Task;
     }
 
-    void GoToShop()
+    public void GoToShop()
     {
         CameraManager.i.switchCameraTo(4);
         playerState = PlayerState.Shop;

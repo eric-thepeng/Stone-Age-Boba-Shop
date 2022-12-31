@@ -195,8 +195,8 @@ MonoBehaviour:
   - {fileID: 30174860035060773}
   - {fileID: 4522555387696987016}
   m_Bounds:
-    m_Center: {x: 0.008737534, y: 0.23226598, z: 2.5501033e-24}
-    m_Extent: {x: 0.4781065, y: 0.22911595, z: 1.1979343e-22}
+    m_Center: {x: 0.008737534, y: 0.23228124, z: -0.000015258789}
+    m_Extent: {x: 0.4781065, y: 0.22911595, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!95 &3701919425512590016
@@ -252,10 +252,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.27
+  m_Radius: 0.37
   m_Height: 1.32
   m_Direction: 0
-  m_Center: {x: 0.02032119, y: 0.25, z: -0.04}
+  m_Center: {x: 0.02032119, y: 0.25, z: -0.1}
 --- !u!1 &3996633726946144685
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3996633726946144685}
   m_LocalRotation: {x: 0.38751557, y: 0, z: 0, w: 0.9218632}
-  m_LocalPosition: {x: 0.005, y: -0.038, z: -0.06}
+  m_LocalPosition: {x: 0.005, y: 0.028, z: 0.006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3701919425512590029}
@@ -328,7 +328,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1444514373
   m_SortingLayer: -1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 683103928825641082, guid: 60966a956e1fd9948834460009bee0ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

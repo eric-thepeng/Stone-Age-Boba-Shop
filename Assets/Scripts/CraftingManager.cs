@@ -49,14 +49,16 @@ public class CraftingManager : SerializedMonoBehaviour
     public void AddToAllTetris(GameObject go)
     {
         allTetris.Add(go);
-        if(go.GetComponent<Tetris>().itemSO == axeISO)
+        ItemScriptableObject thisISO = go.GetComponent<Tetris>().itemSO;
+        if (thisISO == axeISO)
         {
             UI_Tools.i.addAxe();
         }
-        else if(go.GetComponent<Tetris>().itemSO == shovelISO)
+        else if(thisISO == shovelISO)
         {
             UI_Tools.i.addShovel();
         }
+        ShopManager.i.newObj(thisISO);
     }
 
     Vector3 AvaiableTetrisPos()

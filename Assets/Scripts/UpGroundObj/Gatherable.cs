@@ -149,9 +149,9 @@ public class Gatherable : UpGroundObj
 
     public toolMatchness GetToolMatchness(PlayerAction.tool inTool)
     {
-        if(myType == type.Berry) //berry：所有工具都行
+        if(myType == type.Berry) //berry：只能用手
         {
-            return toolMatchness.Normal;
+            if (inTool == PlayerAction.tool.Hand) return toolMatchness.Normal;
         }
         else if(myType == type.Grass) //grass:：只能shovel
         {

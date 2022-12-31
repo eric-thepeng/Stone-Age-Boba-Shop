@@ -134,13 +134,12 @@ MonoBehaviour:
       Data: 
   category: 2
   taskName: 3 Mom Overall Target
-  descriptionText: "Hi son,<br>      Good job! Now, building a shop from scratch
-    take a lot of efforts. Just to give you an overview, you need to have at least
-    4 products, which means making 4 unique types of Boba drinks. You\u2019ll also
-    need to build 1 table and 2 chairs for customers to use, and the final piece
-    of the picture: 1 dress uniform! It makes your shop looks so much more professional!<br>     
-    Keep working on building them, and I\u2019m sure the day your shop opens, it
-    would be a great hit!<br>                                                             
+  descriptionText: "Hi son,<br>      Good job! Building a shop from scratch take
+    a lot of efforts. Just an overview, you need to design at least 4 unique types
+    of Boba drinks. You\u2019ll also need to build 1 table and 2 chairs for customers.
+    Finally, the last piece of the picture: 1 skirt uniform! It makes your shop looks
+    so much more professional!<br>      Keep working on building them, and I\u2019m
+    sure the day your shop opens, it would be a great hit!<br>                                                             
     Good Luck!<br>                                                              --
     Mom"
   completion: 0
