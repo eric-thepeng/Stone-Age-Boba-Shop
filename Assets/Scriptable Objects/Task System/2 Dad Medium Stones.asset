@@ -58,11 +58,12 @@ MonoBehaviour:
   taskName: 2 Dad Medium Stones
   descriptionText: "Hi son,<br>      You mother told me you are starting a little
     shop? What\u2019s it called, ah, Baba Shop or something right? Hahaha I am so
-    flattered!<br>      Let me give you some advice! Click on the door, go outside,
-    and pick up some large stone around the area! Don\u2019t go too far! You know
-    what, try to pick up three large stones for me! I\u2019ll teach you how to craft
-    with them.<br>                                                              Love
-    ya!<br>                                                              -- Dad"
+    flattered!<br>      Let me give you some advice! Click on the door on the top-right,
+    go outside, and pick up some large stone around the area! Don\u2019t go too far!
+    You know what, try to pick up three large stones for me! I\u2019ll teach you
+    how to craft with them.<br>                                                             
+    Love ya!<br>                                                              --
+    Dad"
   completion: 3
   unlocks:
   - {fileID: 11400000, guid: c3b32fd9d763b0f4facb70cd78e8d577, type: 2}

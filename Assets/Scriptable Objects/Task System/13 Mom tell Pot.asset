@@ -57,10 +57,10 @@ MonoBehaviour:
   category: 2
   taskName: 13 Mom tell Pot
   descriptionText: Hi son,<br>      Have you been stumbled to make food? What you
-    need is a pot!<br>      Let me teach you how to make one! Get a cup filled with
-    water, and then lays three grasses beneath it! Super simple right! With a pot
-    you could process more type of food, and of course, boil tea and milk tea! Hope
-    you could manage to make one.<br>                                                 
-    Good Luck!<br>                                                  -- Mom
-  completion: 0
+    need is a pot!<br>      Let me teach you how to make one! Get a full cup of water,
+    and then lays three grasses beneath it! Super simple right! With a pot you could
+    process more type of food, and of course, boil tea and milk tea! Hope you could
+    manage to make one.<br>                                                  Good
+    Luck!<br>                                                  -- Mom
+  completion: 3
   unlocks: []

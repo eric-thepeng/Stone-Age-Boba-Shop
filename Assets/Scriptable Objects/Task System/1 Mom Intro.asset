@@ -26,15 +26,14 @@ MonoBehaviour:
       Data: 
   category: 2
   taskName: 1 Mom Intro
-  descriptionText: "Hi son,<br>      Good job! Building a shop from scratch take
-    a lot of efforts. Just to give you an overview, you need to design at least 4
-    unique types of Boba drinks. You\u2019ll also need to build 1 table and 2 chairs
-    for customers. Finally, the last piece of the picture: 1 skirt uniform! It makes
-    your shop looks so much more professional!<br>      Keep working on building
-    them, and I\u2019m sure the day your shop opens, it would be a great hit!<br>                                                             
-    Good Luck!<br>                                                              --
-    Mom"
-  completion: 0
+  descriptionText: Hi son,<br>      I heard that you are starting a little business!
+    That is wonderful! You could start by go around and see what your little shop
+    can do first!<br>      Press [A] or [D] to switch between different panels in
+    the shop! After taking a tour of all 3 panels, come back and click on the [Complete]
+    button! <br>                                                              Hope
+    you Have fun!<br>                                                             
+    -- Mom
+  completion: 3
   unlocks:
   - {fileID: 11400000, guid: e228224ff8956e94eba4325fc6dc5b70, type: 2}
   - {fileID: 11400000, guid: 5226d252679e39840aed0992d0aebda3, type: 2}

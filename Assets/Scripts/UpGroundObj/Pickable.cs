@@ -50,7 +50,7 @@ public class Pickable : UpGroundObj
 
         GameObject ngo = Instantiate(objProduce, transform.parent);
         ngo.transform.position = transform.position;
-        ngo.GetComponent<mushroom>().SetUp(staticPop, isoToGet, 1.5f);
+        ngo.GetComponent<mushroom>().SetUp(staticPop, isoToGet, 1f);
         yield return new WaitForSeconds(0.5f);
         staticCanPickUp = true;
     }
