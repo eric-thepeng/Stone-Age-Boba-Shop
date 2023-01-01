@@ -64,6 +64,7 @@ public class TaskManager : MonoBehaviour
 
     public void CheckTasksComplete()
     {
+        bool hasChange = false;
         foreach(Task t in taskBoard)
         {
             bool completion = true;
@@ -71,7 +72,11 @@ public class TaskManager : MonoBehaviour
             {
                 if (ProgressControl.i.CheckCompletion(t.myTi))
                 {
-                    t.myTi.completion = 2;
+                    if (t.myTi.completion != 2)
+                    {
+                        t.myTi.completion = 2;
+                        hasChange = true;
+                    }
                 }
                 else
                 {
@@ -82,20 +87,29 @@ public class TaskManager : MonoBehaviour
             {
                  foreach(KeyValuePair<ItemScriptableObject, int> kvp in t.myTi.request)
                 {
-                    if(CraftingManager.i.CheckAmountISO(kvp.Key) < kvp.Value)//Inventory.i.AmountOf(kvp.Key) < kvp.Value)
+                    if(CraftingManager.i.CheckAmountISO(kvp.Key) < kvp.Value)
                     {
                         completion = false;
                     }
                 }
                 if (completion)
                 {
-                    t.myTi.completion = 2;
+                    if (t.myTi.completion != 2)
+                    {
+                        t.myTi.completion = 2;
+                        hasChange = true;
+                    }
                 }
                 else
                 {
                     t.myTi.completion = 1;
                 }
             }
+        }
+
+        if (hasChange)
+        {
+            CraftingManager.i.SetTaskCompleteNotification(true);
         }
 
         if (displayingNow == null) return;
@@ -112,6 +126,7 @@ public class TaskManager : MonoBehaviour
 
     public void ClickComplete()
     {
+        CraftingManager.i.SetTaskCompleteNotification(false);
         taskBoard.Remove(displayingTask);
         Destroy(displayingTask.transform.parent.gameObject);
         displayingTask = null;

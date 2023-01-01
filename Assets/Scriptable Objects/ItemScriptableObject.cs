@@ -22,7 +22,8 @@ public class ItemScriptableObject : SerializedScriptableObject
     {
         get
         {
-            return allRecipes[0].getCoordForm();
+            if(allRecipes.Count > 0) return allRecipes[0].getCoordForm();
+            return null;
         }
     }
 

@@ -14,7 +14,7 @@ public class Gatherable : UpGroundObj
     [SerializeField] string emptySpriteLabel;
     public enum state {Gathering, Full, Empty}
     public enum toolMatchness {Normal, Stuck}
-    public enum type {Berry, Grass, Tree}
+    public enum type {Berry, Grass, Tree, SmallTree}
     public type myType = type.Tree;
     state stateNow;
     public state bornState;
@@ -160,6 +160,11 @@ public class Gatherable : UpGroundObj
         else if(myType == type.Tree) //tree：只能axe
         {
             if (inTool == PlayerAction.tool.Axe) return toolMatchness.Normal;
+        }
+        else if (myType == type.SmallTree) //small tree: 斧子或者手
+        {
+            if (inTool == PlayerAction.tool.Axe) return toolMatchness.Normal;
+            if (inTool == PlayerAction.tool.Hand) return toolMatchness.Normal;
         }
         return toolMatchness.Stuck;
     }

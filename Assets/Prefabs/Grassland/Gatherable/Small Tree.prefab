@@ -229,8 +229,8 @@ MonoBehaviour:
   - {fileID: 7332049097671988363}
   - {fileID: 7332049096856544276}
   m_Bounds:
-    m_Center: {x: 0.026250064, y: 1.526309, z: -0.0000014310942}
-    m_Extent: {x: 0.45936584, y: 0.98200274, z: 0.0000004773239}
+    m_Center: {x: 0.026242197, y: 1.5263135, z: -0.000000020527295}
+    m_Extent: {x: 0.45936584, y: 0.9820068, z: 0.00000765115}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!114 &7332049097794404214
@@ -251,7 +251,7 @@ MonoBehaviour:
   targetCategroy: Tree
   fullSpriteLabel: Tree_Small_Full
   emptySpriteLabel: Tree_Small_Empty
-  myType: 0
+  myType: 3
   bornState: 1
   objProduce: {fileID: 6364644185954913908, guid: e288feda10ac1484f8a1592ce58ef242, type: 3}
   produceList:

@@ -59,6 +59,7 @@ public class CraftingManager : SerializedMonoBehaviour
             UI_Tools.i.addShovel();
         }
         ShopManager.i.newObj(thisISO);
+        TaskManager.i.CheckTasksComplete();
     }
 
     Vector3 AvaiableTetrisPos()
@@ -119,5 +120,18 @@ public class CraftingManager : SerializedMonoBehaviour
     public void mouseExitTetris()
     {
         transform.Find("NameUI").gameObject.SetActive(false);
+    }
+
+    public void SetTaskCompleteNotification(bool setTo)
+    {
+        print("setting to " + setTo);
+        if (setTo)
+        {
+            transform.Find("Task Complete Notification").gameObject.SetActive(true);
+        }
+        else
+        {
+            transform.Find("Task Complete Notification").gameObject.SetActive(false);
+        }
     }
 }

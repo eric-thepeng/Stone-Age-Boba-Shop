@@ -274,7 +274,7 @@ public class Tetris : MonoBehaviour
         CraftingManager.i.mouseClickTetris();
         if(stateNow == state.Merge)
         {
-            myRC.StopMerge();
+            //myRC.StopMerge();
         }
         if (stateNow != state.Wait) return;
         SetState(state.Drag);

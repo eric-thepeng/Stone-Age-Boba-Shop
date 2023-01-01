@@ -9,7 +9,6 @@ public class PictureSequence : MonoBehaviour
     [SerializeField] Transform CameraTransform;
     int cursor = 0;
     Frame frameNow = null;
-
     private void Start()
     {
         PlayFrame(AllFrames[cursor]);
@@ -44,6 +43,11 @@ public class PictureSequence : MonoBehaviour
     void End()
     {
         SceneManager.LoadScene(sceneName: "SampleScene");
+    }
+
+    private void OnMouseUpAsButton()
+    {
+        NextFrame();
     }
 
     IEnumerator CountDown(float frameTime)

@@ -54,6 +54,7 @@ public class ProgressControl : MonoBehaviour
         {
             task1_freed = true;
             completedPCTasks.Add(task1);
+            TaskManager.i.CheckTasksComplete();
         }
         
     }

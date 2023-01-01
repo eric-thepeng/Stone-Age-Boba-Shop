@@ -70,6 +70,7 @@ public class MasterManager : MonoBehaviour
     {
         CameraManager.i.switchCameraTo(2);
         playerState = PlayerState.Crafting;
+        TaskManager.i.CheckTasksComplete();
     }
 
     public void LeaveHome()
