@@ -102,10 +102,12 @@ public class MasterManager : MonoBehaviour
         print("exit door button");
         if(playerState == PlayerState.World)
         {
+            AudioManager.i.PlaySoundEffectByName("Door Close");
             GoHome();
         }
         else
         {
+            AudioManager.i.PlaySoundEffectByName("Door Open");
             LeaveHome();
         }
     }

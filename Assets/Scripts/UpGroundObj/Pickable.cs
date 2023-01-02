@@ -31,6 +31,7 @@ public class Pickable : UpGroundObj
 
     IEnumerator PickUpIE()
     {
+        AudioManager.i.PlaySoundEffectByName("Pick Up Resource", true);
         int amount = 0;
         while(amount < produceAmount)
         {
@@ -47,7 +48,7 @@ public class Pickable : UpGroundObj
     }
     IEnumerator StaticPickUpIE()
     {
-
+        AudioManager.i.PlaySoundEffectByName("Pick Up Resource", true);
         GameObject ngo = Instantiate(objProduce, transform.parent);
         ngo.transform.position = transform.position;
         ngo.GetComponent<mushroom>().SetUp(staticPop, isoToGet, 1f);

@@ -126,6 +126,7 @@ public class TaskManager : MonoBehaviour
 
     public void ClickComplete()
     {
+        AudioManager.i.PlaySoundEffectByName("Task Complete");
         CraftingManager.i.SetTaskCompleteNotification(false);
         taskBoard.Remove(displayingTask);
         Destroy(displayingTask.transform.parent.gameObject);

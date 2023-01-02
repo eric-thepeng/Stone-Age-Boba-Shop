@@ -195,8 +195,8 @@ MonoBehaviour:
   - {fileID: 30174860035060773}
   - {fileID: 4522555387696987016}
   m_Bounds:
-    m_Center: {x: 0.008737534, y: 0.23228124, z: -0.000015258789}
-    m_Extent: {x: 0.4781065, y: 0.22911595, z: 0}
+    m_Center: {x: 0.008768022, y: 0.2322657, z: 0.0000038146973}
+    m_Extent: {x: 0.4781065, y: 0.22910859, z: 0.0000038146973}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!95 &3701919425512590016
@@ -255,7 +255,7 @@ CapsuleCollider:
   m_Radius: 0.37
   m_Height: 1.32
   m_Direction: 0
-  m_Center: {x: 0.02032119, y: 0.25, z: -0.1}
+  m_Center: {x: 0.02032119, y: 0.04, z: -0.04}
 --- !u!1 &3996633726946144685
 GameObject:
   m_ObjectHideFlags: 0

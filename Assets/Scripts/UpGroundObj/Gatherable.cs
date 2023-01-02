@@ -136,6 +136,7 @@ public class Gatherable : UpGroundObj
 
     IEnumerator ProduceIE()
     {
+        AudioManager.i.PlaySoundEffectByName("Get Resource", true);
         foreach(ItemScriptableObject iso in produceList)
         {
             GameObject ngo = Instantiate(objProduce, transform.parent);

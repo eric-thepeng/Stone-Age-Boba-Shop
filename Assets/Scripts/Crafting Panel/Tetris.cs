@@ -424,13 +424,12 @@ public class Tetris : MonoBehaviour
 
     void CheckSnap(RecipeCombiator rc)//check if the Tetris is close enough to another to snap them together
     {
-        print("at 1");
         if (!rc.hasConnector()) return;
-        print("at 2");
         foreach (Edge e in allEdges)
         {
             if (e.isConnected())
             {
+                AudioManager.i.PlaySoundEffectByName("Tetris Snap", true);
                 StartCoroutine(SnapMovement(e.getOppositeEdgeDistance()));
                 break;
             }
