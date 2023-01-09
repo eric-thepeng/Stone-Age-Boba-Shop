@@ -21,7 +21,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"E:/Unity/Projects/Stone Age Boba Shop/Stone-Age-Boba-Shop/WebGL Builds/alpha 6.0;E:/Unity/Projects/Stone Age Boba Shop/Stone-Age-Boba-Shop/WebGL Builds/alpha 5.0;E:/Unity/Projects/Stone Age Boba Shop/Stone-Age-Boba-Shop/WebGL Builds/4;E:/Unity/Projects/Stone Age Boba Shop/Stone-Age-Boba-Shop/WebGL Builds/3;E:/Unity/Projects/Stone Age Boba Shop/Stone-Age-Boba-Shop/WebGL Builds/2;E:/Unity/Projects/Stone Age Boba Shop/Stone-Age-Boba-Shop/WebGL Builds/1;;;;\"}"
+                "value": "{\"m_Value\":\"E:/Unity/Projects/Stone Age Boba Shop/Stone-Age-Boba-Shop/WebGL Builds/1.0.7;E:/Unity/Projects/Stone Age Boba Shop/Stone-Age-Boba-Shop/WebGL Builds/1;;;;;;;;\"}"
             }
         ]
     }
